@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Necessite ant 1.5 au min et le JDK 1.4 -->
+<project default="doAll" name="TS" basedir="..">
+
+	<!-- répertoire pour les documents -->
+	<property name="docs.dir" location="${basedir}/TS Documents/" />
+	<property name="docs.file" value="ts_terminale_S" />
+
+	
+	<!-- Chapitre N1 -->
+	<property name="n1.dir" value="${basedir}/N1 - Suites numériques" />
+	<property name="n1.file" value="ts_n1_suites_numériques" />
+
+	
+
+
+	<target name="doAll">
+		<antcall target="mergePdf"/>
+	</target>
+
+	<target name="mergePdf">
+		<delete file="${docs.dir}/${docs.file}.pdf"/>
+		<echoxml file="ts_pdfsam.tmp.xml">
+			<filelist>
+				<file value="${n1.dir}/${n1.file}.pdf" />
+			</filelist>
+		</echoxml>
+		<java jar="/Applications/pdfsam.app/Contents/Resources/Java/lib/pdfsam-console-2.3.1e.jar" fork="true" failonerror="true" output="output">
+			<jvmarg value="-Dlog4j.configuration=console-log4j.xml"/>
+			<arg value="-o"/>
+			<arg value="${docs.dir}/${docs.file}.pdf"/>
+			<arg value="-l"/>
+			<arg value="ts_pdfsam.tmp.xml"/>
+			<arg value="-pdfversion"/>
+			<arg value="3"/>
+			<arg value="concat"/>
+		</java>
+		<delete file="ts_pdfsam.tmp.xml"/>
+		<delete file="output"/>
+		<echo message="Création du fichier de cours ${docs.file}.pdf terminée"/>
+	</target>
+
+</project>

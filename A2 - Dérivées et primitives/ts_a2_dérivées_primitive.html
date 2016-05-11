@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Dérivées et primitives" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="TS - Dérivées et primitives" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="1"
+data-left="$T_S$-$A_2$"
+data-main-width="900">
+
+<!-- Fonction dérivée -->
+<div class="box" data-title="Fonction dérivée" data-num="$N_1$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxD Nombre dérivée" data-color="#444444">
+       Soit $f$ une fonction définie sur un intervalle $I$ de $\mathbb{R}$ et $a \in I$. Le nombre dérivé en $a$ de $f$, noté $f'(a)$, est défini, quand il existe, par : $\displaystyle \frac{f(a+h) - f(a)}{h} \underset{h \rightarrow 0}{\longrightarrow} f'(a)$. $f'(a)$ est appelé le *{bold::nombre dérivée} de la fonctin $f$ en $a$.
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Fonction dérivée" data-color="#444444">
+        Si pour tout réel $a \in I$, $f'(a)$ existe, on dit que $f$ est *{bold::dérivable} sur $I$. $I$ est le domaine de dérivabilité qu'on peut note $D_{f'}$.
+
+La *{bold::fonction dérivée}, notée $f'$, est définie sur $D_{f'}$ par : $\displaystyle f' : x \mapsto f'(x)$
+
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Dérivabilité et continuité" data-color="#444444">
+       Si $f$ est dérivable sur un intervalle $I$ de $\R$ alors $f$ est *{bold::continue} sur $I$. Attention la réciproque est fausse.
+
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Dérivées usuelles" data-color="#444444">
+        $m$ et $p$ sont deux réels et $n$ entier naturel.
+        <div class="table" style="margin-left: 100px"  data-table-class="grey-alternate-header" data-table-style="border-collapse: collapse" cells="*,*|h30;w150;c;bo1#444444">
+        $f(x)$ & $\mathcal{D}_f$ & $f'(x)$ & $\mathcal{D}_{f'}$ ||
+        $f(x) = mx+p$  & $\R$ & $f'(x) = m$ & $\R$ ||  
+            $f(x) = x^2$  & $\R$ & $f'(x) = 2x$ & $\R$  ||  
+            $f(x) = x^n$  & $\R$ & $f'(x) = nx^{n-1}$ & $\R$  ||
+            $f(x) = \dfrac{1}{x}$  & $\R^*$ & $f'(x) = -\dfrac{1}{x^2}$ & $\R^*$  
+            ||
+            $f(x) = \sqrt{x}$  & $[0;+\infty[$ & $f'(x) = \dfrac{1}{2\sqrt{x}}$ & $]0;+\infty[$ 
+            ||
+            $f(x) = \cos{(x)}$  & $\R$ & $f'(x) = -\sin{(x)}$ & $\R$ 
+            ||
+            $f(x) = \sin{(x)}$  & $\R$ & $f'(x) = \cos{(x)}$ & $\R$ 
+        </div>
+	</div>
+   
+    <div class="titled hide" data-title="\boxP Dérivée de la fonction $f(ax+b)$" data-color="#444444">
+        Soit $f$ une fonction dérivable sur un intervalle $I$ de $\R$. Soit $a$ et $b$ deux réels et $g$ une fonction définie par $g(x) = f(ax+b)$. La fonction $g$ est alors dérivable sur $I$ et $g'(x) = [f(ax+b)]' = a\times f'(ax+b)$
+    </div>    
+	
+   
+	<div class="styled">
+        Déterminer les dérivées des fonctions suivantes : 
+        <div class="table 3cols" data-table-style="border-spacing: 0px 5px">
+            <div class="num" data-valign-num="10px">$\displaystyle f_1(x) = \frac{1}{-3x+7}$</div> &
+            <div class="num">$\displaystyle f_2(x) = \sqrt{2x-9}$</div> &
+            <div class="num">$f_3(x) = x^5$</div> ||
+            <div class="num">$f_4(x) = \sin{(7x-\pi)}$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_5(x) = \cos{\Big(\frac{1}{3}x+\frac{\pi}{3}\Big)}$</div> &
+            <div class="num"> $\displaystyle f_6(x) = \sin{(-x-\frac{\pi}{4})}$</div> 
+         </div>
+    </div>
+	
+</div>	
+    
+    
+<!-- Dérivée d'une somme-->
+<div class="box" data-title="Dérivée d'une somme" data-num="$N_2$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Dérivée d'une somme" data-color="#444444">
+        Soient $u$ et $v$ deux fonctions définies et dérivables sur un intervalle $I$ alors la fonction $(u+v)(x) = u(x) + v(x)$ est dérivable sur $I$ et : $\displaystyle (u+v)' (x)= u'(x) + v'(x)$}
+	</div>
+        
+        <div class="styled">
+         Déterminer les dérivées des fonctions suivantes : 
+        <div class="table 2cols" data-table-style="border-spacing: 0px 5px">
+            <div class="num" data-valign-num="10px">$\displaystyle f_1(x) = \sqrt{2x-7} + \frac{1}{-8x+7}$</div> &
+            <div class="num">$\displaystyle f_2(x) = \sqrt{2x-9} - \dfrac{1}{9-2x}$</div> ||
+            <div class="num">$f_3(x) = x^5 + \cos{{5-6x}}$</div> &
+            <div class="num">$f_4(x) = \sin{(x-\pi)} + \cos{(6x)}$</div>  ||
+            <div class="num" data-valign-num="10px"> $\displaystyle f_5(x) = \cos{\Big(\frac{1}{2}x+\frac{\pi}{6}\Big)} - \sqrt{\pi x - 8}$</div> &
+            <div class="num"> $\displaystyle f_6(x) = \sin{(-2x-\frac{\pi}{3})} + x^9$</div> 
+         </div>
+        </div>
+</div>    
+        
+
+<div class="newpage"></div>
+    
+<!-- Dérivée du produit par un réel -->
+<div class="box" data-title="Dérivée du produit par un réel" data-num="$N_3$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Dérivée du produit par un réel" data-color="#444444">
+        Soit $u$ une fonction définie et dérivable sur un intervalle $I$ et $k$ un réel alors la fonction $(ku)(x) = k\times u(x)$ est dérivable sur $I$ et : $\displaystyle (ku)' (x)= k\times u'(x)$
+	</div>
+        
+        <div class="styled">
+         Déterminer les dérivées des fonctions suivantes : 
+        <div class="table 3cols" data-table-style="border-spacing: 0px 5px">
+            <div class="num">$\displaystyle f_1(x) = -2\sqrt{2x-7}$</div> &
+            <div class="num">$\displaystyle f_2(x) = \dfrac{-8}{9+2x}$</div> &
+            <div class="num">$f_3(x) = -8x^6$</div> ||
+            <div class="num">$f_4(x) = 9\sin{(3x-\pi)} $</div>  &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_5(x) =\dfrac{-8}{7x-9}$</div> &
+            <div class="num"> $\displaystyle f_6(x) = -2\cos{(-2x-\frac{\pi}{3})}$</div> 
+         </div>
+        </div>
+</div>    
+    
+    
+<!-- Dérivée du produit -->
+<div class="box" data-title="Dérivée du produit" data-num="$N_4$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Dérivée du produit" data-color="#444444">
+        Soient $u$ et $v$ deux fonctions définies et dérivables sur un intervalle $I$ alors la fonction $(u\times v)(x) = u(x) \times v(x)$ est dérivable sur $I$ et : $\displaystyle (uv)' (x)= u'(x) \times v(x) + u(x) \times v'(x)$
+
+	</div>
+        
+        <div class="styled">
+         Déterminer les dérivées des fonctions suivantes : 
+        <div class="table 3cols" data-table-style="border-spacing: 0px 5px">
+            <div class="num">$f_1(x) = x^2\sqrt{3x-8}$</div> &
+            <div class="num" data-valign-num="10px">$\displaystyle f_2(x) = (8 - 2\cos{x})\frac{1}{x} $</div> &
+            <div class="num">$f_3(x) = (2\sin{(-8x-2)} - 1)x^2$</div> ||
+            <div class="num" data-valign-num="10px">$\displaystyle f_4(x) = \sqrt{x}\times \frac{1}{x}$ </div>  &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_5(x) = \sin{x}\cos{x}$</div> &
+            <div class="num"> $\displaystyle f_6(x) =(6x - 8)(9x^2 + 2x -5)$</div> 
+         </div>
+        </div>
+</div>        
+    
+    
+<!-- Dérivée de l'inverse -->
+<div class="box" data-title="Dérivée de l'inverse" data-num="$N_5$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Dérivée de l'inverse" data-color="#444444">
+       Soit $u$  une fonction définie et dérivable sur un intervalle $I$ telle que pour tout $x\in I$, $u(x) \not= 0$ alors la fonction $\Big(\displaystyle \frac{1}{u}\Big)(x) =  \frac{1}{u(x)}$ est dérivable sur $I$ et : $\displaystyle \Big(\frac{1}{u}\Big)' (x)= -\frac{v'(x)}{v^2(x)}$
+
+	</div>
+        
+        <div class="styled">
+         Déterminer les dérivées des fonctions suivantes : 
+        <div class="table 3cols" data-table-style="border-spacing: 0px 10px">
+            <div class="num" data-valign-num="10px">$\displaystyle f_1(x) = \frac{1}{x^2}$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_2(x) = \frac{1}{3x-9} $</div> &
+            <div class="num" data-valign-num="10px">$\displaystyle f_3(x) = \frac{1}{x^3+1}$</div> ||
+            <div class="num" data-valign-num="10px">$\displaystyle f_4(x) = \frac{1}{\sin{x}}$ </div>  &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_5(x) = \frac{1}{\sqrt{7x-9}}$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_6(x) = \frac{1}{\cos{4x-\pi}}$</div> 
+         </div>
+        </div>
+</div>            
+    
+
+<!-- Dérivée du quotient -->
+<div class="box" data-title="Dérivée du quotient" data-num="$N_6$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Dérivée du quotient" data-color="#444444">
+      Soient $u$ et $v$ deux fonctions définies et dérivables sur un intervalle $I$ telles que pour tout $x\in I$, $v(x) \not= 0$ alors la fonction $\Big(\displaystyle \frac{u}{v}\Big)(x) =  \frac{u(x)}{v(x)}$ est dérivable sur $I$ et : 
+$\displaystyle \Big(\frac{u}{v}\Big)' (x)= \frac{u'(x) \times v(x) - u(x) \times v'(x)}{v^2(x)}$
+
+	</div>
+        
+        <div class="styled">
+         Déterminer les dérivées des fonctions suivantes : 
+        <div class="table 3cols" data-table-style="border-spacing: 0px 10px">
+            <div class="num" data-valign-num="10px">$\displaystyle f_1(x) = \frac{5x -9}{\sqrt{x}}$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_2(x) = \frac{7x+9}{x^6 - 3x^2} $</div> &
+            <div class="num">$\displaystyle f_3(x) = \frac{\sqrt{x}}{9 - 8x}$</div> ||
+            <div class="num" data-valign-num="10px">$\displaystyle f_4(x) = \frac{\sin{x}}{\cos{(8x-8)}}$</div>  &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_5(x) = \frac{\cos^2{7x-9}}{\sin{(x)}}$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_6(x) = \frac{(x+1)^2}{(x-1)^3} $</div> 
+         </div>
+        </div>
+</div>
+    
+<div class="newpage"></div>
+    
+<!-- : Dérivée de g(x) = f(u(x) -->
+<div class="box" data-title=": Dérivée de $g(x) = f(u(x)$" data-num="$N_7$" data-date="1">   
+    <div class="titled hide" data-title="\boxP : Dérivée de $g(x) = f(u(x)$" data-color="#444444">
+      Soient $f$ une fonction dérivable sur un intervalle $J$ de $\mathbb{R}$ et $u$  une fonction dérivable sur un intervalle $I$ de $\mathbb{R}$ telle que pour tout $x \in I$, $u(x) \in J$. La fonction $g$ définie par $g(x) = f\Big(u(x)\Big)$ est dérivable sur $I$  et :
+        
+        <centering-box style="display: inline-block;background: #eeeeee">$\displaystyle g'(x) = u'(x) \times f'\Big(u(x)\Big)$</centering-box>
+	</div>
+    
+    <div class="titled hide" data-title="\boxP : Dérivée de $f(x) = (u(x))^n$ pour $n > 0$" data-color="#444444">
+      Soient $u$ une fonction dérivable sur un intervalle $I$ de $\mathbb{R}$ et $n$ un entier naturel tel que $n > 0$. La fonction $f$ définie par $f(x) = \Big(u(x)\Big)^n$ est dérivable sur $I$  et : 
+        
+        <centering-box style="display: inline-block;background: #eeeeee">$\displaystyle f'(x) = n \times u'(x) \times \Big(u(x)\Big)^{n-1}$</centering-box>
+	</div>
+    
+     <div class="titled hide" data-title="\boxP : Dérivée de $f(x) = (u(x))^n$ pour $n < 0$" data-color="#444444">
+     Soient $u$ une fonction dérivable sur un intervalle $I$ de $\mathbb{R}$ telle que <box style="display: inline-block">$u(x) \not= 0$</box>  pour tout $x \in I$ et $n$ un entier naturel tel que $n < 0$. La fonction $f$ définie par $f(x) = \Big(u(x)\Big)^n$ est dérivable sur $I$  et : 
+     
+     <centering-box style="display: inline-block;background: #eeeeee">$\displaystyle f'(x) = n \times u'(x) \times \Big(u(x)\Big)^{n-1}$</centering-box>
+	</div>
+         
+     <div class="titled hide" data-title="\boxP : Dérivée de $f(x) = \sqrt{u(x)}$" data-color="#444444">
+     Soient $u$ une fonction dérivable sur un intervalle $I$ de $\mathbb{R}$ telle que <box style="display: inline-block">$u(x) > 0$</box>  pour tout $x \in I$. La fonction $f$ définie par $f(x) = \sqrt{u(x)}$ est dérivable sur $I$  et : 
+         
+         <centering-box style="display: inline-block;background: #eeeeee">$\displaystyle f'(x) = \dfrac{u'(x)}{2\sqrt{u(x)}}$</centering-box>
+	</div>     
+        
+        <div class="styled">
+         Déterminer les dérivées des fonctions suivantes : 
+        <div class="table 3cols" data-table-style="border-spacing: 0px 20px">
+            <div class="num" data-valign-num="10px">$\displaystyle f_1(x) = \frac{1}{x^2-3x+1}$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_2(x) =  \sqrt{2x^3 + x^2 - 7}$</div> ||
+            <div class="num"> $\displaystyle f_3(x) = \Big(\frac{1}{x} - 4 + \cos{x}\Big)^2$</div> &
+            <div class="num" data-valign-num="10px">$\displaystyle f_4(x) = \sqrt{\frac{1}{x}+7x^2}$</div>  ||
+            <div class="num" data-valign-num="10px"> $\displaystyle f_5(x) = \sqrt{x^7- \sin{x}}$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_6(x) = \Big(9 + \sqrt{x}  \Big)^2 $</div> ||
+            <div class="num" data-valign-num="10px"> $\displaystyle f_7(x) = \cos{(8 -9x)} $</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_8(x) = \frac{3}{\cos{x}+\sin{x}} $</div> ||
+            <div class="num" data-valign-num="10px"> $\displaystyle f_9(x) = \sin{(6x^2+9x)} $</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_{10}(x) = \Big( x^3 - 9x^2+6\Big)^2 $</div> 
+            ||
+            <div class="num" data-valign-num="10px"> $\displaystyle f_{11}(x) = \sqrt{\sin{(4x - \pi)}} $</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_{12}(x) = \frac{1}{\sqrt{7x - 9}} $</div> 
+            ||
+            <div class="num" data-valign-num="10px"> $\displaystyle f_{13}(x) = \Big( \sqrt{6x -9}{}\Big)^3 $</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_{14}(x) = \Big(\frac{1}{2x-2}\Big)^5 $</div> 
+         </div>
+        </div>
+</div> 
+    
+    
+<div class="newpage"></div> 
+    
+<!-- Primitive-->
+<div class="box" data-title="Primitive" data-num="$N_8$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Primitive" data-color="#444444">
+      Soit $f$ une fonction définie sur un intervalle $I$ de $\mathbb{R}$. On appelle *{bold::primitive de $f$ sur $I$} une fonction $F$ dérivable sur $I$ dont la dérivée $F'$ est égale à $f$. C'est à dire pour tout $x \in I$ on a : $\displaystyle F'(x) = f(x)$
+
+vspace{5}
+
+C'est l'"action inverse" de la dérivée.
+
+	</div>
+        
+        <div class="styled">
+         Donner une primitive de : 
+        <div class="table 3cols" data-table-style="border-spacing: 0px 10px">
+            <div class="num" data-valign-num="10px">$f_1(x) = 2x$</div> &
+            <div class="num" data-valign-num="10px">  $\displaystyle f_2(x) = -\frac{1}{x^2}$ </div> &
+            <div class="num"> $f_3(x) = \cos{x}$</div> ||
+            <div class="num" data-valign-num="10px"> $f_4(x) = \sin{x}$</div>  &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_5(x) = \frac{2}{\sqrt{x}}$ </div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_6(x) = -7 $</div> 
+         </div>
+        </div>
+</div>    
+    
+    
+
+    
+<!-- Primitive usuelles-->
+<div class="box" data-title="Primitives usuelles" data-num="$N_{9}$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Primitives usuelles" data-color="#444444">
+        <div class="table" style="margin-left: 150px" data-table-class="grey-alternate-header" data-table-style="border-collapse: collapse" cells="*,*|h30;w170;c;bo1#444444">
+        $f(x)$ & $F(x)$ & $I$ ||
+ $k$ ($k \in \mathbb{R})$ & $kx + C$ & $\mathbb{R}$ ||
+ $x$ & $ \frac{x^2}{2}+ C$ & $\mathbb{R} $ ||
+ $\frac{1}{x^2}$ & $ -\frac{1}{x}+ C$ & $\mathbb{R}^{+*} $ ou  $\mathbb{R}^{-*} $ ||
+ $x^n$ ($n \geqslant 1$) & $ \frac{x^{n+1}}{n+1}+ C$ & $\mathbb{R}$  ||
+ $x^n$ ($n \leqslant -1$) & $ \frac{x^{n+1}}{n+1}+ C$ & $\mathbb{R}^{+*} $ ou  $\mathbb{R}^{-*} $  ||
+ $\cos{x}$ & $ \sin{x}+ C$ & $\mathbb{R} $||
+  $\sin{x}$ & $ -\cos{x}+ C$ & $\mathbb{R} $||
+  $\cos{(ax+b)}$ & $ \frac{1}{a}\sin{(ax+b)}+ C$ & $\mathbb{R} $ ||
+  $\sin{(ax+b)}$ & $ -\frac{1}{a}\cos{(ax+b)}+ C$ & $\mathbb{R} $ 
+        </div>
+	</div>
+        
+        <div class="styled">
+        Donner une primitive de : 
+        <div class="table 2cols" data-table-style="border-spacing: 0px 10px">
+            <div class="num" data-valign-num="10px">$\displaystyle f_1(x) = \frac{3}{x^2}$</div> &
+            <div class="num" data-valign-num="10px">  $\displaystyle f_2(x) = -\frac{1}{2}\cos{(2x - 8)}$</div> ||
+            <div class="num" data-valign-num="10px"> $\displaystyle f_3(x) = \frac{1}{3}\sin{(7+3x)}$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f_4(x) = x^6$</div> 
+         </div>
+        </div>
+</div>   
+    
+<!-- Unicité de la primitive -->
+<div class="box" data-title="Unicité de la primitive" data-num="$N_{10}$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Unicité de la primitive" data-color="#444444">
+     Si $F$ est une primitive de la fonction $f$ sur un intervalle $I$ de $\mathbb{R}$ alors pour tout $k \in \mathbb{R}$ la fonction $G$ définie par $G(x) = F(x) + k$ est *{bold::aussi} une primitive de $f$ sur $I$. 
+
+        vspace{10}
+
+        Soient deux réels $x_0$ et $y_0$.
+Si la fonction $f$ admet des primitives sur un intervalle $I$ de $\mathbb{R}$ alors il existe *{bold::une unique} primitive $F$ de la fonction $f$ sur $I$ dont l'image de $x_0$ est égale à $y_0$ : $\displaystyle F(x_0) = y_0$
+
+	</div>
+        
+        <div class="styled">
+         Donner la primitive dont  l'image de $x_0$ est égale à $y_0$  : 
+        <div class="table 2cols" data-table-style="border-spacing: 0px 2px">
+            <div class="num" data-valign-num="10px">$f_1(x) = 4x^3$, $x_0=1$ et $y_0=4$</div> &
+            <div class="num" data-valign-num="10px">  $f_2(x) = 9$, $x_0=-1$ et $y_0=5$</div>  ||
+            <div class="num" data-valign-num="10px">$f_3(x) = 4x$, $x_0=2$ et $y_0=-1$</div> &
+            <div class="num" data-valign-num="10px">  $f_4(x) = \cos{(x)}$, $x_0=\pi$ et $y_0=6$</div>  ||
+         </div>
+        </div>
+</div>          
+
+    
+<div class="newpage"></div>  
+    
+    
+    
+<!-- Primitive de $\ahpha f + \beta g$ -->
+<div class="box" data-title="Primitive de $\alpha f + \beta g$" data-num="$N_{11}$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Primitive de $\alpha f + \beta g$" data-color="#444444">
+     Si $F$ est une primitive de $f$ sur un intervalle $I$ de $\mathbb{R}$ et $G$ est une primitive de $g$ sur $I$ alors $\alpha F+ \beta G$ est une primitive de $\alpha f+ \beta g$ sur $I$. ($\alpha$ et $\beta$ sont deux réels)
+
+	</div>
+        
+        <div class="styled">
+        Donner une primitive de : 
+        <div class="table 2cols" data-table-style="border-spacing: 0px 2px">
+            <div class="num" data-valign-num="10px">$f_1(x) = 4x - 3\cos{x}$</div> &
+            <div class="num" data-valign-num="10px">  $f_2(x) = \dfrac{3}{x^2} - \dfrac{7}{2\sqrt{x}}$</div>  
+         </div>
+        </div>
+</div>     
+    
+<!-- Primitive de $f(ax+b)$ -->
+<div class="box" data-title="Primitive de $f(ax+b)$" data-num="$N_{12}$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Primitive de $f(ax+b)$" data-color="#444444">
+     Si $F$ est une primitive de $f$ sur un intervalle $I$ de $\mathbb{R}$. Soit deux réels $a$ et $b$ ($a \not= 0$) et $g$ une fonction définie par $g(x) = f(ax+b)$ alors il existe une primitive de $G$ ed $g$ sur $I$ et :  
+        
+        <centering-box style="display: inline-block;background: #eeeeee">$G(x) = \dfrac{1}{a}F(ax+b) + k$</centering-box>
+
+	</div>
+        
+        <div class="styled">
+        Donner une primitive de : 
+        <div class="table 3cols" data-table-style="border-spacing: 0px 2px">
+            <div class="num" data-valign-num="10px">$f_1(x) = 2(4x -9)$</div> &
+            <div class="num" data-valign-num="10px">  $f_2(x) = \dfrac{-1}{(2x-9)^2}$</div>  
+         </div>
+        </div>
+</div>      
+    
+<!-- primitive de $f(x) = u'(x) \times (u(x))^n$ -->
+<div class="box" data-title="Primitive de $f(x) = u'(x) \times (u(x))^n$" data-num="$N_{13}$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Primitive de $f(x) = u'(x) \times (u(x))^n$" data-color="#444444">
+    Soient $u$ une fonction dérivable sur $I$, $n \not= -1 \in \mathbb{N}$ et $f$ une fonction définie par $f(x) = u'(x) \times \Big(u(x)\Big)^n $. $F$ est une primitive de $f$ définie par : $\displaystyle F(x) = \frac{\Big( u(x)\Big)^{n+1}}{n+1}$
+        
+        vspace{10}
+        Si $n \leqslant -2$ il faut vérifier que pour tout $x$ de $I$, $u(x) \not= 0$.
+
+	</div>
+        
+        <div class="styled">
+        Donner une primitive de : 
+        <div class="table 3cols" data-table-style="border-spacing: 0px 2px">
+            <div class="num" data-valign-num="10px">$f_1(x) = 2(4x -9)$</div> &
+            <div class="num" data-valign-num="10px">  $f_2(x) = \dfrac{-1}{(2x-9)^2}$</div>  
+         </div>
+        </div>
+</div>  
+    
+    
+<div class="newpage"></div>  
+    
+<div class="box" data-title="Des dérivées">
+        <div class="styled">
+        Donner l'ensemble de dérivabilité de $f$ puis calculer sa dérivée :
+        <div class="table 3cols" data-table-style="border-spacing: 0px 5px">
+            <div class="num" data-valign-num="middle"> $\displaystyle f(x) = (4x-3)^2$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = (3x^2-4x)^3$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = (2x^2-3x+1)^2$ </div>  || 
+            
+            <div class="num" data-valign-num="middle">  $\displaystyle f(x) = (x^3+2x)^2$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = (x^3+4x^2+5)^4$ </div> &
+            <div class="num" data-valign-num="middle">    $\displaystyle f(x) = 2x^2 - (2x-1)^2$ </div> || 
+            
+            <div class="num" data-valign-num="middle">  $\displaystyle f(x) =\frac{2}{(x+1)^3}$</div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) =\frac{3}{(2x+1)^4}$</div> &
+            <div class="num" data-valign-num="middle">    $\displaystyle f(x) =\frac{4}{(x^3-1)^3}$</div> || 
+            
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) =\frac{5}{(2x^2+3)^2}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) =\frac{5}{3(x-1)^4}$ </div> &
+            <div class="num" data-valign-num="middle">    $\displaystyle f(x) =\frac{3}{(3x^2+5)^2}$ </div> || 
+            
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) =\frac{5}{3(x-2)^4}$</div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) =2\Big(\frac{x}{x+1}\Big)^{3}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) =2\Big(\frac{x+1}{x+2}\Big)^{-2}$ </div> || 
+            
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) =(x-2)^3 + \frac{1}{(x-2)^3}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) =\cos^3{x}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = 3\cos{x} + 2\sin^2{x}$ </div>  || 
+            
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = 3x^2\cos{7x - 8} $</div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = \frac{\cos{(7-3x)}}{x^2}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = \frac{x\sin{(3x-4)}}{2x^2+8}$</div> || 
+            
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) =\sqrt{x}\sin{8x^2-2}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) =\sin{(8x^2 + 6x)}\sqrt{x-3}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) =\sqrt{\cos^2{(6x+2)}}$</div>
+         </div>
+        </div>   
+</div>    
+    
+<div class="box" data-title="Des primitives">
+        <div class="styled">
+        Déterminer une primitive de la fonction $f$ :
+        <div class="table 3cols" data-table-style="border-spacing: 0px 5px">
+            <div class="num" data-valign-num="middle"> $\displaystyle f(x) = x^3$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = \sin{\Big( 3x - \frac{\pi}{3}\Big)}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = x^2 + \frac{1}{x^2}$ </div>  || 
+            
+            <div class="num" data-valign-num="middle">  $\displaystyle f(x) = x^2 - \frac{3}{2}x + 4$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = \frac{1}{3}x^3 - 3x$</div> &
+            <div class="num" data-valign-num="middle">    $\displaystyle f(x) = x^4 - 2x$ </div> || 
+            
+            <div class="num" data-valign-num="middle">  $\displaystyle f(x) = \frac{5}{x^2}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = -\frac{4}{x^3} + 5$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = 4x^5+\frac{1}{3}x^3-2$ </div> || 
+            
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = \frac{5}{2}x^3 - \frac{2}{x^2}+x$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = 4x^2 - \frac{3}{x^3} +2x$ </div> &
+            <div class="num" data-valign-num="middle">    $\displaystyle f(x) = 1 - \sin{(2x)}$ </div> || 
+            
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = \cos{(3x)} + \frac{1}{3}\sin{(2x)}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = 2\cos{(3x+5)}$</div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = 3\sin{\Big(2x+\frac{\pi}{4}\Big)}$ </div> || 
+            
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = x(x^2-1)^2$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = (x+1)(x^2+2x + 3)^3$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = (2x+1)^4$ </div>  || 
+            
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = \frac{2}{(4x+5)^2}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = \frac{-1}{(2x+1)^3}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = \frac{3x}{(3x^2+5)^3}$ </div> || 
+            
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = \cos{x}\sin^2{x}$</div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = -\frac{3x}{(x^2-4)^3}$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle f(x) = \frac{1}{(x-1)^4}$ </div>
+         </div>
+        </div>   
+</div> 
+    
+<div class="box" data-title="Fonction $k$">
+<div class="styled">
+    <div class="num" data-valign-num="0px"> Soit la fonction $k$ définie  par  $k(x) = 3(x^2-2x)$ sur $\mathbb{R}$. Etudier les variations de $k$. </div>
+<div class="num" data-valign-num="0px">  Tracer la courbe représentative  $\mathcal{C}_k$ de $k$ dans un repère orthonormé. </div>
+ <div class="num" data-valign-num="middle"> Etudier le signe de $k$ sur $[-1;3]$. </div>
+ <div class="num" data-valign-num="middle"> Déterminer une la primitive $K$ de $k$ sur $[-1;3]$ telle que $K(0) = -2$</div>
+ <div class="num" data-valign-num="0px"> En utilisant des résultats précédents, établir le tableau de variations de $K$. Tracer la courbe représentative  $\mathcal{C}_K$ de $K$ dans un presser orthonormé.    </div>
+</div>     
+</div>   
+    
+    
+<div class="newpage"></div>
+   
+    
+<div class="box" data-title="Primitives trigonométriques">
+<div class="styled">
+    Soit $f$ la fonction définie sur $\mathbb{R}$ par : $ f(x) = \sin{x}\cos^2{x}$;  la fonction $g$ définie sur $\mathbb{R}$ par : 
+ $ g(x) = \sin^3{(x)}$ et la fonction $h$ définie sur $\mathbb{R}$ par :
+$ h(x) = \sin^2{(x)}$
+    <div class="num" data-valign-num="0px">  Déterminer une primitive sur $\mathbb{R}$ de $f$.</div>
+<div class="num" data-valign-num="0px">  Montrer que $ g(x) = \sin{(x)}(1-\cos^2{x})$. En déduire une primitive $G$ de $g$.</div>
+ <div class="num" data-valign-num="middle"> Calculer $\cos{(2x)}$.  En déduire une primitive $H$ de $h$ sur $\mathbb{R}$</div>
+</div>     
+</div>   
+    
+<div class="box" data-title="Motocycliste">
+<div class="styled">
+ Un motocycliste se déplace sur une route rectiligne. <br>
+
+Le graphique ci-dessous représente l'évolution de la vitesse $v(t)$ (en $ms^{-1}$) en fonction du temps $t$ (en secondes). Cette courbe représentative comporte trois morceaux :  <br>
+<draw width='23cm' height='6cm' style="border: 1px solid #444444;background: #ffffff;border-radius: 5px;margin: auto;margin-bottom: 20px">
+		mark({Ox : '1cm', Oy : '5cm',dx: 1,cmx : 5,cmy: 10})
+      	grid(3)
+        width(3)
+        curve('2x',0,15,0.01)
+        curve('30',15,75,0.01)
+        curve('-(x-105)',75,105,0.01)
+	</draw>  
+vspace{5}    
+On se propose de déterminer l'expression de la fonction $d(t)$ en $m$ parcourue en fonction du temps $t$ (en secondes).
+
+vspace{5}
+Pour chaque phase du mouvement, la fonction vitesse $v(t)$ est la dérivée de la fonction $d(t)$.
+
+    <div class="num" data-valign-num="middle"> *{bold::Phase $n^\circ 1$ : mouvement uniformément accéléré} </div>
+<div class="item" data-value="a) " style="margin-left: 50px">Donner l'intervalle $I_1$ correspondant à cette phase du mouvement.</div>
+<div class="item" data-value="b) " style="margin-left: 50px"> Montrer que $v(t) = 2t$ sur $I_1$</div>
+<div class="item" data-value="c) " style="margin-left: 50px"> Déterminer la primitive $F_1$ de $v(t)$ sur $I_1$ telle que $F_1(0) = 0$.</div>
+<div class="item" data-value="d) " style="margin-left: 50px"> Que peut-on dire de $d(t)$ et $F_1(t)$ sur $I_1$</div>
+<div class="item" data-value="e) " style="margin-left: 50px"> Quelle est la distance parcourue par ce motocycliste au bout de $15$ secondes ?</div>
+ <div class="num" data-valign-num="middle"> *{bold::Phase $n^\circ 2$ : mouvement uniforme}</div>
+<div class="item" data-value="a) " style="margin-left: 50px"> Donner l'intervalle $I_2$ correspondant à cette phase du mouvement.</div>
+<div class="item" data-value="b) " style="margin-left: 50px"> Montrer que $v(t) = 30$ sur $I_2$</div>
+<div class="item" data-value="c) " style="margin-left: 50px"> Déterminer la primitive $F_2$ de $v(t)$ sur $I_2$ telle que $F_2(15) = 225$.</div>
+<div class="item" data-value="d) " style="margin-left: 50px"> Que peut-on dire de $d(t)$ et $F_2(t)$ sur $I_2$</div>
+ <div class="item" data-value="e) " style="margin-left: 50px"> Quelle est la distance parcourue par ce motocycliste au bout de $75$ secondes ?</div>
+    <div class="num" data-valign-num="middle">  *{bold::Phase $n^\circ3$ : mouvement uniformément décéléré}</div>
+<div class="item" data-value="a) " style="margin-left: 50px"> Donner l'intervalle $I_3$ correspondant à cette phase du mouvement.</div>
+<div class="item" data-value="b) " style="margin-left: 50px">  Déterminer l'expression de $v(t)$ sur $I_3$</div>
+<div class="item" data-value="c) " style="margin-left: 50px">  Déterminer la primitive $F_3$ de $v(t)$ sur $I_3$ telle que $F_3(75) = 2\;025$.</div>
+ <div class="item" data-value="d) " style="margin-left: 50px">  Que peut-on dire de $d(t)$ et $F_3(t)$ sur $I_3$</div>
+ <div class="item" data-value="e) " style="margin-left: 50px">  Quelle est la distance parcourue par ce motocycliste durant tout le trajet ?</div>
+
+<div class="num" data-valign-num="middle"> Déterminer les variations de $d(t)$ sur $[0;105]$</div>
+<div class="num" data-valign-num="middle"> Dans un repère orthogonal adapté, tracer la courbe représentative $\mathcal{C}_d$ de $d$ sur  $[0;105]$.</div>
+  
+</div>     
+</div>       
+  
+</body>
+</html>

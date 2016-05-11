@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Fonction exponentielle" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="TS - Fonction exponentielle" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="1"
+data-left="$T_S$-$A_4$"
+data-main-width="900">
+
+<!-- Fonction exponentielle -->
+<div class="box" data-title="Fonction exponentielle" data-num="$N_1$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxD Fonction exponentielle" data-color="#444444">
+       La fonction *{bold::exponentielle} noté $\exp$ est la fonction définie, dérivable et continue sur $\R$ telle que : 
+        
+        <centering-box style="display: inline-block;background: #eeeeee">$[\exp(x)]' = \exp'(x) = \exp(x)$ et $\exp(0) = 1$</centering-box>
+	</div>
+    
+    <div class="titled hide" data-title="\boxR Remarques" data-color="#444444">
+        <div class="table 2cols">
+        ,, $\exp(x)$ est très souvent notée $\e^x$ & ,,  $\exp(1) = \e$ et $\exp(0) = \e^0 = 1$ ||
+        ,, Pour  $x \in \mathbb{R}$, $\exp(x)\times \exp(-x)  = 1$ & ,, Pour  $x \in \mathbb{R}$, $\exp(x) > 0$ ou $\e^x > 0$ ||
+        ,, La dérivée de $\exp(x)$ est $\e^x$ & ,,  Une primitive de $\exp(x)$ est $\e^x$   
+        </div>    
+
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Tableau de variation" data-color="#444444">
+       La fonction $\exp(x)$ est définie et dérivable sur  $\mathbb{R}$. La fonction $\e^x$ est *{bold::croissante} sur $\mathbb{R}$. On a de plus, $\displaystyle \underset{x \rightarrow -\infty}{\lim} \e^x = 0$ et $\displaystyle \underset{x \rightarrow +\infty}{\lim} \exp(x) = +\infty$ :
+<drawing width='400' height='150' style="margin-top: 10px;margin-left: 210px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
+		move(10,5)
+		down('h-10')
+		right('w-20')
+		up('h-10')
+		left('w-20')
+		
+		move(70,5)
+		down('h-10')
+		move(10,50)
+		right('w-20')
+		
+		math('x',30,15,{fontSize: '14pt'})
+		math('-\\infty','lastX+45','lastY',{fontSize: '14pt'})
+		math('+\\infty','w-50','lastY',{fontSize: '14pt'})
+        //math('a','w-180','lastY',{fontSize: '14pt'})    
+		
+		math("\\exp",25,'h-60',{fontSize: '14pt'})
+		arrow('->')
+		move(95,'h-20')
+		line(250,-65)
+        math("0",80,'h-30',{fontSize: '14pt'})
+        math("+\\infty",352,'h-100',{fontSize: '14pt'})  
+		
+	</drawing>     
+	</div>
+    
+   
+   
+    <div class="titled hide" data-title="\boxP Représentation graphique" data-color="#444444">
+        Dans un repère, la courbe représentative de la fonction $\exp(x) = \e^x$ a pour asymptote horizontale l'axe des abscisses lorsque $x \rightarrow -\infty $ :
+        <draw width='22cm' height='7.5cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		mark({Ox: '10cm',Oy: '6.5cm',dx: 2,cmy: 1})
+        grid(3)
+        width(4)   
+		curve('e^x',-30,30,0.001)  
+            
+	</draw>
+    </div>    
+	
+   
+	<div class="styled">
+        <div class="num">En utilisant la calculatrice donner $\e$ ; $\e^2$ ; $\exp(3)$ ; $\e^{-1}$ ;  $\exp(-2)$. Arrondir au millième.</div>
+        <div class="num"> Soit la fonction $g(x) = \exp(x-1) + 2$.</div>
+        <div class="item" data-value="a) " style="margin-left:50px"> Donner l'ensemble de dérivabilté de $g$ puis construire un tableau de variation de  $g$.</div>
+        <div class="item" data-value="b) " style="margin-left:50px">Dans un repère, tracer la courbe représentative de $g$. </div>
+         <div class="item" data-value="c) " style="margin-left:50px">Déterminer  graphiquement $x$ tel que $g(x) = 1$. </div>
+        <div class="num"> Soit la fonction $h(x)$ telle que $h'(x) = 2h(x)$ et telle que $h(0) = 1$.</div>
+        <div class="item" data-value="a) " style="margin-left:50px"> Déterminer l'expression de $h$.</div>
+         <div class="item" data-value="b) " style="margin-left:50px"> Construire un tableau de variation de  $h$.</div>
+        <div class="num"> Soit la fonction $f(x)$ telle que $f'(x) = -3f(x) + 2$ et telle que $f(0) = 3$.</div>
+        <div class="item" data-value="a) " style="margin-left:50px"> Déterminer l'expression de $f$.</div>
+         <div class="item" data-value="b) " style="margin-left:50px"> Construire un tableau de variation de  $f$.</div>
+    </div>
+	
+</div>	
+    
+    
+
+        
+
+<div class="newpage"></div>
+    
+<!-- Relation fonctionnelle -->
+<div class="box" data-title="Relation fonctionnelle" data-num="$N_2$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Relation fonctionnelle" data-color="#444444">
+        Pour $a$ et $b$ deux réels  :  $\displaystyle \e^{a+b} = \e^a \times \e^b $
+	</div>
+        
+        <div class="styled">
+        Calculer les expressions suivantes :
+        <div class="table 4cols">
+        <div class="num">$\e^{2+3}$</div> &
+            <div class="num">$\e^{ \frac{1}{3} + \frac{3}{4}}$ </div> &
+            <div class="num">$\e^{ \frac{2}{5} + x }$ </div> &
+            <div class="num"> $\e^{ y + x }$ </div> ||
+            <div class="num">$\e^{2,7x+9}$ </div> &
+                <div class="num"> $\e^{ 3x^2+2x+1}$ </div> &
+            <div class="num"> $\e^{ 7x+y}$ </div> &
+                <div class="num"> $\e^{ 9+3,3y+6x+2x^2}$ </div>
+        </div>
+        </div>
+
+</div>    
+    
+    
+<!-- Exponentielle d'une différence -->
+<div class="box" data-title="Exponentielle d'une différence" data-num="$N_3$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Exponentielle d'une différence" data-color="#444444">
+        Pour $a$ et $b$ deux réels  :  $\displaystyle \e^{a-b} = \e^a \div \e^b = \dfrac{\e^a}{\e^b} $
+	</div>
+        
+        <div class="styled">
+        Calculer les expressions suivantes :
+        <div class="table 4cols">
+        <div class="num">$\e^{2-9,7}$</div> &
+            <div class="num">$\e^{ \frac{2}{5} - \frac{3}{4}}$ </div> &
+            <div class="num">$\e^{ \frac{1}{3} + x }$ </div> &
+            <div class="num"> $\e^{ y - x }$ </div>||
+            <div class="num">$\e^{4x-0,7}$ </div> &
+                <div class="num"> $\e^{ 3x^2-2x-1}$ </div>&
+            <div class="num"> $\e^{ x-y+3}$ </div> &
+                <div class="num"> $\e^{ 9-2y-6x+2x^2}$ </div>
+        </div>
+        </div>
+</div>
+    
+<!-- Exponentielle d'un produit -->
+<div class="box" data-title="Exponentielle d'un produit" data-num="$N_4$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Exponentielle d'un produit" data-color="#444444">
+        Pour $a$ et $b$ deux réels  et $n \in \mathbb{Z}$ : $\displaystyle \e^{ab} = \Big(\e^a\Big)^b = \Big(\e^b\Big)^a  $  et $\displaystyle \e^{na} = \Big(\e^a\Big)^n   $
+	</div>
+        
+        <div class="styled">
+        Calculer les expressions suivantes :
+        <div class="table 4cols" data-table-style="border-spacing: 0px 5px">
+        <div class="num">$\e^{2\times 4}$</div> &
+            <div class="num">$\e^{ 7x}$ </div> &
+            <div class="num"> $\e^{ 2yx}$ </div> &
+            <div class="num"> $\e^{0,5x}$ </div>||
+            <div class="num">$\e^{-4x}$ </div> &
+                <div class="num"> $\e^{8y}$ </div>&
+            <div class="num"> $\e^{ xyz}$ </div> &
+                <div class="num"> $\e^{3x+7y}$ </div>
+        </div>
+        </div>
+</div>   
+    
+    
+<!--Dérivée de $e^{u(x)}$ t -->
+<div class="box" data-title="Dérivée de $\e^{u(x)}$" data-num="$N_5$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Dérivée de $\e^{u(x)}$" data-color="#444444">
+        Soit $u$ une fonction dérivable sur un intervalle $I$ de $\mathbb{R}$ . Soit $f$ une fonction définie sur $I$ et par : $f(x) = e^{u(x)}$. $f$ est dérivable sur $I$ et : $\displaystyle f'(x) =u'(x)e^{u(x)}$
+	</div>
+        
+        <div class="styled">
+       Donner les dérivées de :
+        <div class="table 4cols" data-table-style="border-spacing: 0px 5px">
+        <div class="num">$\e^{4x+1}$</div> &
+            <div class="num">$\e^{2x+3}$ </div> &
+            <div class="num"> $3x-4x^2+\e^{2x^2}$ </div> &
+            <div class="num"> $\e^{\frac{1}{x} - 7x^6}$</div>||
+            <div class="num">$\e^{-\frac{1}{x^2} + \sqrt{3x-1}}$</div> &
+                <div class="num"> $\e^{\frac{4x+8}{\cos{x}}}$ </div>&
+            <div class="num"> $\e^{ 2\sin{(7x-8)}}$ </div> &
+                <div class="num"> $(x-1)\e^{-x^2 + 3\sin^2{x}}$ </div>
+        </div>
+        </div>
+</div>  
+    
+<!--Primitive $u'(x)e^{u(x)}$ -->
+<div class="box" data-title="Primitive $u'(x)\e^{u(x)}$" data-num="$N_6$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Primitive $u'(x)\e^{u(x)}$" data-color="#444444">
+        Soit $u$ une fonction dérivable sur un intervalle $I$ de $\mathbb{R}$. Soit $f$ une fonction définie sur $I$ et par : $f(x) = u'(x)e^{u(x)}$. Une primitive sur $I$ de $f$ est $F$ : $\displaystyle F(x) = e^{u(x)}$
+	</div>
+        
+        <div class="styled">
+      Donner une primitive  de :
+        <div class="table 4cols" data-table-style="border-spacing: 0px 5px">
+        <div class="num">$3e^{x}+x^2$</div> &
+            <div class="num">$2\e^{3x+1}$ </div> &
+            <div class="num" data-valign-num="middle">  $\displaystyle \frac{3\e^x}{\e^x+1}$</div> &
+            <div class="num"> $2\e^{x}+\cos{x}$</div>||
+            <div class="num" data-valign-num="middle">$\displaystyle \frac{1}{\e^{3x}}$</div> &
+                <div class="num"> $2-x\e^{-x^2}$ </div>&
+            <div class="num">$\e^{2x} - 5\e^x+8$ </div> &
+                <div class="num" data-valign-num="middle"> $\displaystyle \frac{2\e^x}{(\e^{x}+1)^2}$ </div>
+        </div>
+        </div>
+</div>      
+  
+    
+<div class="newpage"></div>   
+    
+<!-- Limites de $e^{u(x)}$ -->
+<div class="box" data-title="Limites de $\e^{u(x)}$ et autres limites" data-num="$N_7$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Limites de $e^{u(x)}$" data-color="#444444">
+        Soient $u$ une fonction définie sur un intervalle $I$ de $\mathbb{R}$  et $a \in \mathbb{R}$ et $b \in \mathbb{R}$ :
+        <div class="table 2cols">
+         ,, si $\displaystyle\underset{x \rightarrow a}{\lim} u(x) = b\;$ alors $\displaystyle\underset{x \rightarrow a}{\lim} e^{u(x)} = e^{b}$ &
+        ,, si $\displaystyle\underset{x \rightarrow a}{\lim} u(x) = +\infty\;$ alors $\displaystyle\underset{x \rightarrow a}{\lim} e^{u(x)} = +\infty$ ||
+            
+            ,, si $\displaystyle\underset{x \rightarrow +\infty}{\lim} u(x) = b\;$ alors $\displaystyle\underset{x \rightarrow +\infty}{\lim} e^{u(x)} = e^{b}$ &
+            ,, si $\displaystyle\underset{x \rightarrow +\infty}{\lim} u(x) = +\infty\;$ alors $\displaystyle\underset{x \rightarrow +\infty}{\lim} e^{u(x)} = +\infty$ ||
+            
+            ,,  si $\displaystyle\underset{x \rightarrow -\infty}{\lim} u(x) = +\infty\;$ alors $\displaystyle\underset{x \rightarrow +\infty}{\lim} e^{u(x)} = +\infty$ &
+            ,,  si $\displaystyle\underset{x \rightarrow a}{\lim} u(x) = -\infty\;$ alors $\displaystyle\underset{x \rightarrow a}{\lim} e^{u(x)} = 0$ ||
+            
+            ,, si $\displaystyle\underset{x \rightarrow -\infty}{\lim} u(x) = b\;$ alors $\;\underset{x \rightarrow -\infty}{\lim} e^{u(x)} = e^{b}$ &
+            ,, si $\displaystyle\underset{x \rightarrow +\infty}{\lim} u(x) = -\infty\;$ alors $\displaystyle\underset{x \rightarrow +\infty}{\lim} e^{u(x)} = 0$ ||
+            
+            ,, si $\displaystyle\underset{x \rightarrow -\infty}{\lim} u(x) = -\infty\;$ alors $\displaystyle\underset{x \rightarrow -\infty}{\lim} e^{u(x)} = 0$
+        </div>
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Autres limites" data-color="#444444">
+        <div class="table 3cols">
+            ,, $\displaystyle\underset{x \rightarrow 0}{\lim} \dfrac{\e^x - 1}{x} = 1$ & 
+            ,, $\displaystyle\underset{x \rightarrow +\infty}{\lim} \dfrac{\e^x}{x} = +\infty$ &
+            ,, $\displaystyle\underset{x \rightarrow -\infty}{\lim} x\e^x = 0$
+        </div>    
+    </div>    
+        
+        <div class="styled">
+     Déterminer les limites suivantes :
+        <div class="table 4cols" data-table-style="border-spacing: 0px 15px">
+        <div class="num">$\displaystyle\underset{x \rightarrow +\infty}{\lim} e^{\frac{1}{x}}\;$</div> &
+            <div class="num"> $\displaystyle\underset{x \rightarrow -\infty}{\lim} e^{3x+9}\;$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle\underset{x \rightarrow 0^+}{\lim} e^{\frac{1}{x^2}}\;$</div> &
+            <div class="num"> $\displaystyle\underset{x \rightarrow 3^-}{\lim} e^{\frac{1}{x-3}}\;$</div> ||
+            
+            <div class="num">$\displaystyle\underset{x \rightarrow +\infty}{\lim} e^{\frac{1}{x}}\;$</div> &
+            <div class="num"> $\displaystyle\underset{x \rightarrow -\infty}{\lim} e^{3x+9}\;$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle\underset{x \rightarrow 0^+}{\lim} e^{\frac{1}{x^2}}\;$</div> &
+            <div class="num"> $\displaystyle\underset{x \rightarrow 3^-}{\lim} e^{\frac{1}{x-3}}\;$</div> ||
+            
+            <div class="num">$\displaystyle\underset{x \rightarrow +\infty}{\lim} e^{\frac{1}{x}}\;$</div> &
+            <div class="num"> $\displaystyle\underset{x \rightarrow -\infty}{\lim} e^{3x+9}\;$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle\underset{x \rightarrow 0^+}{\lim} e^{\frac{1}{x^2}}\;$</div> &
+            <div class="num"> $\displaystyle\underset{x \rightarrow 3^-}{\lim} e^{\frac{1}{x-3}}\;$</div> ||
+            
+            <div class="num">$\displaystyle\underset{x \rightarrow +\infty}{\lim} e^{\frac{1}{x}}\;$</div> &
+            <div class="num"> $\displaystyle\underset{x \rightarrow -\infty}{\lim} e^{3x+9}\;$ </div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle\underset{x \rightarrow 0^+}{\lim} e^{\frac{1}{x^2}}\;$</div> &
+            <div class="num"> $\displaystyle\underset{x \rightarrow 3^-}{\lim} e^{\frac{1}{x-3}}\;$</div>
+            
+        </div>
+        </div>
+</div> 
+    
+    
+<div class="box" data-title="Lubrifiant d'un moteur">
+    <div class="styled">
+    La température $f$ en $^\circ C$ du lubrifiant d'un moteur varie en fonction du temps $t$ exprimé en heures. La fonction $f$ est définie sur $[0;+\infty[$ par $f(t) = 30 - 10\e^{-0,1t}$
+<div class="num"> Déterminer la température du lubrifiant à l'arrêt at au bout de $24\;h$. </div>
+ <div class="num">Déterminer  $\displaystyle \underset{t \rightarrow +\infty}{\lim} f(t)$. Donner une interprétation graphique de ce résultat puis donner une signification concrète pour ce lubrifiant. </div>
+ <div class="num"> Calculer $f'(t)$, la dérivée de $f$ sur $[0;+\infty[$ . En déduire le sens de variations de la fonction $f$ sur $[0;+\infty[$. </div>
+ <div class="num">Tracer la courbe représentative $\mathcal{C}_f$ de $f$ dans un repère adapté. </div>
+     <div class="num">A quel instant la température du lubrifiant est-elle de $28^\circ C$ ? Donner une valeur approchée à l'heure près. </div>
+
+    </div>
+    
+</div> 
+    
+    
+<div class="box" data-title="Fonction $g$">
+    <div class="styled">
+     Soit $g$ une fonction définie  par $g(x) = 2\e^x+2x+3$ sur $\mathbb{R}$.
+       <div class="num" data-valign-num="15px"> Etudier le fonction $g$ et la représenter la courbe représentative $\mathcal{C}_g$ dans le repère $(0;\vecteur{i},\vecteur{j})$. </div>
+     <div class="num"> En déduire que l'équation $g(x) = 0$ admet une unique solution $\alpha$. </div>
+     <div class="num"> Donner l'arrondi au dixième de $\alpha$. </div>
+     <div class="num"> En déduire le signe de $g(x)$. </div>
+    </div>
+</div>  
+    
+    
+<div class="newpage"></div>    
+ 
+    
+<div class="box" data-title="Fonction $f$">
+    <div class="styled">
+      Soit $f$ une fonction définie  par $f(x) = 2\e^x+x^2+3x$ sur $\mathbb{R}$.
+       <div class="num"> Déterminer les limites de $f(x)$ quand $x$ tend vers $+\infty$ et $-\infty$. </div>
+  <div class="num"> Soit $\mathcal{P}$ la parabole d'équation $y = x^2+3x$. Déterminer la limite de $f(x) - (x^2+3x)$ quand $x$ tend vers  $-\infty$. Que peut on en déduire graphiquement ? </div>
+  <div class="num"> Etudier la positon de  $\mathcal{P}$  et de la courbe représentative $\mathcal{C}_f$ de $f$. Etablir le tabeau de variation de $f$.</div>
+  <div class="num"> Donner une valeur approchée de $f(\alpha)$ à $10^{-1}$ près. </div>
+  <div class="num"> Déterminer une équation de la tangente à la courbe $\mathcal{C}_f$ au point d'abscisse $0$. </div>
+    </div>
+</div>     
+    
+    
+<div class="box" data-title="Une autre fonction $f$">
+    <div class="styled">
+      On considère la fonction $f$ définie sur $\mathbb{R}$  par : $f(x) = (x-x^2)\e^{-x+2}+1$ 
+
+        <div class="num"> Déterminer la limite de $f$ en $-\infty$. </div>
+ <div class="num"> Montrer que pour $x\in \mathbb{R}$ : $f(x) = \e^2(xe^{-x}-x^2\e^{-x})+1$  </div>
+<div class="num"> En déduire la limite de $f$ en $+\infty$. Interpréter graphiquement le résultat obtenu. </div>
+<div class="num"> Montrer que pour $x\in \mathbb{R}$ : $f'(x) = (x^2-3x+1)\e^{-x+2}$ </div>
+<div class="num"> Déterminer le signe de $f'$ sur $\mathbb{R}$ et en déduire le sens de variation de $f$. </div>
+<div class="num"> Déterminer les coordonnées des points d'intersection de la courbe représentative $\mathcal{C}_f$ de la fonction $f$ et de la droite $(\Delta)$ d'équation $y=1$. </div>
+<div class="num"> Etudier les positions relatives de la courbe  $\mathcal{C}_f$ et de la droite $(\Delta)$. </div>
+<div class="num"> Montrer que sur l'intervalle $[-1;0]$, la courbe $\mathcal{C}_f$ coupe l'axe des abscisses en un unique point. On notera $\alpha$ l'abscisse de ce point. </div>
+<div class="num"> A l'aide de la calculatrice, déterminer un encadrement de $\alpha$ d'amplitude $10^{-2}$.</div>
+    </div>
+</div> 
+    
+    
+<div class="box" data-title="Encore une fonction $f$">
+    <div class="styled">
+        <div class="table 2cols">
+        
+            Soit la fonction $f$ définie sur $\mathbb{R}$ par : $\displaystyle f(x) = \e^{2x} - \frac{9}{2}\e^x+2$
+
+<br>
+Sur le graphique ci-dessous, on a tracé sa courbe représentative $\mathcal{C}_f$ dans un repère orthonormé d'unité graphique $2\;cm$ : 
+        <draw width='10cm' height='9cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		mark({Ox: '5cm',Oy: '4cm',dx: 2,cmy: 1})
+        grid(3)
+        width(4)   
+		curve('e^(2x) - 4.5*e^x+2',-30,30,0.001)  
+            
+	</draw>
+        &
+         <div class="num"> Déterminer la limite de $f$ en $-\infty$. Interpréter le résultat graphiquement. </div>
+ <div class="num"> Démontrer que pour $x \in \mathbb{R}$ : $\displaystyle f(x) = (\e^{x}-4)\Big( \e^x - \frac{1}{2}\Big) $ </div>
+<div class="num"> En déduire la limite de $f$ en $+\infty$. </div>
+<div class="num">  Démontrer que pour $x \in \mathbb{R}$ :  $\displaystyle f'(x) = 2\e^x\Big( \e^x - \frac{9}{4}\Big) $</div>
+<div class="num"> Etudier le signe de $f'$ puis établir le tableau complet des variations de la fonction $f$ : on calculera en particulier la valeur exacte de l'extremum.</div>
+<div class="num"> Graphiquement : </div>
+        <div class="item" data-value="a) " style="margin-left: 50px"> Quelle est l'équation de la tangente $(\mathcal{D})$ en $0$ à la courbe $\mathcal{C}_f$. </div>
+    <div class="item" data-value="b) " style="margin-left: 50px">  Résoudre l'équation $f(x) = 0$ </div>
+     <div class="item" data-value="c) " style="margin-left: 50px">  Résoudre l'inéquation $f(x) \leqslant 2$ </div>
+    <div class="num"> En utilisant la factorisation de la fonction $f$, résoudre par le calcul l'équation $f(x) = 0$. </div>
+       </div> 
+    </div>
+</div>      
+    
+</body>
+</html>

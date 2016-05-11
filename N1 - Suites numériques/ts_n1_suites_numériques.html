@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Suites numériques" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="TS - Suites numériques" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="1"
+data-left="$T_S$-$N_1$"
+data-main-width="900">
+
+<!--Défintiion et vocabulaire-->
+<div class="box" data-title="Définitions et vocabulaire" data-num="$N_1$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxD Suite numérique" data-color="#444444">
+        Une *{bold::suite numérique}, notée $(u_n)$ ou $u$, est une fonction définie sur $\N$. L'image de l'entier $n$, notée $u_n$ (sans les parenthèses), est appelée *{bold::terme de la suite $u$ d'indice $n$}. Ainsi : <br>
+
+
+$\begin{array}{rcl}
+ (u_n)  : \mathbb{N} & \longrightarrow &  \mathbb{R} \\
+ n & \longmapsto & u_n
+\end{array}$
+        
+        
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Suite explicite" data-color="#444444">
+        Une *{bold::suite explicite} est un suite dont les termes sont de la forme : $u_n=f(n)$ ou $f$ est une fonction définie sur un intervalle $I$ de  $\mathbb{R}$.
+	</div>
+    
+   
+	
+   
+	<div class="styled">
+         <div class="num" data-valign-num="middle" style="margin-top: 10px">Soit $u$ une suite numérique définie par : $u_n = -2n^2$  </div> 
+        <div class="item"  style="margin-left: 50px" data-value="a) ">Pour quelle(s) valeur(s) de $n$, $u_n$ n'est pas définie.</div>
+         <div class="item" style="margin-left: 50px" data-value="b) ">Calculer les termes $u_0$ , $u_1$, $\ldots$ et $u_{8}$.</div>
+         <div class="item" style="margin-left: 50px" data-value="c) ">Dans un repère, placer les points $(n;u_n)$ pour tous les entiers naturels plus petits que $8$.</div>
+         <div class="item"  style="margin-left: 50px" data-value="d) ">Quel est l'indice de $u$ tel que $u_n = -30258$ ?</div>
+         <div class="item"  style="margin-left: 50px" data-value="e) ">Quels sont les indices de $u$ tels que $u_n  \geqslant -200$ ?</div>
+       <div class="item" style="margin-left: 50px" data-value="f) ">Quel est l'indice de $u$ tel que $u_n = -10$ ?</div>
+        
+        <div class="num" data-valign-num="middle" style="margin-top: 10px">Soit $u$ une suite numérique définie par : $\displaystyle u_n = \frac{-3}{n}$</div>
+ <div class="item"  style="margin-left: 50px" data-value="a) ">Pour quelle(s) valeur(s) de $n$, $u_n$ n'est pas définie.</div>
+ <div class="item"  style="margin-left: 50px" data-value="b) ">Calculer les termes $u_1$, $\ldots$ et $u_{5}$.</div>
+ <div class="item"  style="margin-left: 50px" data-value="c) ">Dans un repère, placer les points $(n;u_n)$ pour tous les entiers naturels plus petits que $5$.</div>
+ <div class="item"  style="margin-left: 50px" data-value="d) ">Quel est l'indice de $u$ tel que $u_n = 10^{-34}$ ?</div>
+ <div class="item"  style="margin-left: 50px" data-value="e) ">Quels sont les indices de $u$ tels que $u_n  \geqslant 1$ ?</div>
+        
+    </div>
+	
+</div>	
+    
+    
+<!--Relation de récurrence-->
+<div class="box" data-title="Relation de récurrence" data-num="$N_2$" data-date="1">
+    <div class="titled hide" data-title="\boxD Relation de récurrence" data-color="#444444">
+        Une suite numérique $u$ est définie par une *{bold::relation de récurrence} quand son premier terme est connu et le terme $u_{n+1}$ peut être calculé en fonction du terme $u_n$.
+	</div>
+    
+    <div class="styled">
+         <div class="num" data-valign-num="middle" style="margin-top: 10px"> Soit $u$ une suite numérique définie par : $u_0 = 1$ et $u_{n+1} = 3u_n-2$ </div> 
+        <div class="item"  style="margin-left: 50px" data-value="a) "> Calculer les termes $u_0$ , $u_1$, $\ldots$ et $u_{8}$.</div>
+         <div class="item" style="margin-left: 50px" data-value="b) "> Dans un repère, placer les points $(n;u_n)$ pour tous les entiers naturels plus petits que $8$.</div>
+        
+        <div class="num" data-valign-num="middle" style="margin-top: 10px"> Soit $u$ une suite numérique définie par : $u_0 = 4$ et $\displaystyle u_{n+1} = \frac{3}{4}u_n+1$ </div> 
+        <div class="item"  style="margin-left: 50px" data-value="a) "> Calculer les termes $u_0$ , $u_1$, $\ldots$ et $u_{8}$.</div>
+         <div class="item" style="margin-left: 50px" data-value="b) "> Dans un repère, placer les points $(n;u_n)$ pour tous les entiers naturels plus petits que $8$.</div>
+        
+        <div class="num" data-valign-num="middle" style="margin-top: 10px">Soit $u$ une suite numérique définie par : $u_0 = 2$ et $\displaystyle u_{n+1} = \frac{1}{2}u_n+3$ </div> 
+         
+<div class="item"  style="margin-left: 50px" data-value="a) "> Déterminer la fonction $f$ telle que $\displaystyle u_{n+1} = f(u_n)$</div>
+        <div class="item"  style="margin-left: 50px" data-value="b) ">  Dans un repère, tracer la courbe représentative de $f$ puis dans ce même repère, tracer la droite d'équation $y=x$ (c'est la première bissectrice des axes)</div>
+        <div class="item"  style="margin-left: 50px" data-value="c) "> Calculer les termes $u_0$ , $u_1$, $u_3$ et $u_{4}$.</div>
+         <div class="item" style="margin-left: 50px" data-value="d) "> Placer dans le repère, les termes $u_1$, $u_2$, $u_3$ et $u_4$</div>
+    </div>    
+</div>    
+    
+<div class="newpage"></div>    
+    
+<!--Raisonnemet par récurrence-->
+<div class="box" data-title="Raisonnement par récurrence" data-num="$N_3$" data-date="1">
+    <div class="titled hide" data-title="\boxT Raisonnement par récurrence" data-color="#444444">
+        Soit $P_n$ une propriété dépendant d'un entier $n$. Soit $n_0 \in \N$ ($P_n$ peut être vue comme le terme d'une suite $(P_n)$ de propositions mathématiques). vspace{20}
+        On dit que la propriété $P$ est *{bold::héréditaire} à partir du rang $n_0$ lorsque, pour tout $n \geqslant n_0$ on a l'implication suivante :
+        <centering-box style="display: inline-block;background: #eeeeee">$P_n$ est vraie $\Longrightarrow$ $P_{n+1}$ est vraie aussi</centering-box>
+        
+        vspace{20}
+        Si $P_{n_0}$ est vraie (*{bold::initialisation}) et si $P$ est héréditaire (*{bold::hérédité}) à partir du rang $n_0$ alors :
+        <centering-box style="display: inline-block;background: #eeeeee">$P_n$ est vraie pour tout $n\geqslant n_0$</centering-box>
+	</div>
+    <div class="titled hide" data-title="\boxE Exemple de raisonnement par récurrence" data-color="#444444">
+        On considère la suite $(u_n)$ définie par la relation de récurrence : $u_{n+1} = 0,2u_n - 10$ et $u_0 = 10$. <br>
+        Le but est de démontrer par récurrence que pour tout $n \in \N$ on a $u_n \geqslant -12,5$
+        vspace{20}
+        Soit la proposition mathématique : <box style="display:inline-block;background: #eeeeee">$P_n$ : $u_n \geqslant -12,5$ pour $n\geqslant 0$</box>
+        vspace{10}
+        ,, *{bold::Initialisation} : Pour $n_0 = 0$ on a $u_{n_0} = u_0 = 10 $ donc   $u_0 \geqslant -12,5$.  <box style="display:inline-block;background: #eeeeee">$P_{n_0}$ est vraie</box>
+        vspace{10}
+        ,, *{bold::Hérédité} : On suppose que pour *{tdu::un} entier $n \geqslant 0$, $P_n$ est vraie c'est à dire $u_n \geqslant -12,5$.<br>
+        $u_n \geqslant -12,5 \Longrightarrow 0,2u_n - 10 \geqslant 0,2\times (-12,5) - 10  \Longrightarrow 0,2u_n - 10 \geqslant -12,5 \Longrightarrow u_{n+1} \geqslant -12,5$<br>
+        Donc $P_{n+1}$ est vraie ce qui implique que <box style="display:inline-block;background: #eeeeee">$P$ est *{bold::héréditaire}</box>
+        vspace{10}
+        ,, *{bold::Conclusion} :  $P_{n_0}$ est vraie et $P$ est héréditaire alors <box style="display:inline-block;background: #eeeeee">$P_n$ est vraie pour tout $n\geqslant n_0$</box> ce qui implique que $u_n \geqslant -12,5$ pour tout $n \in \N$.
+    </div>    
+    
+    <div class="styled">
+     <div class="num"></div>
+    </div>
+</div>  
+    
+    
+<div class="newpage"></div>   
+
+<!-- Sens de variation -->
+<div class="box" data-title="Sens de variations" data-num="$N_4$" data-date="1">
+    <div class="titled hide" data-title="\boxD Suite monotone" data-color="#444444">
+        ,, Une suite $u$ est *{bold::croissante}, si pour tout entier naturel $n$ : $u_{n+1} \geqslant u_n$ ou $u_{n+1} - u_n \geqslant 0$
+
+vspace{5}
+Dans le cas où les termes de la suite $u$ sont tous strictement positifs : $\displaystyle \frac{u_{n+1}}{u_n} \geqslant 1$
+
+        vspace{10}
+        ,, Une suite $u$ est *{bold::décroissante}, si pour tout entier naturel $n$ : $u_{n+1} \leqslant u_n$ ou $u_{n+1} - u_n \leqslant 0$
+
+vspace{5}
+Dans le cas où les termes de la suite $u$ sont tous strictement positifs : $\displaystyle \frac{u_{n+1}}{u_n} \leqslant 1$
+ vspace{10}
+        ,, Une suite $u$ est *{bold::monotone} si elle croissante ou décroissante
+        
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Suite monotone dans le cas explicite" data-color="#444444">
+        Soit une suite $u$ définie par $u_n = f(n)$ avec $n\in \mathbb{N}$ et $f$ une fonction définie sur $[0;+\infty[$.
+
+vspace{5}
+,, Si $f$ est croissante sur $[0;+\infty[$ alors $u$ est croissante.
+
+vspace{5}
+,, Si $f$ est décroissante sur $[0;+\infty[$ alors $u$ est décroissante.
+        
+	</div>
+    <div class="styled">
+    Déterminer la monotonie des suites suivantes :
+        <div class="table 2cols">
+        <div class="num">$u_n = (-1)^n$ pour $n \in \mathbb{N}$</div> & <div class="num"> $u_n = 5n +9$ pour $n \in \mathbb{N}$</div> || 
+            <div class="num"> $\displaystyle u_n = \frac{1}{n+1}$ pour $n \in \mathbb{N}$</div> & <div class="num"> $\displaystyle u_n = \sqrt{n+2}$ pour $n \in \mathbb{N}$</div> || 
+        </div>
+    </div>
+</div>    
+    
+<!-- Majorant ou minorant  -->
+<div class="box" data-title="Suite majorée, minorée et bornée" data-num="$N_5$" data-date="1">
+    <div class="titled hide" data-title="\boxD Suite majorée, minorée et bornée" data-color="#444444">
+        ,, Une suite $u$ est *{bold::majorée} par un réel $M$, si pour tout entier naturel $n$ : $u_{n} \leqslant M$ 
+
+      vspace{10}
+        ,, Une suite $u$ est *{bold::minorée} par un réel $m$, si pour tout entier naturel $n$ : $u_{n} \geqslant m$ 
+
+ vspace{10}
+        ,, Une suite $u$ est *{bold::bornée} si elle majorée *{tdu::et} minorée.
+        
+	</div>
+    
+
+    <div class="styled">
+    Déterminer la monotonie des suites suivantes :
+        <div class="table 2cols">
+        <div class="num">$u_n = (-1)^n$ pour $n \in \mathbb{N}$</div> & <div class="num"> $u_n = 5n +9$ pour $n \in \mathbb{N}$</div> || 
+            <div class="num"> $\displaystyle u_n = \frac{1}{n+1}$ pour $n \in \mathbb{N}$</div> & <div class="num"> $\displaystyle u_n = \sqrt{n+2}$ pour $n \in \mathbb{N}$</div> || 
+        </div>
+    </div>
+</div>   
+    
+    
+<div class="newpage"></div>       
+  
+</body>
+</html>

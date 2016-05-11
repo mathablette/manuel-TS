@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Intégration" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="TS - Intégration" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="1"
+data-left="$T_S$-$A_6$"
+data-main-width="900">
+
+<!-- Fonction continue et positive -->
+<div class="box" data-title="Fonction continue et positive" data-num="$N_1$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxD Fonction continue" data-color="#444444">
+       Une fonction $f$ est *{bold::continue} sur un intervalle $I$ de $\mathbb{R}$ quand sa courbe représentative  $\mathcal{C}_f$ est en un seul morceau sur $I$ c'est à dire que sa représentation  graphique ne possède pas de "cassure" sur $I$ ou encore on peut la tracer sans lever le crayon.
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Fonction positive" data-color="#444444">
+        Une fonction $f$ est *{bold::positive} sur un intervalle $I$ de $\mathbb{R}$ quand  pour tout réel $x \in I$, $f(x) \geqslant 0$.
+	</div>
+    
+   
+	<div class="styled">
+        Donner cinq fonctions continues et positives sur un intervalle $I$ de $\mathbb{R}$
+    </div>
+	
+</div>	
+    
+    
+<!-- Intégrale -->
+<div class="box" data-title="Intégrale" data-num="$N_2$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Intégrale" data-color="#444444">
+        Soient $a$ et $b$ deux réels tels que $a \leqslant b$ et $f$ une fonction *{bold::continue et positive}  sur l'intervalle $I = [a;b]$ de représentation graphique  $\mathcal{C}_f$. 
+
+L'*{bold::intégrale de $f$ sur $[a;b]$} est l'aire de la partie du plan délimitée par $\mathcal{C}_f$, l'axe des abscisses ($y=0$) et les droites verticales d'équation $x=a$ et $x=b$.<br>On note cette aire : $\displaystyle \int_{a}^{b} f(x)dx$
+        vspace{5}
+        <draw width='15cm' height='7.5cm' style="margin-left: 120px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		mark({Ox: '7cm',Oy: '5.5cm',dx: 1,cmy: 1})
+        grid(3)
+        width(4)   
+		curve('sqrt(25-x^2)',-30,30,0.001)  
+        back('#000000')
+        alpha(0.5)
+        curveArea('sqrt(25-x^2)',-3,2,0.001) 
+        arrow('<-')  
+        width(2)     
+        line(-3,-0.2,-3,-1.2) 
+        line(2,-0.2,2,-1.2)  
+        math('a',-3.1,-1.2) 
+        math('b',1.9,-1.2) 
+            
+        line(4.2,3.1,5,3.8) 
+        math('\\mathcal{C}_f',5.15,4.3)
+            
+        line(-1.5,1.5,-4.3,3.5) 
+        math('\\displaystyle \\int_{a}^{b} f(x)dx',-6.5,4.6)    
+	</draw>
+	</div>
+            
+            
+     <div class="titled hide" data-title="\boxP Intégrale et primitive" data-color="#444444">
+            Soit $F$ une primitive de $f$ sur $[a;b]$ alors :  $\displaystyle  \int_{a}^{b} f(x)dx = F(b) - F(a) $
+    </div>        
+        
+        <div class="styled">
+       On se place  dans un repère orthonormé d'unité $1\; cm$.
+        <div class="num">Soit une fonction $f_1$ définie sur $\mathbb{R}$ par $f_1(x) = 2x +1$.</div>
+        <div class="item" style="margin-left: 50px" data-value="a) ">Tracer la courbe représentative $\mathcal{C}_{f_1}$ de $f_1$.</div>
+         <div class="item" style="margin-left: 50px" data-value="b) ">Hachurer le domaine $\mathcal{D}_1$ du plan délimité par $\mathcal{C}_{f_1}$, l'axe des abscisses et les droites d'équation $x=2$ et $x=5$. Calculer l'aire $\mathcal{A}_1$ du domaine $\mathcal{D}_1$ géométriquement puis algébriquement.</div>
+        
+        
+        <div class="num" data-valign-num="10px">Soit une fonction $f_2$ définie sur $\mathbb{R}^*$ par $\displaystyle f_2(x) = \frac{1}{x}$.</div>
+        <div class="item" style="margin-left: 50px" data-value="a) ">Tracer la courbe représentative $\mathcal{C}_{f_2}$ de $f_2$.</div>
+         <div class="item" style="margin-left: 50px" data-value="b) ">Hachurer le domaine $\mathcal{D}_2$ du plan délimité par $\mathcal{C}_{f_2}$, l'axe des abscisses et les droites d'équation $x=1$ et $x=3$. Calculer l'aire $\mathcal{A}_2$ du domaine $\mathcal{D}_2$ algébriquement.</div>
+        
+     
+        <div class="num" data-valign-num="10px">Soit une fonction $f_3$ définie sur $\mathbb{R}$ par $\displaystyle f_3(x) = x^2$.</div>
+        <div class="item" style="margin-left: 50px" data-value="a) ">Tracer la courbe représentative $\mathcal{C}_{f_3}$ de $f_3$.</div>
+         <div class="item" style="margin-left: 50px" data-value="b) ">Hachurer le domaine $\mathcal{D}_3$ du plan délimité par $\mathcal{C}_{f_3}$, l'axe des abscisses et les droites d'équation $x=-2$ et $x=3$. Calculer l'aire $\mathcal{A}_3$ du domaine $\mathcal{D}_3$ algébriquement.</div>
+        
+        
+        </div>
+</div>    
+        
+
+<div class="newpage"></div>
+    
+
+  
+</body>
+</html>

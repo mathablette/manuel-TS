@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link id="page_icon" rel="icon" type="image/png" href="http://mathablette.fr/imgs/mathablette0.png" />
+<link rel="stylesheet" href="http://mathablette.fr/lib/font-awesome/css/font-awesome.min.css"></link>
+<link rel="stylesheet" href="http://mathablette.fr/lib/pfmath.css"></link> 
+<script  id="mathjax"  type="text/javascript" src="http://mathablette.fr/lib/MathJax/MathJax.js"></script>
+<script id="geodyn-plugin"  type="text/javascript" src="http://mathablette.fr/geodyn/lib/geodyn-plugin-loader.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/numeral.min.js?1"></script>
+<script  id="jquery"  type="text/javascript" src="http://mathablette.fr/lib/jquery.js?1"></script>
+<script type="text/javascript" src="http://mathablette.fr/lib/math.min.js"></script>
+<script  id="mathablette"  type="text/javascript" src="http://mathablette.fr/lib/les5der.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/6les5der.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/5les5der.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/4les5der.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/3les5der.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/2les5der.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/1sles5der.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/tstlles5der.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/bdles5der.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/1stlles5der.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/tsles5der.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/calculles5der.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/tc.js"></script>
+ <script  type="text/javascript" src="http://mathablette.fr/lib/activities.js"></script>
+<script  type="text/javascript" src="http://mathablette.fr/lib/acts/acts-1-50.js"></script>
+ <script  type="text/javascript" src="http://mathablette.fr/lib/prog.js"></script>
+<script src="http://mathablette.fr/lib/LAB.js"></script>
+<script>
+$( document ).ready(function() {
+MAIN_FONT_SIZE_1 = "20pt";
+MAIN_FONT_SIZE_2 = "16pt";
+EXOS_COUNT = 8;
+_OBJS = {};
+_OBJS.name = "Calcul mental";
+_OBJS.description = "Nombres relatifs";
+_OBJS.endMessage = "";
+_OBJS.showControl = 1;
+_OBJS.showCorrection = 1;
+_OBJS.bip = 1;
+_OBJS.showInitialisation = 1;
+_OBJS.exos = [];
+_OBJS.exos.push({count : 10,pb : 0,rTime: 40,time: 30,id: "LYC_1N_1", description : "Calcul mental et nombres relatifs"});
+_OBJS.exos.push({count : 10,pb : 0,rTime: 40,time: 30,id: "LYC_1N_1", description : "Calcul mental et nombres relatifs"});
+_OBJS.exos.push({count : 5,pb : 0,rTime: 40,time: 40,id: "LYC_1N_4", description : "Priorités opératoires et nombres relatifs"});
+_OBJS.exos.push({count : 5,pb : 0,rTime: 40,time: 40,id: "LYC_1N_4", description : "Priorités opératoires et nombres relatifs"});
+_OBJS.exos.push({count : 10,pb : 0,rTime: 40,time: 30,id: "LYC_1N_1", description : "Calcul mental et nombres relatifs"});
+_OBJS.exos.push({count : 10,pb : 0,rTime: 40,time: 30,id: "LYC_1N_1", description : "Calcul mental et nombres relatifs"});
+_OBJS.exos.push({count : 5,pb : 0,rTime: 40,time: 40,id: "LYC_1N_4", description : "Priorités opératoires et nombres relatifs"});
+_OBJS.exos.push({count : 5,pb : 0,rTime: 40,time: 40,id: "LYC_1N_4", description : "Priorités opératoires et nombres relatifs"});
+_EXOS = [];
+__MATHABLETTE_WORK = true;
+__MATHABLETTE_WORK_INDEX = 0;
+__MATHABLETTE_WORK_SHOW_ID = false;
+__MATHABLETTE_WORK_COUNT=8;
+_EXOS.push(createExosContent_(_OBJS.exos[ 0 ]));
+_EXOS.push(createExosContent_(_OBJS.exos[ 1 ]));
+_EXOS.push(createExosContent_(_OBJS.exos[ 2 ]));
+_EXOS.push(createExosContent_(_OBJS.exos[ 3 ]));
+_EXOS.push(createExosContent_(_OBJS.exos[ 4 ]));
+_EXOS.push(createExosContent_(_OBJS.exos[ 5 ]));
+_EXOS.push(createExosContent_(_OBJS.exos[ 6 ]));
+_EXOS.push(createExosContent_(_OBJS.exos[ 7 ]));
+$( document ).ready(function() {
+var audioBip = new Audio();
+audioBip.src = "http://mathablette.fr/sons/bip.mp3";
+audioBip.load();
+$("#title1").html('Calcul mental');
+$("#title2").html('Nombres relatifs');
+var currentExo = null;
+var currentCorrection = null;
+var currentExoIndex = 0;
+var launch = function(fn){
+if ( currentCorrection != null ) {currentCorrection.hide();}
+if ( currentExoIndex >= EXOS_COUNT ) {
+currentExo = null;currentExoIndex = 0;
+var popup = $("<div></div>");
+popup.css({background: "#eeeeee",border: "2px solid #000000",borderRadius: "10px",padding: "5px",zIndex: 200,marginBottom: "10px"});
+var d1 = $('<div style="font-size: 22pt;Font-weight: bold;font-style: italic;text-align: center;margin-top: 10px"></div>');
+if ( typeof _OBJS.endMessage == "string" && _OBJS.endMessage.length > 0)
+{d1.html(manageText__(_OBJS.endMessage));}
+else {d1.text("Fin ....");}
+popup.append(d1);
+var d1 = $('<div style="font-size: 20pt;Font-weight: bold;font-style: italic;text-align: center;margin-top: 5px;margin-bottom: 10px"></div>');
+var but = $('<button title="Retour"  class="btn btn-default"><i class="fa fa-home"></i> Accueil</button>');
+d1.append(but);
+popup.append(d1);
+but.bind("click",{popup: popup},function(evt)
+{
+evt.data.popup.remove();
+$("body").css({paddingTop: "5px"});
+$("#__title").show();
+$("#_init").show();
+});
+$("body").append(popup);
+return;
+}
+if (typeof _EXOS[currentExoIndex].ret.validButton != "undefined" ) {_EXOS[currentExoIndex].ret.unvalidFn()};
+var aContent = _EXOS[currentExoIndex].popup;
+aContent.show();
+currentExo = aContent;
+if (_OBJS.bip == 1){audioBip.play()}
+if ( _OBJS.exos[currentExoIndex].time <= 0) {
+var button = $('<button title="Afficher la correction"  class="btn btn-default"><i class="fa fa-comment"></i></button>');
+var offset = aContent.offset();
+doDivPosition(button,offset.left+800-30,offset.top+10);
+aContent.append(button);
+button.bind("click",{but: button},function(evt)
+{
+evt.data.but.remove();
+fn();
+});
+} else {
+var time = new TimeAnimationX(100);
+time.canvas.attr("title","Passer à une autre exercice");
+time.max = _OBJS.exos[currentExoIndex].time;
+time.fontSize = 14;
+time.data = {};
+time.doStop = function(data)
+{
+this.canvas.remove();
+fn();
+}
+time.doClick = function(data)
+{
+this.stop();
+this.canvas.remove();
+fn();
+};
+aContent.append(time.canvas);
+aContent.animate({marginLeft: "0px"}, 500,function()
+{
+var offset = aContent.offset();
+doDivPosition(time.canvas,offset.left+800-115,offset.top+10);
+time.start();
+});
+}
+};
+var correction = function(){
+if ( currentExoIndex >= EXOS_COUNT ) {
+currentExo = null;currentExoIndex = 0;
+return;
+}
+currentExo.hide();
+if (_OBJS.showCorrection == 0) {currentExoIndex++;launch(correction);return;}
+if (typeof _EXOS[currentExoIndex].ret.validButton != "undefined" ) {_EXOS[currentExoIndex].ret.validFn()};
+var aContent = _EXOS[currentExoIndex].popup;
+currentCorrection = aContent;
+currentCorrection.show();
+var fun = function(){currentExoIndex++;launch(correction);};
+if ( _OBJS.exos[currentExoIndex].rTime <= 0) {
+var button = $('<button title="Exercice suivant"  class="btn btn-default"><i class="fa fa-hand-o-right"></i></button>');
+var offset = aContent.offset();
+doDivPosition(button,offset.left+800-30,offset.top+10);
+aContent.append(button);
+button.bind("click",{but: button},function(evt)
+{
+evt.data.but.remove();
+fun();
+});
+} else {
+var time = new TimeAnimationX2(100);
+time.canvas.attr("title","Passer à une autre exercice");
+time.max = _OBJS.exos[currentExoIndex].rTime;
+time.fontSize = 14;
+time.data = {};
+time.doStop = function(data)
+{
+this.canvas.remove();
+fun();
+}
+time.doClick = function(data)
+{
+this.stop();
+this.canvas.remove();
+fun();
+};
+aContent.append(time.canvas);
+var offset = aContent.offset();
+doDivPosition(time.canvas,offset.left+800-115,offset.top+10);
+time.start();
+}
+};
+$("#_launch").bind("click",function(evt){
+$("#_init").hide();
+$("#__test").hide();
+if ( ismobile() ) {$("#__title").hide();$("body").css({paddingTop: "10px"});}
+launch(correction);
+});
+$("#_print").bind("click",function(evt){
+$("#_init").hide();
+$("#__test").hide();
+for ( var e = 0 ; e < EXOS_COUNT ; e++) {
+if (typeof _EXOS[e].ret.validButton != "undefined" ) {_EXOS[e].ret.unvalidFn()};
+var aContent = _EXOS[e].popup;
+if( typeof _OBJS.exos[e].pb == "number"){
+if ( _OBJS.exos[e].pb == 1){
+aContent.css("page-break-after","always");}
+if ( _OBJS.exos[e].pb == -1){
+aContent.css("page-break-before","always");}
+}
+aContent.show();
+}
+});
+$("#_print2").bind("click",function(evt){
+$("#_init").hide();
+$("#__test").hide();
+$("#title2").html($("#title2").html() + " - correction");
+for ( var e = 0 ; e < EXOS_COUNT ; e++) {
+if (typeof _EXOS[e].ret.validButton != "undefined" ) {_EXOS[e].ret.validFn()};
+var aContent = _EXOS[e].popup;
+if( typeof _OBJS.exos[e].pb == "number"){
+if ( _OBJS.exos[e].pb == 1){
+aContent.css("page-break-after","always");}
+if ( _OBJS.exos[e].pb == -1){
+aContent.css("page-break-before","always");}
+}
+aContent.show();
+}
+});
+$("#_reload").bind("click",function(evt){
+window.location.reload();
+});
+$("#_info").append(updateExoList__(_OBJS,2));
+$("#__test").append(doMathSpanInit("Mathablette - Chargement \\; terminé.",10));
+var fun0 = function(){$("#__test").hide()};
+setTimeout(fun0,20000);
+for ( var e = 0 ; e < _EXOS.length ; e++){
+$("body").append(_EXOS[e].popup);
+}
+$("#_init").show();
+});
+});
+</script>
+<style>
+body{padding-top: 5px;background: #ffffff;width: 810px;margin: auto;font-size: 11pt;color: #000000;user-select: none;-moz-user-select: -moz-none;-webkit-user-select: none; -khtml-user-select: none;}
+.adminbutton{width: 75px;color: #eeeeee;text-decoration: none;padding: 4px 10px;height: 32px;border-radius: 6px;background-image:linear-gradient(45deg,#aaeeee, #226666);background-image:-webkit-linear-gradient(45deg,#aaeeee, #226666);border: solid 1px #008888;cursor: pointer;}
+.greybutton{color: #000000;text-decoration: none;padding: 4px 10px;height: 32px;border-radius: 6px;background-image:linear-gradient(45deg,#cccccc, #999999);background-image:-webkit-linear-gradient(45deg,#cccccc, #999999);border: solid 1px #000000;cursor: pointer;}
+.blackbutton{width: 75px;color: #eeeeee;text-decoration: none;padding: 4px 10px;height: 32px;border-radius: 6px;background-image:linear-gradient(45deg,#cccccc, #000000);background-image:-webkit-linear-gradient(45deg,#cccccc, #000000);border: solid 1px #000000;cursor: pointer;}
+.greenbutton{width: 75px;color: #eeeeee;text-decoration: none;padding: 4px 10px;height: 32px;border-radius: 6px;background-image:linear-gradient(45deg,#aaeeaa, #226622);background-image:-webkit-linear-gradient(45deg,#aaeeaa, #226622);border: solid 1px #008800;cursor: pointer;}
+.redbutton{width: 75px;color: #eeeeee;text-decoration: none;padding: 4px 10px;height: 32px;border-radius: 6px;background-image:linear-gradient(45deg,#eeaaaa, #662222);background-image:-webkit-linear-gradient(45deg,#eeaaaa, #662222);border: solid 1px #880000;cursor: pointer;}
+.bluebutton{width: 75px;color: #eeeeee;text-decoration: none;padding: 4px 10px;height: 32px;border-radius: 6px;background-image:linear-gradient(45deg,#aaaaee, #222266);background-image:-webkit-linear-gradient(45deg,#aaaaee, #222266);border: solid 1px #000088;cursor: pointer;}
+</style>
+</head>
+<body><div id="_init" style="display: none;margin-top: 0px;width: 815px"><div style="border: 2px solid #000000;border-radius: 8px;background: #eeeeee;box-shadow: 3px 5px 10px rgba(200, 200, 200,0.5);padding: 10px"><table style="width: 100%"><tbody><tr><td style="vertical-align: top;text-align: right;padding-left: 10px;font-weight: bold;color: #000000;font-style: italic;padding-right: 10px;border-right: 4px solid #000000"><div style="text-align: right;width: 120px"><div id="_launch" title="Lancer la série d'exercices" style="display: inline-block" class="btn btn-default"><i class="fa fa-play-circle fa-lg"></i> Lancer</div></div><div style="margin-top: 10px;text-align: right"><div id="_print" title="Imprimer la série d'exercices" style="display: inline-block" class="btn btn-default"><i class="fa fa-print fa-lg"></i> Imprimer</div></div><div style="margin-top: 10px;text-align: right"><div id="_print2" title="Imprimer la correction série d'exercices" style="display: inline-block" class="btn btn-default"><i class="fa fa-graduation-cap fa-lg"></i> Correction</div></div><div style="margin-top: 10px;text-align: right"><div id="_reload" title="Actualiser la page" style="display: inline-block" class="btn btn-default"><i class="fa fa-refresh fa-lg"></i> Actualiser</div></div></td><td style="vertical-align: top"><div id="_info" style="margin-bottom: 10px;color: #008888;font-weight: bold;font-style: italic"></div></td></tr></tbody></table></div></div>
+</body></html>

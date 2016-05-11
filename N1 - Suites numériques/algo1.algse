@@ -1,0 +1,10 @@
+// demander le nombre de départ
+var x = algo.promptNumber("Nombre de départ :");
+
+// le résultat
+var u = 0;
+
+// programme de calcul
+
+// afficher le résultat
+algo.outputVar(u);

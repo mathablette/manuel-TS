@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Fonction logarithme népérien" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="TS - Fonction logarithme népérien" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="1"
+data-left="$T_S$-$A_5$"
+data-main-width="900">
+
+<!-- Fonction logarithme népérien -->
+<div class="box" data-title="Fonction logarithme népérien" data-num="$N_1$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxD Fonction logarithme népérien" data-color="#444444">
+       La fonction *{bold::logarithme népérien} noté $\ln$ est la fonction définie, dérivable et continue sur $]0;+\infty[$ comme la primitive de la fonction $\dfrac{1}{x}$ qui s'annule en $1$, c'est à dire : 
+       
+        <centering-box style="display: inline-block;background: #eeeeee">$[\ln(x)]' = \ln'(x) = \dfrac{1}{x}$ et $\ln(1) = 0$</centering-box>
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Autre définition de la fonction logarithme népérien" data-color="#444444">
+       La fonction *{bold::logarithme népérien} noté $\ln$ est la fonction définie, dérivable et continue sur $]0;+\infty[$ telle que
+       
+        <centering-box style="display: inline-block;background: #eeeeee">$y = \ln(x) \ssi x = \e^{y}$</centering-box>
+	</div>
+    
+    <div class="titled hide" data-title="\boxR Remarques" data-color="#444444">
+        <div class="table 2cols">
+        ,, $\ln(1) = 0$ et $\ln(\e) = 1$ & ,, La dérivée de $\ln(x)$ est $\frac{1}{x}$ 
+        </div>    
+
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Tableau de variation" data-color="#444444">
+       La fonction $\ln(x)$ est définie et dérivable sur  $]0;+\infty[$. La fonction $\ln(x)$ est *{bold::croissante} sur $]0;+\infty[$. On a de plus, $\displaystyle \underset{x \rightarrow 0}{\lim} \ln(x) = -\infty$ et $\displaystyle \underset{x \rightarrow +\infty}{\lim} \ln(x) = +\infty$ :
+<drawing width='400' height='150' style="margin-top: 10px;margin-left: 210px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
+		move(10,5)
+		down('h-10')
+		right('w-20')
+		up('h-10')
+		left('w-20')
+		
+		move(70,5)
+		down('h-10')
+		move(10,50)
+		right('w-20')
+		
+		math('x',30,15,{fontSize: '14pt'})
+		math('0','lastX+45','lastY',{fontSize: '14pt'})
+		math('+\\infty','w-50','lastY',{fontSize: '14pt'})
+        //math('a','w-180','lastY',{fontSize: '14pt'})    
+		
+		math("\\ln",25,'h-60',{fontSize: '14pt'})
+		arrow('->')
+		move(130,'h-20')
+		line(215,-65)
+        math("-\\infty",90,'h-30',{fontSize: '14pt'})
+        math("+\\infty",352,'h-100',{fontSize: '14pt'})  
+        arrow('-')
+		line(82,'h-10',82,'h-95')
+        line(78,'h-10',78,'h-95')
+	</drawing>     
+	</div>
+    
+   
+   
+    <div class="titled hide" data-title="\boxP Représentation graphique" data-color="#444444">
+        Dans un repère orthogonal, la courbe représentative de la fonction $\ln(x)$ a pour asymptote verticale l'axe des ordonnées lorsque $x \rightarrow 0^+ $
+        <draw width='22cm' height='7.5cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		mark({Ox: '2cm',Oy: '3.5cm',dx: 2,cmy: 1})
+        grid(3)
+        width(4)   
+		curve('ln(x)',0,30,0.001)  
+            
+	</draw>
+    </div>    
+	
+   
+	<div class="styled">
+        <div class="num">En utilisant la calculatrice donner $\ln(2)$ ; $\ln(3)$ ; $\ln(4)$ ;  $\ln(2,6)$ ; $\ln(2,7)$ et $\ln(2,8)$. Arrondir au millième.</div>
+        <div class="num">Déterminer une approximation au millième du nombre $\e$. </div>
+        <div class="num">  Soit la fonction $g(x) = \ln(x-1) + 2$</div>
+        <div class="item" data-value="a) " style="margin-left:50px"> Donner l'ensemble de définition et de dérivabilté de $g$.</div>
+        <div class="item" data-value="b) " style="margin-left:50px">Construire un tableau de variation de  $g$.</div>
+        <div class="item" data-value="c) " style="margin-left:50px">Dans un repère, tracer la courbe représentative de $g$. </div>
+         <div class="item" data-value="d) " style="margin-left:50px">Déterminer  graphiquement $x$ tel que $g(x) = 4$. </div>
+    </div>
+	
+</div>	
+    
+    
+
+        
+
+<div class="newpage"></div>
+    
+<!-- Relation fonctionnelle -->
+<div class="box" data-title="Relation fonctionnelle" data-num="$N_2$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Relation fonctionnelle" data-color="#444444">
+        Pour $a$ et $b$ deux réels tels que $a > 0$ et $b > 0$ : $\displaystyle \ln(ab) = \ln(a) + \ln(b)$
+	</div>
+        
+        <div class="styled">
+        Calculer les expressions suivantes :
+        <div class="table 3cols">
+        <div class="num">$\displaystyle \ln(8\times 6) $</div> &
+            <div class="num">$\displaystyle \ln(7x) $ </div> &
+            <div class="num">$\displaystyle \ln(10\times 10) $ </div> ||
+            <div class="num"> $\displaystyle \ln(2^7) $ </div> & 
+            <div class="num">$\displaystyle \ln(2xy) $ </div> &
+                <div class="num"> $\displaystyle \ln(x\times x ) $ </div> 
+        </div>
+        </div>
+
+</div>    
+    
+    
+<!-- Logarithme d'un quotient et de l'inverse -->
+<div class="box" data-title="Logarithme d'un quotient et de l'inverse" data-num="$N_3$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Logarithme d'un quotient" data-color="#444444">
+        Pour $a$ et $b$ deux réels tels que $a > 0$ et $b > 0$ : $\displaystyle \ln\Big(\frac{a}{b}\Big) = \ln(a) - \ln(b)$
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Logarithme de l'inverse" data-color="#444444">
+        Pour $b$ un réel tel que $b > 0$ : $\displaystyle \ln\Big(\frac{1}{b}\Big) = - \ln(b)$
+	</div>
+        
+        <div class="styled">
+        Calculer les expressions suivantes :
+        <div class="table 4cols" data-table-style="border-spacing : 0px 5px">
+        <div class="num">$\displaystyle \ln{\Big( \frac{34}{2}\Big)} $</div> &
+            <div class="num">$\displaystyle \ln{\Big( \frac{1}{5x}\Big)} $ </div> &
+            <div class="num">$\displaystyle \ln{\Big( \frac{7}{x}\Big)} $ </div> &
+            <div class="num"> $\displaystyle \ln{(10^{-9})} $ </div>||
+            <div class="num">$\displaystyle \ln{\Big( \frac{2}{6x}\Big)} $ </div> &
+                <div class="num"> $\displaystyle \ln{\Big( \frac{1}{2xy}\Big)} $ </div>&
+            <div class="num"> $\displaystyle \ln{\Big( \frac{2x}{7}\Big)} $ </div> &
+                <div class="num"> $\displaystyle \ln{(3^{-2})} $ </div> ||
+            <div class="num">$\displaystyle \ln{\Big( \frac{8x}{3}\Big)} $ </div> &
+                <div class="num"> $\displaystyle \ln{\Big( \frac{9x}{y}\Big)} $ </div>&
+            <div class="num"> $\displaystyle \ln{\Big( \frac{2y}{2x}\Big)} $ </div> &
+                <div class="num"> $\displaystyle \ln{\Big( \frac{xy}{z}\Big)} $ </div>
+            
+        </div>
+        </div>
+</div>
+    
+<!-- Logorithme d'une puissance -->
+<div class="box" data-title="Logarithme d'une puissance" data-num="$N_4$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Logarithme d'une puissance" data-color="#444444">
+        Pour $a$ un réel tel que $a > 0$ et $n \in \mathbb{Z}$ : $\displaystyle \ln{(a^n)} = n\ln{(a)}$
+	</div>
+        
+        <div class="styled">
+        Calculer les expressions suivantes :
+        <div class="table 4cols" data-table-style="border-spacing: 0px 5px">
+        <div class="num">$\displaystyle \ln{( x^{8})} $</div> &
+            <div class="num">$\displaystyle \ln{(3^{-15})} $ </div> &
+            <div class="num"> $\displaystyle \ln{( (xy)^{8})} $ </div> &
+            <div class="num"> $\displaystyle \ln{(z^{-2})} $ </div>
+        </div>
+        </div>
+</div>   
+    
+    
+<!--Dérivée $\ln{(u(x))}$ -->
+<div class="box" data-title="Dérivée $\ln{(u(x))}$" data-num="$N_5$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Dérivée $\ln{(u(x))}$" data-color="#444444">
+        Soit $u$ une fonction dérivable sur un intervalle $I$ de $\mathbb{R}$ telle que pour tout $x \in I$, $u(x) > 0$ . Soit $f$ une fonction définie sur $I$ et par : $f(x) = \ln{\Big(u(x)\Big)}$. $f$ est dérivable sur $I$ et : $\displaystyle f'(x) = \frac{u'(x)}{u(x)}$
+	</div>
+        
+        <div class="styled">
+       Donner les dérivées de :
+        <div class="table 3cols" data-table-style="border-spacing: 0px 10px">
+        <div class="num" data-valign-num="middle"> $\displaystyle f_1(x) = \ln{(3x+2)}$</div> &
+            <div class="num" data-valign-num="middle">$\displaystyle f_2(x) = \ln{(1-x)}$ </div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle f_3(x) = \ln{(x^2+1)}$ </div> ||
+            <div class="num" data-valign-num="middle"> $\displaystyle f_4(x) = x\ln{(x^2+3)}$</div>&
+            <div class="num" data-valign-num="middle">$\displaystyle f_5(x) = \ln{\Big(1 + \frac{1}{x}\Big)}$</div> &
+                <div class="num" data-valign-num="middle"> $\displaystyle f_6(x) = \frac{\ln{(1+x)}}{x}$ </div>||
+            <div class="num" data-valign-num="middle"> $\displaystyle f_7(x) = \ln{\Big(\frac{x-1}{x+1}\Big)}$ </div> &
+                <div class="num" data-valign-num="middle"> $\displaystyle f_8(x) = \ln{\Big(\frac{x^2+2}{x}\Big)}$ </div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle f_9(x) = (2x+1)\ln{(2x+1)}$ </div> ||
+                <div class="num" data-valign-num="middle"> $\displaystyle f_{10}(x) = \ln{(x^3+x^2)}$ </div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle f_{11}(x) = \ln{(x)}$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle f_{12}(x) = \ln{(7x^2-9x^3+\frac{1}{x})}$</div>
+        </div>
+        </div>
+</div>  
+    
+<div class="newpage"></div>      
+    
+<!--Primitive $\ln{(u(x))}$ -->
+<div class="box" data-title="Primitive $\ln{(u(x))}$" data-num="$N_6$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Primitive $\ln{(u(x))}$" data-color="#444444">
+       Soit $u$ une fonction dérivable sur un intervalle $I$ de $\mathbb{R}$ telle que pour tout $x \in I$, $u(x) > 0$ . Soit $f$ une fonction définie sur $I$ et par : $f(x) = \frac{u'(x)}{u(x)}$. Une primitive sur $I$ de $f$ est $F$ : $\displaystyle F(x) = \ln{\Big(u(x)\Big)}$
+	</div>
+        
+        <div class="styled">
+      Donner une primitive  de :
+        <div class="table 3cols" data-table-style="border-spacing: 0px 5px">
+        <div class="num" data-valign-num="middle">$\displaystyle f_1(x) = \frac{3}{2x-4}$</div> &
+            <div class="num" data-valign-num="middle">$\displaystyle f_2(x) = x+\frac{3}{4x-5}$ </div> &
+            <div class="num" data-valign-num="middle">  $\displaystyle f_3(x) =\frac{x}{x^2+1}$</div> ||
+            <div class="num">  $\displaystyle f_4(x) =  x^2 + 3x+ \frac{1}{1-3x}$</div>&
+            <div class="num" data-valign-num="middle">$\displaystyle f_5(x) = 2 + \frac{1}{2x-1} + \frac{1}{(2x-1)^2}$</div> &
+                <div class="num" data-valign-num="middle"> $\displaystyle f_6(x) = \frac{x+1}{x^2+2x+2}$ </div>||
+            <div class="num" data-valign-num="middle">$\displaystyle f_7(x) = \frac{2}{x-4} + \frac{1}{2x+7}$ </div> &
+                <div class="num" data-valign-num="middle"> $\displaystyle f_8(x) = \frac{1}{x\ln{x}} $ </div> &
+                <div class="num" data-valign-num="middle"> $\displaystyle f_9(x) = \frac{-8x^2}{8x^2-9} $ </div>
+        </div>
+        </div>
+</div>      
+  
+    
+ 
+    
+<!-- Limites de $\ln{(u(x))}$ -->
+<div class="box" data-title="Limites de $\ln{(u(x))}$ et autres limites" data-num="$N_7$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Limites de $\ln{(u(x))}$" data-color="#444444">
+        Soient $u$ une fonction définie sur un intervalle $I$ de $\mathbb{R}$  et $a \in \mathbb{R}$ et $b \in \mathbb{R}$ :
+        <div class="table 2cols">
+         ,, si $\displaystyle\underset{x \rightarrow a}{\lim} u(x) = b\;$ alors $\displaystyle\underset{x \rightarrow a}{\lim} \ln{(u(x))} = \ln{(b)}$ &
+        ,,  si $\displaystyle\underset{x \rightarrow a}{\lim} u(x) = +\infty\;$ alors $\displaystyle\underset{x \rightarrow a}{\lim} \ln{(u(x))} = +\infty$ ||
+            
+            ,, si $\displaystyle\underset{x \rightarrow +\infty}{\lim} u(x) = b\;$ alors $\displaystyle\underset{x \rightarrow +\infty}{\lim} \ln{(u(x))} = \ln{(b)}$ &
+            ,, si $\displaystyle\underset{x \rightarrow +\infty}{\lim} u(x) = +\infty\;$ alors $\displaystyle\underset{x \rightarrow +\infty}{\lim} \ln{(u(x))} = +\infty$ ||
+            
+            ,,  si $\displaystyle\underset{x \rightarrow -\infty}{\lim} u(x) = b\;$ alors $\displaystyle\underset{x \rightarrow -\infty}{\lim} \ln{(u(x))} = \ln{(b)}$ &
+            ,,  si $\displaystyle\underset{x \rightarrow -\infty}{\lim} u(x) = +\infty\;$ alors $\displaystyle\underset{x \rightarrow -\infty}{\lim} \ln{(u(x))} = +\infty$  ||
+    
+        </div>
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Autres limites" data-color="#444444">
+        <div class="table 3cols">
+            ,, $\displaystyle\underset{x \rightarrow 0}{\lim} \dfrac{\ln(x + 1)}{x} = 1$ & 
+            ,, $\displaystyle\underset{x \rightarrow +\infty}{\lim} \dfrac{\ln(x)}{x} = 0$ &
+            ,, $\displaystyle\underset{x \rightarrow 0}{\lim} x\ln(x) = 0$
+        </div>    
+    </div>    
+        
+        <div class="styled">
+     Déterminer les limites suivantes :
+        <div class="table 3cols" data-table-style="border-spacing: 0px 15px">
+        <div class="num"> $\displaystyle\underset{x \rightarrow 1^{-}}{\lim} \ln{(1-x^2)}\;$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle \;\underset{x \rightarrow +\infty}{\lim} \ln{(x^2+1)}\;$</div> &
+            <div class="num" data-valign-num="middle">   $\displaystyle \;\underset{x \rightarrow 3}{\lim} \ln{\Big(  \frac{x-3}{x}\Big)}\;$</div>||
+            <div class="num" data-valign-num="middle"> $\displaystyle \;\underset{x \rightarrow +\infty}{\lim} \ln{\Big(  \frac{x+9}{x}\Big)}\;$</div> &
+            
+            <div class="num">$\displaystyle\underset{x \rightarrow +\infty}{\lim} e^{\frac{1}{x}}\;$</div> &
+            <div class="num"> $\displaystyle\underset{x \rightarrow -\infty}{\lim} e^{3x+9}\;$ </div> 
+            
+        </div>
+        </div>
+</div> 
+    
+  
+<!-- logarithme décimal -->
+<div class="box" data-title="Logarithme décimal" data-num="$N_8$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Logarithme décimal" data-color="#444444">
+       La fonction *{bold::logarithme décimal}, notée $\log$, est la fonction définie sur l'intervalle $I=]0;+\infty[$ par : $\displaystyle \log{(x)} = \frac{\ln{(x)}}{\ln{(10)}}$
+
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Propriétés du logarithme décimal" data-color="#444444">
+        Soient $a$ et $b$ deux réels tels que $a >0$ et $b >0$ et $n \in \mathbb{Z}$ : 
+       <div class="table 2cols">
+        ,, $\log{(1)} = 0 $ et $\log{(10)} = 1 $ & ,, $\log{(ab)} = \log{(a)} + \log{(b)} $ ||
+        ,, $\displaystyle \log{\Big(\frac{a}{b}\Big)} = \log{(a)} - \log{(b)} $ &  ,,  $\displaystyle \log{\Big(\frac{1}{b}\Big)} = - \log{(b)} $ ||
+        ,,  $\displaystyle \log{(a^n)} = n\log{(a)} $ & ,, $\displaystyle \log{(10^n)} = n $ 
+        
+        </div>
+	</div>
+        
+        <div class="styled">
+     Calculer : 
+        <div class="table 4cols" data-table-style="border-spacing: 0px 0px">
+        <div class="num" data-valign-num="middle">$\log{(10^3)}$</div> &
+            <div class="num" data-valign-num="middle">$\log{(10\; 000)}$ </div> &
+            <div class="num" data-valign-num="middle">  $\log{(10^{-2})}$</div> &
+            <div class="num">  $\log{(0,001)}$</div>
+        </div>
+        </div>
+</div> 
+    
+    
+<div class="newpage"></div>
+    
+<!-- Nombre $a^b$ -->
+<div class="box" data-title="Nombre $a^b$" data-num="$N_9$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Nombre $a^b$" data-color="#444444">
+       Pour tout réel $a > 0$ et pour tout réel $b$, le nombre $a^b$ est défini par : $\displaystyle a^b = \e^{b\ln{(a)}}$
+	</div>
+    
+
+        
+        <div class="styled">
+     Ecrire les nombres suivants sous la forme $\e^{b\ln{(a)}}$ :  
+        <div class="table 4cols" data-table-style="border-spacing: 0px 0px">
+        <div class="num" data-valign-num="middle">$1,6^8$</div> &
+            <div class="num" data-valign-num="middle">$0,5^x$ </div> &
+            <div class="num" data-valign-num="middle">  $x^{-\frac{3}{4}}$</div> &
+            <div class="num"> $x^{9,6}$</div>
+        </div>
+        </div>
+</div> 
+    
+<!-- Exponentielle de base $a$ -->
+<div class="box" data-title="Exponentielle de base $a$" data-num="$N_{10}$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Exponentielle de base $a$" data-color="#444444">
+       Pour tout réel $a > 0$, on appelle *{bold::fonction exponentielle de base $a$} la fonction $f$ définie sur $\mathbb{R}$  et par : $\displaystyle f(x) = a^x = e^{x\ln{(a)}}$
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Dérivée de $a^x$" data-color="#444444">
+       Pour tout réel $a > 0$, la fonction définie par $\displaystyle f(x) = a^x = e^{x\ln{(a)}}$ est dérivable sur $\mathbb{R}$ et : $\displaystyle f'(x) = \ln{(a)}a^x =  \ln{(a)}e^{x\ln{(a)}}$
+	</div>
+
+        
+        <div class="styled">
+     Soit la fonction  $f$ définie par $f(x) = \dfrac{1}{2}^x$ :
+        <div class="table 4cols" data-table-style="border-spacing: 0px 0px">
+            <div class="num" data-valign-num="middle">Donner l'ensemble de définition et de dérivabilité de $f$.</div>
+            <div class="num" data-valign-num="middle">Donner les limites de $f$ aux bornes de son ensemble de définition.</div>
+            <div class="num" data-valign-num="middle">Construire le tableau de variation de $f$.</div>
+            <div class="num" data-valign-num="middle">Dans un repère orthonormé, tracer la courbe représentative de $f$.</div>
+        </div>
+</div>     
+</div>
+    
+<!-- Equation $e^{ax} = b$ -->
+<div class="box" data-title="Equation $e^{ax} = b$" data-num="$N_{11}$" data-date="1">   
+    
+        <div class="styled">
+    Résoudre dans $\mathbb{R}$ les équations suivantes :
+        <div class="table 4cols" data-table-style="border-spacing: 0px 0px">
+            <div class="num" data-valign-num="middle">$e^{2x} = 10$</div> &
+            <div class="num" data-valign-num="middle">$5e^{10x} - 100= 0 $ </div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle e^{-2x + 4} = \frac{1}{4}$ </div> &
+            <div class="num"> $\displaystyle e^{2x - 7} = e^{0,5x}$</div> ||
+            
+            <div class="num" data-valign-num="middle">$\displaystyle e^{x^2} = e^{2x-1}$</div> &
+            <div class="num" data-valign-num="middle">$\displaystyle 5e^{0,5x+1}  -1 = 0$ </div> &
+            <div class="num" data-valign-num="middle"> $e^{2x+ 9} = 1$ </div> &
+            <div class="num"> $2e^{x-3}  - 5 = 0$</div> ||
+            
+            <div class="num" data-valign-num="middle">$\displaystyle 0,5e^{3x-3}  = \frac{1}{6}$</div> &
+            <div class="num" data-valign-num="middle">$\displaystyle e^{x + 2} = e^{1-x}$ </div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle e^{x^2+6} = e^{3x}$ </div> &
+            <div class="num"> $\displaystyle e^{x+1} = e^{2x}$</div> 
+        </div>
+        </div>
+</div>  
+    
+<!-- Inéquation $e^{ax}  <  b$ -->
+<div class="box" data-title="Inéquation $\e^{ax}  <  b$" data-num="$N_{12}$" data-date="1">   
+    
+        <div class="styled">
+    Résoudre dans $\mathbb{R}$ les inéquations suivantes :
+        <div class="table 4cols" data-table-style="border-spacing: 0px 0px">
+            <div class="num" data-valign-num="middle">$e^{x} <  9 $</div> &
+            <div class="num" data-valign-num="middle">$30e^{x} > 10$ </div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle e^{2x - 4} \leqslant 5$ </div> &
+            <div class="num"> $\displaystyle e^{7x} \geqslant 5$</div> ||
+            
+            <div class="num" data-valign-num="middle"> $\displaystyle 20e^{3x} - \sqrt{2} < 0$</div> &
+            <div class="num" data-valign-num="middle">$e^{2x+ 9} > 1$ </div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle e^{5x+1}  \leqslant e^{-x}$ </div> &
+            <div class="num"> $\displaystyle 4e^{x} - 5 \geqslant 0$</div> 
+        </div>
+        </div>
+</div>    
+            
+            
+<!-- Equation $\log{(ax)} = k$ -->
+<div class="box" data-title="Equation $\log{(ax)} = k$" data-num="$N_{13}$" data-date="1">   
+    
+        <div class="styled">
+    Résoudre dans $\mathbb{R}$ les équations suivantes :
+        <div class="table 4cols" data-table-style="border-spacing: 0px 0px">
+            <div class="num" data-valign-num="middle">$\log{(x)} = 10$</div> &
+            <div class="num" data-valign-num="middle">$\displaystyle \log{(5x)} = \frac{2}{3}$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle \log{(7x)} = \frac{7}{8}$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle \log{(3x)} = -\frac{10}{23}$</div>
+        </div>
+        </div>
+</div> 
+            
+            
+<!-- Equation $x^{\alpha} = k$ -->
+<div class="box" data-title="Equation $x^{\alpha} = k$" data-num="$N_{14}$" data-date="1">   
+    
+        <div class="styled">
+    Résoudre dans $\mathbb{R}$ les équations suivantes :
+        <div class="table 4cols" data-table-style="border-spacing: 0px 0px">
+            <div class="num" data-valign-num="middle">$x^{10}=4$</div> &
+            <div class="num" data-valign-num="middle"> $x^{1,5} = 2$ </div> &
+            <div class="num" data-valign-num="middle"> $x^{\frac{1}{3}} = 3$</div> &
+            <div class="num">  $x^{6} = 5$  </div> ||
+            
+            <div class="num" data-valign-num="middle"> $x^{2} = 100$  </div> &
+            <div class="num" data-valign-num="middle">$x^{13}=0,47$ </div> &
+            <div class="num" data-valign-num="middle"> $x^{6,9} = 10$ </div> &
+            <div class="num"> $x^{0,5} = \sqrt{2}$  </div> 
+        </div>
+        </div>
+</div>      
+   
+ <div class="newpage"></div>           
+            
+<!-- Inéquation $\ln{(u(x))} > b$ -->
+<div class="box" data-title="Inéquation $\ln{(u(x))} > b$" data-num="$N_{15}$" data-date="1">   
+    
+        <div class="styled">
+    Résoudre dans $\mathbb{R}$ les inéquations suivantes :
+        <div class="table 4cols" data-table-style="border-spacing: 0px 0px">
+            <div class="num" data-valign-num="middle">$\ln{(x)} > -2$</div> &
+            <div class="num" data-valign-num="middle"> $\ln{(1,5x-1)} \leqslant 6$</div> &
+            <div class="num" data-valign-num="middle"> $4\ln{(2x-6)} + 3> 0$</div> &
+            <div class="num"> $\ln{(2-x)} < -1$  </div> ||
+            
+            <div class="num" data-valign-num="middle"> $2\ln{(3x - 3)} \leqslant 5$  </div> &
+            <div class="num" data-valign-num="middle"> $4\ln{(7-8x)} \geqslant 3$ </div> &
+            <div class="num" data-valign-num="middle"> $2\ln{(3x-3)} + 5 < 0$ </div> &
+            <div class="num"> $\ln{(4x-5)} \geqslant 3$    </div> 
+        </div>
+        </div>
+</div>   
+            
+            
+<!-- Inéquation $q^n \leqslant a$ ou $q^n \geqslant a$} -->
+<div class="box" data-title="Inéquation $q^n \leqslant a$ ou $q^n \geqslant a$}" data-num="$N_{16}$" data-date="1">   
+    
+        <div class="styled">
+    Résoudre dans $\mathbb{R}$ les inéquations suivantes :
+        <div class="table 4cols" data-table-style="border-spacing: 0px 0px">
+            <div class="num" data-valign-num="middle">$10^n \leqslant 0,5$ </div> &
+            <div class="num" data-valign-num="middle"> $5^n \geqslant 50$</div> &
+            <div class="num" data-valign-num="middle"> $0,65^n \leqslant 0,005$</div> &
+            <div class="num"> $0,1^n \geqslant 10^{-10}$ </div> 
+        </div>
+        </div>
+</div>               
+    
+
+            
+<div class="box" data-title="$\ln{(ax^2+bx+c)}$">
+<div class="styled">
+ Soient $a$ , $b$ et $c$ trois réels et $f$ une fonction définie par : $f(x) = \ln{(ax^2+bx+c)}$. On suppose qu'il existe un intervalle $I$ de $\mathbb{R}$ tel que pour tout $x \in I$, $ax^2+bx+c > 0$.
+
+
+<div class="num" data-valign-num="0px">Calculer la dérivée $f'$ de $f$. </div>
+<div class="num" data-valign-num="0px">On suppose que $f$ est dérivable en $0$ et $1$. Sachant que $f(0) = f(1) = 0$ et $f'(1) = 1$, déterminer $a$,$b$ et $c$.</div>    
+ <div class="num" data-valign-num="middle"> On considère la fonction $g$ définie sur $\mathbb{R}$ par : $g(x) = \ln{(x^2-x+1)}$.  Justifier que pour tout $x \in \mathbb{R}$, $x^2-x+1 > 0$ </div>
+ <div class="num" data-valign-num="middle"> Calculer $g'$, dérivée de $g$, puis étudier le signe de $g'$. </div>
+     <div class="num" data-valign-num="middle"> Déterminer les limites de $g$ en $-\infty$ et en $+\infty$ puis donner le tableau de variations de $g$ en y faisant figurer les limites.</div> 
+<div class="num" data-valign-num="middle">Soit $h$ le fonction définie sur $\displaystyle \Big]-\frac{1}{3};+\infty\Big[$ par : 
+$\displaystyle h(x) = \ln{\Big(\frac{3x-1}{x+1}\Big)}$
+    </div>     
+<div class="num" data-valign-num="middle"> Développer $(x-1)^2(x+2)$. En déduire les solutions de l'équation dans $\mathbb{R}$ de 
+ $x^3-3x+2 = 0$
+    </div>
+    <div class="num" data-valign-num="10px"> Dans un repère $(O;\vecteur{i},\vecteur{j})$, on note $\mathcal{C}_g$ la courbe représentative de $g$ et $\mathcal{C}_h$ la courbe représentative de $h$. Montrer que $\mathcal{C}_g$  et $\mathcal{C}_h$ ont un unique point en commun, et qu'en ce point, $\mathcal{C}_g$ et $\mathcal{C}_h$ ont la même tangente.  
+    </div>
+</div>            
+</div> 
+            
+            
+<div class="box" data-title="Fonction $f$">
+<div class="styled">
+    On considère la fonction $f$ définie sur $[0;+\infty[$ par : 
+ $f(t) = 5e^{\big(-\frac{1}{2}\ln{2}\big)t} $. 
+Sa courbe représentative $\mathcal{C}_f$ est représentée ci-contre.
+<div class="table">    
+
+    
+    
+<div class="num" data-valign-num="0px"> Déterminer la limite de $f(t)$ lorsque $t$ tend vers $+\infty$.  En donner une interprétation graphique.</div>
+ <div class="num" data-valign-num="0px"> Calculer $f'(t)$ pour $t \in [0;+\infty[$. Déterminer une équation de la tangente à  $\mathcal{C}_f$ au point d'abscisse $0$. La tracer dans le repère.</div>
+ <div class="num" data-valign-num="0px"> Vérifier que pour tout $t \in [0;+\infty[$ : $\displaystyle f(t+2) = \frac{1}{2}f(t) $. Le nombre de cellules, exprimé en millions, d'une culture cellulaire soumise à une expérimentation est modélisé, en fonction du temps, par la fonction $f$.
+</div>
+ <div class="num" data-valign-num="0px"> Comment interpréter l'égalité de la question *{bold::3.} ?</div>
+ <div class="num" data-valign-num="0px">Déterminer l'instant $t$ (en heures et minutes) où le nombre de cellules n'est plus que de $750\;000$.</div>
+ <div class="num" data-valign-num="0px"> Retrouver graphiquement le résultat en faisant apparaître les tracés utiles.</div>  
+    
+&
+    <draw width='8cm' height='9cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		mark({Ox: '1cm',Oy: '8cm',cmx: 2,cmy: 1})
+        grid(3)
+        width(4)   
+		curve('5*e^(-0.5*ln(2)*x)',-30,30,0.001)  
+            
+	</draw>
+</div>
+</div>            
+</div>                    
+       
+<div class="newpage"></div>            
+            
+<div class="box" data-title="Intensité sonore">
+<div class="styled">
+ L'intensité sonore $I$ d'un son caractérise le volume de ce son. L'unité de mesure de l'intensité sonore est  le watt par mètre carré ($Wm^{-2}$). Le niveau sonore $N$ de ce son est donné par la relation : $  N = 10\log{\Big( \frac{I}{I_0}\Big)}  $ 
+où $I_0$ est une intensité sonore de référence valant $I_0 = 10^{-12}\;Wm^{-2}$. Le niveau sonore ainsi calculé est exprimé en décimal ($dB$)
+
+<div class="num" data-valign-num="0px"> Déterminer le niveau sonore en $dB$ quand l'intensité sonore vaut $10^{-12}\;Wm^{-2}$. On parle de seuil d'audibilité.</div>
+ <div class="num" data-valign-num="middle"> On considère deux sons d'intensité sonore $I_1$ et $I_2$ et de niveau sonore $N_1$ et $N_2$. Quand on double l'intensité sonore : $I_2 = 2I_1$, quelle est la différence $N_2-N_1$ des niveaux sonores ? </div>
+ <div class="num" data-valign-num="middle"> Quand la différence de deux niveaux sonores vaut $20\;dB$, quel est le rapport entre les deux intensités sonores.  </div>
+</div>            
+</div>    
+            
+            
+<div class="box" data-title="Encadrement de $\ln{(x+1)} - \ln{(x)} $">
+<div class="styled">
+ Soient $f$ et $g$ deux fonctions définies sur $]0;+\infty[$ par :
+vspace{5}
+$\displaystyle \bullet \; f(x) = \ln{(x+1)} - \ln{x} - \frac{1}{x+1}$
+
+et vspace{5} $\displaystyle \bullet \; g(x) = \ln{(x+1)} - \ln{x} - \frac{1}{x}$
+vspace{5}
+    
+    
+<div class="num" data-valign-num="0px"> Calculer la limite de $f$ en $0$.</div>
+ <div class="num" data-valign-num="0px"> Déterminer la limite de $\displaystyle x \mapsto \frac{x+1}{x}$ quand $x$ tend vers $+\infty$. En déduire   $\displaystyle \;\underset{x \rightarrow +\infty}{\lim} \ln{\Big(  \frac{x+1}{x}\Big)}\;$</div>
+ <div class="num" data-valign-num="0px"> Déterminer la limite de $f$ en $+\infty$.</div>
+ <div class="num" data-valign-num="0px"> Déterminer la dérivée $f'$ de $f$.</div>
+ <div class="num" data-valign-num="0px"> Etudier le signe de $f'$.</div>
+ <div class="num" data-valign-num="0px"> Etablir le tableau de variations de $f$ en y faisant figurer les limites.</div>
+ <div class="num" data-valign-num="0px"> Démontrer que pour $x > 0 $ :
+$\displaystyle \frac{1}{x+1} \leqslant \ln{(x+1)} - \ln{(x)}$</div>
+
+ <div class="num" data-valign-num="0px"> Déterminer la dérivée $g'$ de $g$.</div>
+ <div class="num" data-valign-num="0px"> Etudier le signe de $g'$.</div>
+ <div class="num" data-valign-num="0px"> Etablir le tableau de variations de $g$.</div>
+ <div class="num" data-valign-num="0px"> Démontrer que pour $x > 0 $ :
+$\displaystyle  \ln{(x+1)} - \ln{(x)} \leqslant \frac{1}{x} $</div>
+
+     <div class="num" data-valign-num="0px"> Donner un encadrement de $\displaystyle  \ln{\Big(\frac{x+1}{x}\Big)}$ </div>   
+
+</div>            
+</div>   
+    
+<div class="box" data-title="pH">
+<div class="styled">
+ On note $[H_3O^+]$ et $[OH^-]$ les concentrations molaires (en $molL^{-1}$) en hydronium et hydroxydes dans une solution. 
+    
+    Pour toute solution aqueuse à une température de $25\;^\circ C$, $[H_3O^+]\times [OH^-] = 10^{-14}$. 
+    
+    Le potentiel hydrogène d'une solution, noté $pH$, est donné par $pH = -\log{\Big( [H_3O^+]\Big)}$ ($pH \in [0;14]$)
+
+<div class="num" data-valign-num="middle">Une solution aqueuse est neutre quand $[H_3O^+] =  [OH^-]$. Déterminer le $pH$ d'une solution neutre (eau pure).</div>
+ <div class="num" data-valign-num="middle"> Une solution est acide  lorsque  lorsque sa concentration $[H_3O^+]$ est supérieure à celle de l'eau pure. sinon elle est dite basique. Comparer le $pH$ d'une solution acide au $pH$ de l'eau pure. </div>
+ <div class="num" data-valign-num="middle"> La solution $S_1$ a une concentration $[H_3O^+]$ $1\;000$ fois supérieure à celle de la solution $S_2$ dont le $pH$ vaut $6$. Quelle est le $pH$ de la solution $S_1$ ? </div>
+     <div class="num" data-valign-num="middle"> Résoudre $\log{(x)} = -8,5$. Une solution dont le $pH$ vaut $8,5$ est-elle acide ou basique ? </div> 
+</div>            
+</div>               
+       
+    
+</body>
+</html>

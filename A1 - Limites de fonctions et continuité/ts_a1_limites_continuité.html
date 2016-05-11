@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Limites de fonctions et continuité" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="TS - Limites de fonctions et continuité" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="1"
+data-left="$T_S$-$A_1$"
+data-main-width="900">
+
+<!--Limite finie en $a$-->
+<div class="box" data-title="Limite finie en $a$" data-num="$N_1$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxD Limite" data-color="#444444">
+        Soient $f$ une fonction définie sur un intervalle $I$ de $\mathbb{R}$ et $a \in I$. 
+
+La fonction $f$ admet une *{bold::limite finie} $l \in \mathbb{R}$ en $a$ quand la distance $|l-f(x)|$ peut être rendue aussi *{rdu::petite} que l'on veut si $x$ est suffisamment  *{tdu::proche} de $a$. On écrit alors :
+
+$\displaystyle \underset{x \rightarrow a}{\lim} \;f(x) =  l$
+
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Continuité" data-color="#444444">
+        La fonction $f$ est *{bold::continue  en $a$} quand  :
+
+$\displaystyle \underset{x \rightarrow a}{\lim} \;f(x) =  f(a)$
+
+vspace{5}
+La fonction $f$ est *{bold::continue} sur un intervalle $I$ de $\mathbb{R}$ quand $f$ est continue pour tout réel $a \in I$. Sa courbe représentative ne possède pas de "trou" sur $I$ : on peut la tracer sans lever le crayon.
+	</div>
+    
+    <div class="titled hide" data-title="\boxA Algorithme" data-color="#444444">
+        L'algorithme suivant permet d'afficher la limite d'une fonction : 
+        <div class="algo" data-type="algse" frame-style="width: 780px;height: 300px" style="margin-left: 30px">
+function f(x) {return 3*x + 3;}
+            
+var distance = 0.001;
+var step = 0.001;
+var x = 0;
+var a = 10;
+var l = 0;
+            
+while (Math.abs(f(x) - f(a)) > distance)
+{
+    l = f(x);
+    x = x+step;
+}
+algo.output('La limite de la fonction f en '+a+' vaut '+l);
+algo.output('f('+a+') =  '+f(a));
+            
+        </div>
+	</div>
+   
+	
+   
+	<div class="styled">
+        Déterminer les limites suivantes :
+        <div class="table 2cols">
+        <div class="num">$\displaystyle \underset{x \rightarrow 0}{\lim} \;f_1(x)$ avec $f_1(x) = 5x+9$</div> &
+            <div class="num">$\displaystyle \underset{x \rightarrow -6}{\lim} \;f_2(x)$ avec $f_2(x) = 8x^2$</div>
+        </div>
+    </div>
+	
+</div>	
+    
+<!--Limite infinie ($+\infty$) en $a$-->
+<div class="box" data-title="Limite infinie ($+\infty$) en $a$" data-num="$N_2$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Limite" data-color="#444444">
+        ,, La fonction $f$ admet une *{bold::limite infinie}  ($+\infty$) en $a$  par *{bold::valeurs supérieures}  quand $f(x)$ peut être rendu aussi *{tdu::grand} que l'on veut si $x > a $ est suffisamment  *{tdu::proche} de $a$. On écrit alors : $\displaystyle \underset{x \rightarrow a^{+}}{\lim} \;f(x) =  +\infty$ vspace{10}
+        ,, La fonction $f$ admet une *{bold::limite infinie}  ($+\infty$) en $a$  par *{bold::valeurs inférieures}  quand $f(x)$ peut être rendu aussi *{tdu::grand} que l'on veut si $x < a $ est suffisamment  *{tdu::proche} de $a$. On écrit alors : $\displaystyle \underset{x \rightarrow a^{-}}{\lim} \;f(x) =  +\infty$
+        
+
+	</div>
+        
+        <div class="styled">
+        Déterminer les limites suivantes :
+        <div class="table 2cols">
+        <div class="num">$\displaystyle \underset{x \rightarrow 0^{+}}{\lim} \;f_1(x) $ avec $\displaystyle f_1(x) = \frac{1}{x}$</div> &
+            <div class="num"> $\displaystyle \underset{x \rightarrow 2^{-}}{\lim} \;f_2(x) $ avec $\displaystyle f_2(x) = \frac{7}{2-x}$</div> ||
+            <div class="num">$\displaystyle \underset{x \rightarrow 4^{+}}{\lim} \;f_3(x) $ avec $\displaystyle f_3(x) = \frac{x}{2x^2 - 32}$</div> &
+            <div class="num"> $\displaystyle \underset{x \rightarrow 3^{-}}{\lim} \;f_4(x) $ avec $\displaystyle f_4(x) = \frac{1}{x} + \frac{2}{6- 2x}$
+</div>
+        </div>
+    </div>
+</div>    
+    
+<div class="newpage"></div>
+    
+<!--Limite infinie ($-\infty$) en $a$-->
+<div class="box" data-title="Limite infinie ($-\infty$) en $a$" data-num="$N_3$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Limite" data-color="#444444">
+        ,, La fonction $f$ admet une *{bold::limite infinie}  ($-\infty$) en $a$  par *{bold::valeurs supérieures}  quand $f(x)$ peut être rendu aussi *{tdu::petit} que l'on veut si $x > a $ est suffisamment  *{tdu::proche} de $a$. On écrit alors : $\displaystyle \underset{x \rightarrow a^{+}}{\lim} \;f(x) =  -\infty$ vspace{10}
+        ,, La fonction $f$ admet une *{bold::limite infinie}  ($-\infty$) en $a$  par *{bold::valeurs inférieures}  quand $f(x)$ peut être rendu aussi *{tdu::grand} que l'on veut si $x < a $ est suffisamment  *{tdu::proche} de $a$. On écrit alors : $\displaystyle \underset{x \rightarrow a^{-}}{\lim} \;f(x) =  -\infty$
+        
+
+	</div>
+        
+        <div class="styled">
+        Déterminer les limites suivantes :
+        <div class="table 2cols">
+        <div class="num">$\displaystyle \underset{x \rightarrow 0^{+}}{\lim} \;f_1(x) $ avec $\displaystyle f_1(x) = \frac{1}{x}$</div> &
+            <div class="num"> $\displaystyle \underset{x \rightarrow 2^{-}}{\lim} \;f_2(x) $ avec $\displaystyle f_2(x) = \frac{7}{2-x}$</div> ||
+            <div class="num">$\displaystyle \underset{x \rightarrow 4^{+}}{\lim} \;f_3(x) $ avec $\displaystyle f_3(x) = \frac{x}{2x^2 - 32}$</div> &
+            <div class="num"> $\displaystyle \underset{x \rightarrow 3^{-}}{\lim} \;f_4(x) $ avec $\displaystyle f_4(x) = \frac{1}{x} + \frac{2}{6- 2x}$
+</div>
+        </div>
+    </div>
+</div>    
+    
+    
+<!--Asymptote verticale-->
+<div class="box" data-title="Asymptote verticale" data-num="$N_4$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Asymptote verticale" data-color="#444444">
+        La courbe représentative $\mathcal{C}_f$ de la fonction $f$ admet une *{bold::asymptote verticale}  (parallèle à l'axe des ordonnées) d'équation $x=a $ quand $\displaystyle \underset{x \rightarrow a^{+}}{\lim} \;f(x)$  ou $\displaystyle \underset{x \rightarrow a^{-}}{\lim} \;f(x)$ sont infinies ($+\infty$ ou $-\infty$). 
+<br>
+C'est à dire que $\mathcal{C}_f$  se "rapproche" de plus de plus de la droite verticale d'équation $x=a$.
+	</div>
+        
+        <div class="styled">
+       Montrer que les représentations graphiques des fonctions $f$ suivantes admettent une asymptote verticale d'équation $x=a$ ($a \in \mathbb{R}$)  : 
+        <div class="table 2cols">
+        <div class="num">$\displaystyle f: x  \mapsto \frac{-1}{x^2}$ et $\displaystyle a = 0$</div> &
+            <div class="num">  $\displaystyle f: x  \mapsto 12 + \frac{1}{x-9}$ et $\displaystyle a = 9$</div> ||
+            <div class="num">$\displaystyle f: x  \mapsto x^2 + \frac{1}{9-x^2}$ et $\displaystyle a = 3$</div> &
+            <div class="num"> $\displaystyle f: x  \mapsto 2x - 8 + \frac{1}{\sqrt{x}}$ et $\displaystyle a = 0$
+</div>
+        </div>
+    </div>
+</div>        
+        
+  
+</body>
+</html>
