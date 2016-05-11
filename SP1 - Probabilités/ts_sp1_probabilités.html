@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Probabilités" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="TS - Probabilités" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="52"
+data-left="$T_S$-$SP_1$"
+data-main-width="900">
+
+<!-- Expérience aléatoire -->
+<div class="box" data-title="Expérience aléatoire" data-num="$N_1$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxD Expérience aléatoire" data-color="#666666">
+        Une *{bold::expérience aléatoire} est une expérience renouvelable dont les résultats possibles, généralement  appelés *{tdu::issues}, sont connus sans qu'on puisse déterminer lequel sera réalisé.
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Univers fini" data-color="#666666">
+        L'*{bold::univers} d'une expérience aléatoire est l'ensemble des issues possibles appelées également résultats ou éventualités. On le note $\Omega$.
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Cardinal de l'univers" data-color="#666666">
+        Le *{bold::cardinal} de l'univers d'une expérience aléatoire est le nombre d'*{tdu::issues} de cet univers. On le note $\text{card}(\Omega)$
+	</div>	
+   
+	<div class="styled">
+        Donner  les univers $\Omega$ des expériences aléatoires suivantes ainsi que leur cardinal :
+        <div class="table 2cols">
+            <div class="num">$E_1$ : Lancer un dé à six faces.</div> &
+            <div class="num">$E_2$ : Lancer une pièce de monnaie.</div> ||   
+            <div class="num">$E_3$ : Choisir un nombre entier dans $[0;10]$</div> &
+            <div class="num">$E_4$ : Le sexe d'un nourrisson.</div>
+        </div>
+	</div>
+</div>	
+    
+<!-- Evènements -->
+<div class="box" data-title="Evènements" data-num="$N_2$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxD Evènement" data-color="#666666">
+        Une *{bold::évènement} d'une expérience aléatoire est un sous-ensemble de l'univers c'est à dire un sous-ensemble comprenant des *{tdu::issues}.
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Union" data-color="#666666">
+       Soient deux évènements $A$ et $B$ d'une même expérience aléatoire. <br>
+
+L'*{bold::union} des évènements $A$ et $B$, notée $A \cup B$, est l'ensemble des issues qui réalise $A$ *{bold::ou} $B$. On dit "$A$ union $B$".
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Intersection" data-color="#666666">
+        Soient deux évènements $A$ et $B$ d'une même expérience aléatoire. <br>
+
+L'*{bold::intersection} des évènements $A$ et $B$, notée $A \cap B$, est l'ensemble des issues qui réalise $A$ *{bold::et} $B$. On dit "$A$ inter $B$".
+	</div>	
+   
+	<div class="styled">
+        On considère l'expérience aléatoire : "lancer un dé à six faces". Décrire les évènements suivants :
+        <div class="table 2cols">
+            <div class="num">$A$ : "Faire un nombre pair"</div> &
+            <div class="num">$B$ : "Faire un nombre multiple de $3$"</div> ||   
+            <div class="num">$A \cup B$</div> &
+            <div class="num">$ A \cap B$</div>
+        </div>
+	</div>
+</div>	   
+    
+<!-- Observation des fréquences -->
+<div class="box" data-title="Observation des fréquences" data-num="$N_3$" data-date="1">
+    
+    <div class="titled hide" data-title="Modèle : Loi faible des grands nombres" data-color="#666666">
+        Lorsqu'on répète $n$ fois, de façon indépendante, une expérience aléatoire, la fréquence d'une issue   va avoir tendance à se stabiliser lorsque $n$ augmente. La probabilité de l'issue est très proche de la valeur stabilisée observée. Il faut s'assurer que la somme des probabilités fasse $1$
+	</div>
+    
+    
+   
+	<div class="styled">
+        
+        <table>
+            <tr>
+                <td style="width: 50%;vertical-align: top">
+                On considère l'expérience aléatoire  $E_1$ : "lancer un dé à six faces" que l'on réalise un certain nombre de fois. Voici les résultats ci-contre. 
+                    <div class="num">Pour $n = 100$, $n=500$ et $n=1\;000$, estimer les probabilités de choisir les  faces $n^\circ 1$,  $n^\circ 2$,  $n^\circ 3$,  $n^\circ 4$, $n^\circ 5$ et $n^\circ 6$  du dé.</div>
+                </td>
+                <td style="width: 50%;vertical-align: top">
+                <div class="table" cells="*,*|bo1#444444&*,2:3:4:5|w55;c" data-table-style="background: #ffffff;border-collapse: collapse">
+                Nbr d'expériences $E_1$ :  $n$ & $100$ & $1\;000$ & $500$||
+                 Face $n^\circ 1$ & $18$ & $165$ & $78$ ||
+                Face $n^\circ 2$ & $16$ & $189$ & $82$  ||
+                 Face $n^\circ 3$ & $17$ & $187$ & $85$   ||
+                Face $n^\circ 4$ & $15$ & $169$ & $79$   ||
+                Face $n^\circ 5$ & $15$ & $174$ & $87$   ||
+                Face $n^\circ 6$ & $19$ & $116$ & $89$      
+                </div>
+                </td>
+            
+            </tr>    
+        </table>
+	</div>
+</div>	       
+
+<div class="newpage"></div>    
+    
+ <!-- Equiprobabilité -->
+<div class="box" data-title="Equiprobabilité" data-num="$N_4$" data-date="1">
+    
+    <div class="titled hide" data-title="Modèle : équiprobabilité" data-color="#666666">
+        Dans un modèle *{bold::équiréparti}, chaque issue a la même probabilité qui vaut : <br>
+$ \displaystyle \frac{1}{\mathrm{Nombre\; d'issues\; possibles}} = \dfrac{1}{\text{card}(\Omega)} $
+
+vspace{5}
+ On dit aussi que c'est une situation d'*{bold::équiprobabilité}.
+	</div>
+    
+   
+   
+	<div class="styled">
+        On considère l'expérience aléatoire  $E_1$ : "lancer un dé à six faces". On suppose qu'il s'agisse d'une situation d'équiprobabilité. 
+        <div class="table 2cols">
+            <div class="num">Pourquoi est-il raisonnable de choisir l'équiprobabilité comme modèle.</div> &
+            <div class="num">Quelle est la probabilité d'obtenir la face $n^\circ 1$</div> ||   
+            <div class="num">Quelle est la probabilité d'obtenir la face $n^\circ 3$</div> &
+            <div class="num">Quelle est la probabilité d'obtenir la face $n^\circ 6$</div>
+        </div>
+	</div>
+</div>	
+    
+ <!-- Loi de probabilité -->
+<div class="box" data-title="Loi de probabilité" data-num="$N_5$" data-date="1" data-newpage="none">
+    
+    <div class="titled hide" data-title="\boxD Loi de probabilité" data-color="#666666">
+        Une *{bold::loi de probabilité} sur un univers $\Omega$ associe à chaque issue qui le réalise un nombre compris entre $0$ et $1$ appelé *{bold::probabilité}. La somme des probabilités des issues est $1$.
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Propriétés" data-color="#666666">
+        ,, Une probabilité valant $1$ indique que l'issue se réalise à chaque expérience. <br>
+        ,, Une probabilité valant $0$ indique que l'issue ne se réalise jamais et ce quelque soit expérience.
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Probabilité d'un évènement" data-color="#666666">
+        La *{bold::probabilité d'un événement} est la somme des probabilités des issues qui le réalisent. Pour un évènement $A$, on note sa probabilité $P(A)$.
+	</div>
+    
+    <div class="titled hide" data-title="\boxN Notations" data-color="#666666">
+        ,,  Un événement *{bold::impossible} est un événement qui ne se réalise jamais. Sa probabilité vaut $0$. <br>
+        ,, Un événement *{bold::certain} est un événement qui est sûr de se réaliser. Sa probabilité vaut $1$.
+	</div>
+   
+    <div class="titled hide" data-title="\boxD Evènement contraire" data-color="#666666">
+        Soit $A$ un événement. L'événement *{bold::contraire} à $A$ est constitué des issues de $\Omega$ ne se réalisant pas dans $A$ et se note $\overline{A}$. Sa probabilité vaut : $P(\overline{A}) = 1 -P(A)$.
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Propriété" data-color="#666666">
+        Si $A$ et $B$ sont deux événements alors : 
+$ \displaystyle P(A \cup B) = P(A) + P(B) - P(A\cap B)$
+
+	</div>
+   
+	<div class="styled">
+        On lance un dé équilibré à $20$ faces et on note le numéro de la face du dessus. On note $A$ l'évènement : "obtenir un nombre pair" et l'évènement $B$ : "obtenir un nombre multiple de $3$".
+
+        <div class="table 2cols">
+            <div class="num">Est-ce une situation d'équiprobabilité ?</div> &
+            <div class="num">Déterminer $P(A)$</div> ||   
+            <div class="num">Décrire l'évènement $\overline{A}$.</div> &
+            <div class="num">Déterminer $P(\overline{A})$</div> ||
+            <div class="num">Décrire l'évènement $\overline{B}$.</div> &
+            <div class="num">Déterminer $P(\overline{B})$</div> ||
+            <div class="num">Déterminer $P(A \cup B)$ et $P(A \cap B)$. Vérifier la propriété.</div> &
+            <div class="num">Décrire les évènements $\overline{A} \cup B$ ,  $A \cup \overline{B}$ et $\overline{A} \cup \overline{B}$. Déterminer les probabilités correspondantes.</div> 
+            
+        </div>
+	</div>
+</div>	    
+
+<div class="newpage"></div>
+    
+<div class="box" data-title="Menus">
+<div class="styled">
+   <div class="table 2cols">
+    
+    Au restaurant scolaire, les élèves ont le choix : <br>
+       ,, entre 2 entrées :Artichaut ou Betterave; <br>
+       ,, entre 3 plats : Cheval, Daube ou Escalope; <br>
+       ,,  entre 2 desserts : Fromage ou Gâteau. <br>
+       
+     Un menu se compose : ,, d’une entrée ; ,, d’un plat ; ,, d’un dessert.  
+    &
+       <div class="num">En utilisant un arbre, représenter tous les menus.</div>
+        <div class="num"> Combien de menus différents sont possibles ?</div>
+        <div class="num"> On choisit un menu au hasard. Quelle est la probabilité :</div>
+       <div class="item" data-value="a) " style="margin-left: 50px"> qu’il comporte une escalope ?</div>
+       <div class="item" data-value="b) " style="margin-left: 50px"> qu’il comporte de l’artichaut et du fromage ?</div>
+       <div class="item" data-value="c) " style="margin-left: 50px"> qu’il ne comporte pas de cheval ?</div>
+    </div> 
+    
+</div>    
+    
+</div>   
+    
+    
+<div class="box" data-title="Rangement de CD">
+<div class="styled">
+   Trois CD notés $a$, $b$ et $c$ ont respectivement des boîtes nommées $A$, $B$ et $C$. On range les $3$ CD au hasard dans les boîtes sans voir leur étiquette.
+        <div class="num">Combien de rangements sont possibles ?</div>
+        <div class="num">Quelle est la probabilité :</div>
+       <div class="item" data-value="a) " style="margin-left: 50px"> que les $3$ CD soient bien rangés ?</div>
+       <div class="item" data-value="b) " style="margin-left: 50px"> qu’exactement $1$ CD soit bien rangé ?</div>
+       <div class="item" data-value="c) " style="margin-left: 50px"> qu’exactement $2$ CD soient bien rangés ?</div>
+     <div class="num">En déduire la probabilité qu’aucun CD ne soit bien rangé.</div>
+</div>    
+    
+</div>   
+    
+    
+<div class="box" data-title="Ordinateurs">
+<div class="styled">
+   Une entreprise fabrique des ordinateurs portables. Ils peuvent présenter deux défauts : ,, un défaut de clavier ou ,, un défaut d’écran. <br>
+Sur un grand nombre d’ordinateurs, une étude statistique montre que : ,, $2\%$ présentent un défaut d’écran; ,, $2,4\%$ présentent un défaut de clavier;
+,, $1,5\%$ présentent les deux défauts.
+        <div class="num">On choisit au hasard un ordinateur et on considère les événements suivants. <br>
+,, $E$ : « L’ordinateur présente un défaut d’écran »; <br>
+,, $C$ : « L’ordinateur présente un défaut de clavier ». Déterminer $P(E)$, $P(C)$ et $P(E \cap C)$.</div>
+        <div class="num">On considère les événements suivants. <br>
+,, « L’ordinateur présente au moins un défaut »; <br>
+,,  « L’ordinateur ne présente que le défaut d’écran  ». Traduire ces 2 événements à l’aide de $E$ et $C$. Calculer leur probabilité.</div>
+</div>    
+    
+</div>   
+    
+    
+<div class="box" data-title="Jetons dans une urne">
+<div class="styled">
+   Une urne contient 4 jetons :,, deux jaunes ; ,, un rose ; ,, un violet. <br>
+On tire au hasard un jeton de l’urne puis un second sans remettre le premier. <br>
+    On suppose que tous les tirages sont équiprobables.
+        <div class="num">Représenter cette situation par un arbre. Combien y-a-t-il de tirages possibles ?</div>
+    <div class="num">On considère les événements suivants : ,, $R$ : « Le premier jeton tiré est rose » et ,, $J$ : « Le deuxième jeton tiré est jaune »</div>
+    <div class="item" data-value="a) " style="margin-left: 50px"> Déterminer $P(R)$ et $P(J)$.</div>
+       <div class="item" data-value="b) " style="margin-left: 50px"> Traduire par une phrase $R \cap J$ puis calculer $P(R \cap J)$. Calculer $P(R \cup J)$.</div>
+    <div class="num">On considère l'événement : ,, $N$ : « Aucun jeton tiré n'est jaune »</div>
+    <div class="item" data-value="a) " style="margin-left: 50px"> Calculer $P(N)$. Exprimer par une phrase $\overline{N}$ puis calculer $P(\overline{N})$.</div>
+      
+</div>    
+    
+</div>       
+    
+   
+    
+    
+       
+</body>
+</html>

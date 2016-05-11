@@ -86,8 +86,271 @@ L'*{bold::intégrale de $f$ sur $[a;b]$} est l'aire de la partie du plan délimi
         
 
 <div class="newpage"></div>
+ 
+<!-- Aire entre deux courbes -->
+<div class="box" data-title="Aire entre deux courbes" data-num="$N_3$" data-date="1">  
+    <div class="titled hide" data-title="\boxP Aire entre deux courbes" data-color="#444444">
+        Soient $f$ et $g$ deux fonctions continues et positive sur l'intervalle $I = [a;b]$ ($a \leqslant b$) telles que pour tout $x \in I$, $f(x) \leqslant g(x)$ alors l'aire du domaine $\mathcal{D}$ délimité par les deux courbes représentatives $\mathcal{C}_f$ et $\mathcal{C}_g$ et les deux droites verticales d'équation $x=a$ et  $x=b$ vaut :
+        
+        <centering-box style="display: inline-block;background: #eeeeee">$\displaystyle \int_{a}^{b} \Big(g(x) - f(x)\Big)dx = \int_{a}^{b}g(x)dx - \int_{a}^{b}f(x)dx$</centering-box>
+
+    </div> 
+    <div class="styled">
+    On se place  dans un repère orthonormé d'unité $1\; cm$.
+ Soient deux fonctions $f_1$ et $f_2$ définies sur $\mathbb{R}$ par $f_1(x) = 2x + 4$ et $f_2(x) = e^x$.
+
+<div class="num">Dans un même repère, tracer les courbes représentatives $\mathcal{C}_{f_1}$ de $f_1$ et $\mathcal{C}_{f_2}$ de $f_2$</div>
+<div class="num">Démontrer que pour $x \in [0;2]$, $f_1(x)  > f_2(x) $.</div>
+<div class="num">Hachurer le domaine $\mathcal{D}$ du plan délimité par $\mathcal{C}_{f_1}$, $\mathcal{C}_{f_2}$ et les droites d'équation $x=0$ et $x=2$.</div>
+ <div class="num">Calculer l'aire $\mathcal{A}$ du domaine $\mathcal{D}$. Arrondir à $0,1$ près.</div>
+    </div>
+    
+</div>   
+    
+    
+<!-- Intégrale d'une fonction continue -->
+<div class="box" data-title="Intégrale d'une fonction continue" data-num="$N_4$" data-date="1">  
+    <div class="titled hide" data-title="\boxP Intégrale d'une fonction continue" data-color="#444444">
+        Soient $I$ un intervalle de $\mathbb{R}$ et $a$ et $b$ deux réels tels que $a \in I$ et $b \in I$. Soient $f$ une fonction continue sur $I$ et dont une primitive sur $I$ est la fonction $F$.
+
+L'*{bold::intégrale} de la fonction continue  $f$ entre $a$ et $b$ vaut  : 
+
+
+        
+        <centering-box style="display: inline-block;background: #eeeeee">$\displaystyle  \int_{a}^{b} f(x)dx = F(b) - F(a) = \Big[ F(x)\Big]^b_a $</centering-box>
+
+    </div> 
+    <div class="styled">
+   Calculer $\displaystyle  \int_{a}^{b} f(x)dx$ : 
+<div class="table 2cols">
+<div class="num"> avec $\displaystyle f(x) = 3x^2 - 3x +1$, $\displaystyle a = 3$ et $\displaystyle b = 5$</div> &
+<div class="num">avec $\displaystyle f(x) = e^x + \frac{1}{x}$, $\displaystyle a = \frac{1}{2}$ et $\displaystyle b = 1$</div> ||
+<div class="num"> avec $\displaystyle f(x) = \sin{x}$, $\displaystyle a = 0$ et $\displaystyle \frac{\pi}{2}$.</div> &
+ <div class="num">avec $\displaystyle f(x) = -5x + 10$, $\displaystyle a = -3$ et $\displaystyle \frac{3}{2}$</div>
+    </div>
+    </div>
+    
+</div> 
     
 
+    
+<!-- Linéarité -->
+<div class="box" data-title="Linéarité" data-num="$N_5$" data-date="1">  
+    <div class="titled hide" data-title="\boxP Linéarité" data-color="#444444">
+        Soient  $f$ et $g$  deux fonctions continues  sur l'intervalle $I$ de $\mathbb{R}$ et $a$, et $b$ deux  réels appartenant à $I$  et $\alpha$ et $\beta$ deux réels alors :
+
+        
+        <centering-box style="display: inline-block;background: #eeeeee">$\displaystyle \int_{a}^{b} \Big(\alpha f(x) + \beta g(x)\Big)dx  =  \alpha \int_{a}^{b} f(x)dx +  \beta \int_{a}^{b} g(x)dx $</centering-box>
+
+    </div> 
+    <div class="styled">
+  Calculer $\displaystyle  \int_{a}^{b} f(x)dx$ en utilisant la propriété précédente (arrondir à $0,01$ près le cas échéant) : 
+<div class="table 2cols">
+<div class="num">  avec $\displaystyle f(x) = 7x + 6x^2$, $\displaystyle a = 0$ et $\displaystyle b = 2$</div> &
+<div class="num">avec $\displaystyle f(x) = -2e^x + 3x$, $\displaystyle a = \frac{1}{2}$ et $\displaystyle b = 1$</div> ||
+<div class="num">  avec $\displaystyle f(x) = 9\sin{x} - 3\cos{x}$, $\displaystyle a = 0$ et $\displaystyle \frac{\pi}{2}$</div> &
+ <div class="num">avec $\displaystyle f(x) = \frac{3}{x} + 7x^4$, $\displaystyle a = -3$ et $\displaystyle \frac{3}{2}$</div>
+    </div>
+    </div>
+    
+</div>   
+    
+<div class="newpage"></div>    
+    
+<!-- Positivité -->
+<div class="box" data-title="Positivité" data-num="$N_6$" data-date="1">  
+    <div class="titled hide" data-title="\boxP Positivité" data-color="#444444">
+       Soient $a$ et $b$ deux réels tels que $a \leqslant b$ et $f$ une fonction continue et positive sur l'intervalle $[a;b]$ alors : <centering-box style="display: inline-block;background: #eeeeee">$\displaystyle \int_{a}^{b} f(x)dx \geqslant 0 $</centering-box>
+
+
+    </div> 
+    <div class="styled">
+   Démontrer que $\displaystyle  \int_{-1}^{5} (2x^2 + 3) dx$  et que $\displaystyle  \int_{-3}^{-1} 8\e^{-2x-5}dx$ sont positives.
+    </div>
+    
+</div>     
+    
+<!-- Relation de Chasles -->
+<div class="box" data-title="Relation de Chasles" data-num="$N_7$" data-date="1">  
+    <div class="titled hide" data-title="\boxP Relation de Chasles" data-color="#444444">
+       Soient  $f$ une fonction continue  sur l'intervalle $I$ de $\mathbb{R}$ et $a$, $b$ et $c$ trois réels appartenant à $I$ alors : <centering-box style="display: inline-block;background: #eeeeee">$\displaystyle \int_{a}^{b} f(x)dx +   \int_{b}^{c} f(x)dx =  \int_{a}^{c} f(x)dx $</centering-box>
+
+
+    </div> 
+    <div class="styled">
+        On a représenté la courbe représentative $\mathcal{C}_f$ de la fonction $f$ sur l'intervalle $[0;10]$ : 
+   <div class="table">
+       
+        <draw width='9cm' height='6cm' style="border: 1px solid #444444;background: #ffffff;border-radius: 5px;margin: auto;margin-bottom: 20px">
+		mark({Ox : '1cm', Oy : '5cm',dx: 1,cmx : 2,cmy: 1})
+      	grid(3)
+        width(3)
+        curve('1.5x',0,2,0.01)
+        curve('0.25*x+2.5',2,8,0.01)
+        curve('-4.5/2(x-10)',8,10,0.01)
+	</draw> 
+       &
+       <div class="num"> Par le calcul, déterminer $\displaystyle \int_{0}^{10} f(x)dx$</div>
+       <div class="num"> En utilisant l'aire de trapèzes rectangles, déterminer l'aire du domaine du plan délimité par $\mathcal{C}_f$, l'axe des abscisses et les droites d'équation $x=0$ et $x=10$</div>
+    </div>
+    </div>
+    
+</div>
+    
+    
+<!-- Opposé -->
+<div class="box" data-title="Opposé" data-num="$N_8$" data-date="1">  
+    <div class="titled hide" data-title="\boxP Opposé" data-color="#444444">
+       Soient  $f$ une fonction continue  sur l'intervalle $I$ de $\mathbb{R}$ et $a$, et $b$  deux  réels appartenant à $I$ alors /  <centering-box style="display: inline-block;background: #eeeeee">$\displaystyle \int_{a}^{b} f(x)dx  =  -\int_{b}^{a} f(x)dx $</centering-box>
+
+
+    </div> 
+    <div class="styled">
+        On a représenté la courbe représentative $\mathcal{C}_f$ de la fonction $f$ sur l'intervalle $[-3,5;4,5]$ : 
+   <div class="table">
+       
+        <draw width='9cm' height='6cm' style="border: 1px solid #444444;background: #ffffff;border-radius: 5px;margin: auto;margin-bottom: 20px">
+		mark({Ox : '4cm', Oy : '3cm',dx: 1,cmx : 1,cmy: 1})
+      	grid(3)
+        width(3)
+        curve('-1/3x - 2/3',-10,10,0.01)
+	</draw> 
+       &
+       Par le calcul, déterminer l'aire du domaine du plan délimité par l'axe des abscisses, $\mathcal{C}_f$ et les droites d'équation $x=0,5$ et $x=3,5$
+    </div>
+    </div>
+    
+</div>    
+
+<div class="newpage"></div>   
+    
+<!-- Valeur moyenne -->
+<div class="box" data-title="Valeur moyenne" data-num="$N_9$" data-date="1">  
+    <div class="titled hide" data-title="\boxP Valeur moyenne" data-color="#444444">
+       Soient $a$, et $b$ deux  réels  tels que $a &lt; b$ et $f$ une fonction continue  sur l'intervalle $[a;b]$.
+
+On appelle *{bold::valeur moyenne} de la fonction $f$ sur $[a;b]$ le réel :  $\displaystyle \frac{1}{b-a}\int_{a}^{b} f(x)dx$
+
+
+    </div> 
+           <div class="titled hide" data-title="\boxP Valeur moyenne d'une fonction périodique" data-color="#444444">
+       Soit $f$ une fonction continue et périodique de période $T &gt; 0$ ($2\pi$ pour les fonctions trigonométriques comme $\cos$ ; $\sin$ ) alors la valeur moyenne  de $f$ vaut (pour tout réel $a$ ) : 
+ $\displaystyle \frac{1}{T}\int_{a}^{a+T} f(x)dx$
+    </div> 
+           
+    <div class="styled">
+       <div class="num">Calculer la valeur moyenne de la fonction $\displaystyle f(x) = 3 - 6x$ sur $[2;4]$</div>
+        <div class="num">Calculer la valeur moyenne de la fonction $\displaystyle f(x) = \dfrac{3}{x}$ sur $[1;e]$</div>
+        <div class="num">Calculer la valeur moyenne de la fonction $\displaystyle f(x) = 5\e^{4x-5}$ sur $[-1;2]$</div>  
+           <div class="num">Calculer la valeur moyenne de la fonction $\displaystyle f(x) = 2\cos(3x)$</div> 
+        <div class="num">Calculer la valeur moyenne de la fonction $\displaystyle f(x) = -\sin(5x)$</div>    
+    </div>
+    
+</div> 
+           
+<div class="box" data-title="Fonction $f$">
+    <div class="styled">
+    Soit $f$ la fonction définie sur $\mathbb{R}$ par : $f(x) = xe^x$. On note $\mathcal{C}_f$ la courbe représentative de $f$. On pose : $\displaystyle I = \int_0^1 f(x)dx $
+<div class="num"> Etudier le signe de $f$ sur $\mathbb{R}$.</div>
+<div class="num">Déterminer les réels $a$ et $b$ tels que la fonction $F$ définie sur $\mathbb{R}$ par : $F(x) = (ax+b)e^x$  soit une primitive de $f$.</div> 
+<div class="num">Vérifier que $I=1$. Interpréter graphiquement l'intégrale $I$. </div>
+ <div class="num"> Soit $k$ un réel tel que $k \leqslant 0$. On note $\mathcal{D}(k)$ l'ensemble des points $M$ du plan compris entre l'axe des abscisses et  $\mathcal{C}_f$ et dont l'abscisse $x$ appartient à $[0;k]$.
+ 
+ Exprimer l'aire $\mathcal{A}(k)$ du domaine  $\mathcal{D}(k)$, en unités d'aire du repère. </div>
+ <div class="num"> Exprimer $\mathcal{A}(k)$ en fonction de $k$. </div>
+     <div class="num"> Calculer la limite de $\mathcal{A}(k)$ quand $k$ tend vers $+\infty$. </div>
+    </div>   
+</div> 
+    
+<div class="box" data-title="Fonction $\phi$">
+    <div class="styled">
+   Soit $\phi$ la fonction définie sur $\mathbb{R}$ par : $\phi(t) = t\sin{(\pi t)}$. On note $\mathcal{C}_\phi$ la courbe représentative de $\phi$.
+<div class="num">Etudier le signe de $\phi$ sur $[0;3]$.</div>
+<div class="num"> Déterminer le réel $\lambda$ tel que la fonction $\Phi$ définie sur $\mathbb{R}$ par : $\Phi(t) = \lambda(\sin{(\pi t)} - \pi t \cos{(\pi t)})$  soit une primitive de $\phi$ sur $\mathbb{R}$. </div>
+ <div class="num"> Calculer l'aire du domaine du plan délimité par $\mathcal{C}_\phi$, l'axe des abscisses et les droites d'équations $x=0$ et $x=3$.</div>
+    </div>   
+</div>    
+
+<div class="box" data-title="Fonction $h$">
+    <div class="styled">
+   
+    Soit $h$ la fonction définie sur $[0;11]$ par : 
+
+$\left\{\begin{array}{lcl}
+
+h(x) = x^2+1  & pour  & x \in [0;2] \\
+h(x) =  6-0,5x& pour  & x \in [2;8] \\
+h(x) = 2& pour  & x \in [8;11] \\
+\end{array}
+\right.
+$
+<br>
+On note $\mathcal{C}_h$ la courbe représentative de $h$ dans le repère $(O;\vecteur{i},\vecteur{j})$.
+Calculer l'aire du domaine du plan délimité par $\mathcal{C}_h$, l'axe des abscisses et les droites d'équations $x=0$ et $x=11$.
+
+
+    </div>   
+</div>        
   
+<div class="newpage"></div> 
+    
+ <div class="box" data-title="Intégrale et probabilité">
+    <div class="styled">
+   On considère la fonction $f$ définie sur $[1;+\infty[$ par : $\displaystyle f(x) = \frac{\alpha}{x^{\alpha+1}}$ où $\alpha$ est un réel tel que $\alpha > 0$.
+<br>
+La variable aléatoire $X$ suit la loi de Pareto de paramètre $\alpha$ lorsque pour $a$ et $b$ deux réels tels que $1 \leqslant a \leqslant b$, la probabilité de l'événement "$X$ appartient à $[a;b]$" vaut : $\displaystyle P(a \leqslant X \leqslant b) =P(X \in [a;b])  =  \int_a^b f(x) dx$
+<br>
+On définit par l'espérance mathématique, notée $E(X)$, par : $\displaystyle E(X) = \underset{t \rightarrow +\infty}{\lim} \int_1^t xf(x)dx$
+<br>
+La fonction de répartition de la variable aléatoire $X$, notée $F$, et définie sur $[1;+\infty[$ et par : 
+$\displaystyle F(x) =P(1 \leqslant X \leqslant x) = \int_1^x f(t) dt$
+
+
+<div class="num">Démontrer que $\displaystyle g(x) = -\frac{1}{x^\alpha}$ est une primitive de $f$ sur $[1;+\infty[$</div>
+<div class="num"> Soit $t$ un réel tel que $t \geqslant 1$. Calculer $\displaystyle \int_1^t f(x)dx$.</div>
+ <div class="num"> Calculer $\displaystyle\underset{t \rightarrow +\infty}{\lim} \int_1^t f(x)dx$. En déduire que la fonction $f$ est bien une densité de probabilité.</div> 
+<div class="num"> Calculer $P(a \leqslant X \leqslant b)$ et  $P(X = a)$.</div>
+        <div class="num">  On suppose que  $P(1 \leqslant X \leqslant 5) = 0,5$, calculer alors $\alpha$ puis donner l'arrondi au centième.</div>
+        
+<div class="num">  On suppose que $\alpha  = 0,5$ :</div>
+<div class="item" style="margin-left: 50px" data-value="a) ">Donner l'expression de la fonction de répartition $F(x)$ en fonction de $x$.</div> 
+<div class="item" style="margin-left: 50px" data-value="b) ">Calculer $P(1 \leqslant X \leqslant 3)$. En déduire $P(X > 3)$ à $10^{-3}$ près. Calculer $E(X)$.</div>  
+        
+        
+<div class="num">  On suppose que $\alpha  = 1,5$ :</div>
+<div class="item" style="margin-left: 50px" data-value="a) ">Donner l'expression de la fonction de répartition $F(x)$ en fonction de $x$.</div> 
+<div class="item" style="margin-left: 50px" data-value="b) "> Calculer $P(X > 4)$ à $10^{-3}$ près. Calculer $E(X)$.</div>          
+</div>       
+</div>  
+    
+<div class="box" data-title="Fonctions $f_1$ et $f_2$">
+    <div class="styled">
+  Soient $f_1$ et $f_2$ deux fonctions définies sur $\mathbb{R}$ par : $f_1(x) = -x^2+4$ et $f_2(x) = x+2$
+
+On note $\mathcal{C}_{f_1}$ et $\mathcal{C}_{f_2}$  les courbes représentatives de $f_1$ et $f_2$ dans le repère $(O;\vecteur{i},\vecteur{j})$.
+<div class="num">Déterminer les points d'intersections d'abscisses $\alpha_1$ et $\alpha_2$ de  $\mathcal{C}_{f_1}$ et $\mathcal{C}_{f_2}$ ($\alpha_1 &lt; \alpha_2$)</div>
+<div class="num"> Calculer l'aire du domaine du plan délimité par $\mathcal{C}_{f_1}$, $\mathcal{C}_{f_2}$ et les droites d'équations $x=\alpha_1$ et $x=\alpha_2$.</div>
+    </div>   
+</div>    
+    
+<div class="box" data-title="Fonction $g$">
+    <div class="styled">
+  Soit $g$ la fonction définie sur $]0;+\infty[$ par : $g(x) = \ln{x}$. 
+<br>
+On note $\mathcal{C}_g$ la courbe représentative de $g$ dans le repère $(O;\vecteur{i},\vecteur{j})$.
+<div class="num">Etudier le signe de $g$ sur $]0;+\infty[$.</div>
+<div class="num"> Déterminer le réel $k$ tel que la fonction $G$ définie sur $]0;+\infty[$  par : $G(x) = x(k+\ln{x})$  soit une primitive de $g$ sur $]0;+\infty[$ . </div>
+<div class="num"> Calculer l'aire du domaine du plan délimité par $\mathcal{C}_g$, l'axe des abscisses et les droites d'équations $x=1$ et $x=4$.</div>        
+    </div>   
+</div>      
+    
+<div class="box" data-title="Valeurs moyennes">
+    <div class="styled">
+<div class="num">Déterminer la valeur moyenne de $f(x) = 5\e^{4-8x} + 3x^3$ sur $[-2;3]$</div>
+<div class="num" data-valign-num="middle"> Déterminer la valeur moyenne de $g(x) = \dfrac{-2}{x} + \dfrac{4}{x^2}$ sur $[2e;3e]$ </div>
+   
+    </div>   
+</div>          
+    
 </body>
 </html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Nombres complexes" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="TS - Nombres complexes" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="1"
+data-left="$T_S$-$G_1$"
+data-main-width="900">
+
+<!-- Fonction dérivée -->
+<div class="box" data-title="Fonction dérivée" data-num="$N_1$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxD Nombre dérivée" data-color="#444444">
+       Soit $f$ une fonction définie sur un intervalle $I$ de $\mathbb{R}$ et $a \in I$. Le nombre dérivé en $a$ de $f$, noté $f'(a)$, est défini, quand il existe, par : $\displaystyle \frac{f(a+h) - f(a)}{h} \underset{h \rightarrow 0}{\longrightarrow} f'(a)$. $f'(a)$ est appelé le *{bold::nombre dérivée} de la fonctin $f$ en $a$.
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Fonction dérivée" data-color="#444444">
+        Si pour tout réel $a \in I$, $f'(a)$ existe, on dit que $f$ est *{bold::dérivable} sur $I$. $I$ est le domaine de dérivabilité qu'on peut note $D_{f'}$.
+
+La *{bold::fonction dérivée}, notée $f'$, est définie sur $D_{f'}$ par : $\displaystyle f' : x \mapsto f'(x)$
+
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Dérivabilité et continuité" data-color="#444444">
+       Si $f$ est dérivable sur un intervalle $I$ de $\R$ alors $f$ est *{bold::continue} sur $I$. Attention la réciproque est fausse.
+
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Dérivées usuelles" data-color="#444444">
+        $m$ et $p$ sont deux réels et $n$ entier naturel.
+        <div class="table" data-table-class="grey-alternate-header" data-table-style="border-collapse: collapse" cells="*,*|h30;w150;c;bo1#444444">
+        $f(x)$ & $\mathcal{D}_f$ & $f'(x)$ & $\mathcal{D}_{f'}$ ||
+        $f(x) = mx+p$  & $\R$ & $f'(x) = m$ & $\R$ ||  
+            $f(x) = x^2$  & $\R$ & $f'(x) = 2x$ & $\R$  ||  
+            $f(x) = x^n$  & $\R$ & $f'(x) = nx^{n-1}$ & $\R$  ||
+            $f(x) = \dfrac{1}{x}$  & $\R^*$ & $f'(x) = -\dfrac{1}{x^2}$ & $\R^*$  
+            ||
+            $f(x) = \sqrt{x}$  & $[0;+\infty[$ & $f'(x) = \dfrac{1}{2\sqrt{x}}$ & $]0;+\infty[$ 
+            ||
+            $f(x) = \cos{(x)}$  & $\R$ & $f'(x) = -\sin{(x)}$ & $\R$ 
+            ||
+            $f(x) = \sin{(x)}$  & $\R$ & $f'(x) = \cos{(x)}$ & $\R$ 
+        </div>
+	</div>
+   
+    <div class="titled hide" data-title="\boxP Dérivée de la fonction $f(ax+b)$" data-color="#444444">
+        Soit $f$ une fonction dérivable sur un intervalle $I$ de $\R$. Soit $a$ et $b$ deux réels et $g$ une fonction définie par $g(x) = f(ax+b)$. La fonction $g$ est alors dérivable sur $I$ et $g'(x) = [f(ax+b)]' = a\times f'(ax+b)$
+    </div>    
+	
+   
+	<div class="styled">
+        Déterminer les dérivées des fonctions suivantes : 
+        <div class="table 2cols">
+        <div class="num">$\displaystyle \underset{x \rightarrow 0}{\lim} \;f_1(x)$ avec $f_1(x) = 5x+9$</div> &
+            <div class="num">$\displaystyle \underset{x \rightarrow -6}{\lim} \;f_2(x)$ avec $f_2(x) = 8x^2$</div>
+        </div>
+    </div>
+	
+</div>	
+    
+    
+<!-- Dérivée d'une somme-->
+<div class="box" data-title="Dérivée d'une somme" data-num="$N_2$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Dérivée d'une somme" data-color="#444444">
+        Soient $u$ et $v$ deux fonctions définies et dérivables sur un intervalle $I$ alors la fonction $(u+v)(x) = u(x) + v(x)$ est dérivable sur $I$ et : $\displaystyle (u+v)' (x)= u'(x) + v'(x)$}
+	</div>
+        
+        <div class="styled">
+        Déterminer la dérivée des fonctions suivantes :
+        <div class="table 2cols">
+        <div class="num">$\displaystyle \underset{x \rightarrow 0^{+}}{\lim} \;f_1(x) $ avec $\displaystyle f_1(x) = \frac{1}{x}$</div> &
+            <div class="num"> $\displaystyle \underset{x \rightarrow 2^{-}}{\lim} \;f_2(x) $ avec $\displaystyle f_2(x) = \frac{7}{2-x}$</div> ||
+            <div class="num">$\displaystyle \underset{x \rightarrow 4^{+}}{\lim} \;f_3(x) $ avec $\displaystyle f_3(x) = \frac{x}{2x^2 - 32}$</div> &
+            <div class="num"> $\displaystyle \underset{x \rightarrow 3^{-}}{\lim} \;f_4(x) $ avec $\displaystyle f_4(x) = \frac{1}{x} + \frac{2}{6- 2x}$
+</div>
+        </div>
+    </div>
+</div>    
+        
+
+<div class="newpage"></div>
+    
+
+  
+</body>
+</html>

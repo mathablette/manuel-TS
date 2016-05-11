@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Echantillonnage" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="TS - Echantillonnage" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="55"
+data-left="$T_S$-$SP_3$"
+data-main-width="900">
+
+<!-- Intervalle de fluctuation -->
+<div class="box" data-title="Intervalle de fluctuation" data-num="$N_1$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxD Echantillon" data-color="#666666">
+        Soit une *{bold::population} (ce n'est pas forcément des êtres humains) de $N \in \mathbb{N}$ individus. On choisit avec remise $n$ individus, on obtient un *{bold::échantillon} de taille $n$. On note $p$ la proportion du caractère étudié dans la population et on note $f$ cette proportion dans l'échantillon. 
+        
+        
+         <div class="draw" width='700' height='320' style="margin: auto;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
+		oval(350,160,300,120)
+        text('population',430,120,{css: 'tdu;textsc;bold;fs16'})
+        text('Taille : $N$',440,160) 
+        text('Proportion du caractère : $p$',370,180)       
+        color('#ff0000')
+        oval(220,160,140,90)
+        text('échantillon',165,90,{css: 'tdu;textsc;bold;fs16'}) 
+        text('Taille : $\\color{#ff0000}{n}$',180,130) 
+        text('Proportion du caractère : $\\color{#ff0000}{f}$',110,150)      
+	</div>
+        
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Intervalle de fluctuation" data-color="#666666">
+        Quand on choisit un échantillon de taille $n$ (tel que $n \geqslant 25$) dans une population qui contient une proportion $p$ (telle que $p\in [0,2;0,8]$) du caractère étudié alors la proportion $f$ du caractère dans l'échantillon est telle que :  vspace{10}
+
+<centering-box style="display: inline-block">$ f \in \Bigg[\;  p -  \dfrac{1}{\sqrt{n}}  ;  p +  \dfrac{1}{\sqrt{n}}  \; \Bigg] $</centering-box>
+
+        vspace{5}
+avec une probabilité de $95\%$.
+
+vspace{}
+Cet intervalle est appelé  *{bold::intervalle de fluctuation asymptotique à $95\%$} qui a pour amplitude $\dfrac{2}{\sqrt{n}}$.
+	</div>
+    
+   
+   
+	
+   
+	<div class="styled">
+           <div class="num">On prélève un échantillon de taille $100$ dans une population qui contient $23\%$ d'éléments du type $A$. Donner l'intervalle de fluctuation asymptotique à $95\%$ de la proportion $f$ d'éléments du type $A$  dans l'échantillon.</div>
+        <div class="num">Dans l'article du site Wikipédia consacré au sex-ratio (c'est à dire au rapport du nombre d'hommes sur le nombre de femmes), on trouve l'affirmation suivante : "en France, il y a environ $105$ garçons pour $100$ filles à la naissance". Dans une clinique il y a environ $1\;500$ naissances par an.</div>
+        <div class="item" data-value="a)" style="margin-left: 50px">Quel est l'intervalle de fluctuation asymptotique à $95\%$ de la proportion $f$  de garçons dans cette clinique ?</div>
+        <div class="item" data-value="b)" style="margin-left: 50px">Quel est l'intervalle de fluctuation  asymptotique à $95\%$ de la proportion $f$  de filles dans cette clinique ?</div>
+        
+        <div class="num">Lors du deuxième tour de l'élection présidentielle, il ne reste plus que deux candidats, nommés $A$ et $B$. Un sondage est effectué la veille du second tour. Le candidat $A$ est crédité de $48\%$ des intentions de vote.</div>
+        <div class="item" data-value="a)" style="margin-left: 50px">Si on choisit un échantillon de taille $n=1\;000$ au hasard dans la population française, quel est l'intervalle de fluctuation asymptotique à $95\%$ de la proportion $f$  de personnes favorables au candidat $A$ ?</div>
+        <div class="item" data-value="b)" style="margin-left: 50px"> Si $f= 48\%$ et si on veut que la limite supérieure de l'intervalle de fluctuation à $95\%$ soit $50\%$, quelle valeur de la taille de l'échantillon $n$ doit-on choisir ?</div>
+	</div>
+</div>	
+
+<div class="newpage"></div>    
+    
+ <!-- Prise de décision -->
+<div class="box" data-title="Prise de décision" data-num="$N_2$" data-date="1" data-newpage="none">
+    <div class="titled hide" data-title="\boxM Méthode" data-color="#666666">
+        On prélève un échantillon de taille $n$ tel que $n \geqslant 25$.
+La proportion $p$ (telle que $p\in [0,2;0,8]$) dans la population est connue et la proportion $f$ dans cet échantillon  est connue.
+
+vspace{}
+<centering-box style="display: inline-block">L'échantillon provient-il de la population ? *{bold::On fait l'hypothèse que oui.}</centering-box>
+
+vspace{10}
+ <centering-box style="display: inline-block">Si : $ f \not\in \Bigg[\;  p -  \dfrac{1}{\sqrt{n}}  ;  p +  \dfrac{1}{\sqrt{n}}  \; \Bigg] $</centering-box>
+ vspace{10}
+Il y a $95\%$ de chance que l'hypothèse précédente soit fausse : on rejette l'hypothèse au seuil de $95\%$ ou avec un risque de $5\%$ (sinon on ne la rejette pas).
+
+	</div>
+    
+    <div class="styled">
+       Une chaîne de production de tablettes numériques est contrôlée régulièrement. Ces contrôles ont fait apparaître que $20\%$ des tablettes présentent un léger défaut au niveau de la finition de l'écran qui nécessite un travail supplémentaire.
+
+        vspace{10}
+On décide de changer les méthodes de travail des équipes de cette chaîne de production. Quelques temps après cette modification, on prélève un échantillon de $300$ tablettes, et on compte $50$ tablettes ayant un défaut de finition de l'écran. Peut-on conclure que la réorganisation du travail a été efficace ? 
+    </div>    
+</div>    
+
+    
+    <!-- Intervalle de confiance -->
+<div class="box" data-title="Intervalle de confiance" data-num="$N_3$" data-date="1">
+    
+    
+    
+    <div class="titled hide" data-title="\boxP Intervalle de confiance" data-color="#666666">
+        Quand  un échantillon de taille $n$ (tel que $n \geqslant 25$)  contient une proportion $f$ (telle que $f\in [0,2;0,8]$) du caractère étudié alors la proportion $p$ du caractère dans la population est telle que :  vspace{10}
+
+<centering-box style="display: inline-block">$ p \in \Bigg[\;  f -  \dfrac{1}{\sqrt{n}}  ;  f +  \dfrac{1}{\sqrt{n}}  \; \Bigg] $</centering-box>
+
+        vspace{}
+avec une probabilité de $95\%$.
+
+vspace{}
+Cet intervalle est appelé  *{bold::intervalle de confiance à $95\%$} qui a pour amplitude $\dfrac{2}{\sqrt{n}}$.
+	</div>
+    
+   
+   
+	
+   
+	<div class="styled">
+           En Italie, un sondage est effectué sur la politique budgétaire du pays. La question posée est : "pensez-vous que la rigueur actuelle soit suffisante pour régler le problème du déficit de l'Etat ". 
+
+vspace{5}
+Sur les $1\;000$ personnes interrogées, $30\%$ ont répondu non. Donner l'intervalle de confiance à $95\%$ du pourcentage d'Italiens qui répondraient non. 
+	</div>
+</div>
+   
+<!-- Dé pipé -->    
+<div class="box" data-title="Dé pipé">
+<div class="styled">
+Un dé semble sortir un nombre anormalement élevé de "6". Il est lancé $150$ fois, on relève que la face portant le "6" est sortie $40$ fois.
+
+Tester l'hypothèse suivante : ce dé n'est pas pipé.    
+</div>    
+</div> 
+    
+ 
+    <!-- Urne -->
+<div class="box" data-title="Urne">
+<div class="styled">
+Une urne contient $40\%$ de boules noires et le reste de boules rouges. Elle contient un très grand nombre de boules. On présente trois échantillons de boules noires et rouges mais on ignore si ces échantillons proviennent effectivement de l'urne.
+
+vspace{5}
+
+$\bullet$ L'échantillon $A$ contient $30$ boules dont $12$ noires.
+
+vspace{5}
+
+$\bullet$ L'échantillon $B$ contient $81$ boules dont $40$ noires.
+
+vspace{5}
+
+$\bullet$ L'échantillon $C$ contient $260$ boules dont $80$ noires.
+
+vspace{5}
+
+Pour chacun des échantillons, examiner l'hypothèse suivante : cet échantillon a été prélevé dans l'urne. 
+</div>    
+</div>      
+    
+<div class="newpage"></div>    
+     <!-- Comparaison de $2$ échantillons -->
+<div class="box" data-title="Comparaison de $2$ échantillons" data-num="$N_4$" data-date="1" data-newpage="none">
+    
+    
+    
+    <div class="titled hide" data-title="\boxM Méthode" data-color="#666666">
+        Soient deux échantillons de proportions respectives $f_1$ et $f_2$ d'un caractère. On détermine les deux intervalles de confiance de ces deux échantillons. On fait l'hypothèse qu'ils proviennent d'une *{tdu::même} population.  vspace{10}
+
+<centering-box style="display: inline-block">*{bold::Si les deux intervalles à $95\%$ sont disjoints (aucun nombre en commun) alors on rejette l'hypothèse, sinon on ne la rejette pas.}</centering-box>
+
+	</div>
+    
+   
+   
+	
+   
+	<div class="styled">
+           Le premier janvier $2012$ a été décidé une augmentation sur les prix du tabac. Pour étudier l'impact de cette augmentation sur la consommation de cigarettes, un institut de sondage a demandé à deux cents personnes choisies au hasard dans la population française s'ils ont fumés des cigarettes durant la dernière semaine.
+
+vspace{10}
+
+Pour la semaine qui a précédé l'augmentation du prix du tabac, le pourcentage de personnes ayant répondu favorablement est de $35\%$.
+
+vspace{10}
+
+Pour la semaine qui a suivi l'augmentation du prix du tabac, le pourcentage de personnes ayant répondu favorablement est de $32\%$.
+
+vspace{10}
+Peut-on conclure qu'il y a une baisse significative de la consommation de cigarettes ?
+	</div>
+</div>	
+    
+<!-- Mouches drosophiles -->    
+<div class="box" data-title="Mouches drosophiles">
+<div class="styled">
+On élève des mouches drosophiles dans un aquarium. Dans cette grande population de drosophiles de plusieurs milliers d'insectes, il y a $25\%$ de mouches qui ont les yeux rouges. On prélève un échantillon d'une centaine de mouches et on appelle $f$ la proportion de mouches qui ont les yeux rouges.
+
+Donner l'intervalle de fluctuation à $95\%$ de la proportion $f$.   
+</div>    
+</div>
+    
+<!-- Précaution -->    
+<div class="box" data-title="Précaution">
+<div class="styled">
+Lors du second tour de l'élection présidentielle, on considère que l'on peut annoncer la victoire d'un candidat si l'intervalle de confiance à $95\%$ ne "mord" pas la barre des $50\%$.
+
+<div class="num">Dans un échantillon de $100$ personnes, un candidat est crédité de $53\%$ des voix. Peut-on annoncer sa victoire ?</div> 
+<div class="num">Dans un échantillon de $2\;000$ personnes, un candidat est crédité de $53\%$ des voix. Peut-on annoncer sa victoire ?</div>     
+    
+</div>    
+</div>  
+    
+<!-- Lecteur MP3 -->    
+<div class="box" data-title="Lecteur MP3">
+<div class="styled">
+Une unité de production réalisant des lectures MP3 a modifié récemment ses méthodes.
+
+Avant la modification, sur u échantillon de $130$ lecteurs MP3, on a constaté que $42$ lecteurs MP3 avaient un défaut. Après la modification, sur un échantillon de $90$ lecteurs MP3, on constate que $25$ lecteurs MP3 ont un défaut.
+
+vspace{10}
+Peut-on dire que la modification des méthodes de production a eu un impact significatif sur la qualité de la production ?
+</div>    
+</div> 
+    
+<!-- Surpoids -->    
+<div class="box" data-title="Surpoids">
+<div class="styled">
+Une nouvelle pilule est testée qui serait censée aider les personnes qui souffrent de surpoids à maigrir. Cette pilule est administrée à une centaine de personnes en surpoids et, après un traitement d'un mois, on constate que $30\%$ des personnes ont effectivement perdu du poids (on considère que la perte de poids est significative à partir de $2$ kilos). Par ailleurs, un placebo est administré à une centaine de personnes en surpoids et on constate que, dans cet échantillon, $28\%$ des personnes ont perdu du poids.
+
+
+vspace{10}
+Peut-on conclure que cette pilule est efficace au vu des résultats obtenus sur ces deux échantillons ?
+</div>    
+</div>     
+    
+<div class="newpage"></div>     
+<!-- Epidemie -->    
+<div class="box" data-title="Epidémie" data-newpage="none">
+<div class="styled">
+Le département de la Réunion a fait face à une épidémie. Pour évaluer le budget nécessaire qui permettra d'affronter efficacement cette maladie, il faut connaître le nombre de patients qui seront atteints par cette maladie. L'épidémie est partie du Sud de la Réunion et on estime qu'elle est dans cette partie en phase de disparition. Dans   un village de $1\;800$ habitants, on a comptabilisé $430$ cas maintenant que l'épidémie est finie.
+
+
+<div class="num">Donner par intervalle de confiance à $95\%$ la proportion de réunionnais qui seront atteints.</div> 
+<div class="num">Sachant que sur l'île de la Réunion on compte environ $800\;000$ personnes, donner par intervalle de confiance à $95\%$ le nombre de réunionnais qui seront atteints par cette maladie.</div>
+<div class="num">Si le coût par personne de cette maladie est de $120$ €, quel est par l'intervalle de confiance à $95\%$, le budget qu'il faut prévoir pour affronter cette maladie ?</div>    
+    
+</div>    
+</div>     
+    
+<!-- Répression des fraudes -->    
+<div class="box" data-title="Répression des fraudes" data-newpage="none">
+<div class="styled">
+La répression des fraudes a enquêté au casino « Le Lion Vert ».
+Elle a estimé que la roulette française n’était pas équilibrée et que le casino avait fraudé avec une probabilité d’environ $95\%$.
+Ils ont, pour cela, effectué une analyse informatique des tirages de l’année précédente et remarqué que la couleur rouge était sortie avec une fréquence de $49\%$ sur un certain nombre de lancers au jeu de la mise sur chance simple Noir-Rouge.
+vspace{5}
+Quelle est la taille minimale de l’échantillon pour que la répression des fraudes puisse arriver à cet conclusion ? La veille, un client notant le déséquilibre en a profité pour l’utiliser. Quelle stratégie le client a-t-il utilisé ?   
+    
+</div>    
+</div>  
+    
+    
+<!-- Sur internet -->    
+<div class="box" data-title="Sur internet" data-newpage="none">
+<div class="styled">
+En décembre 2012, un sondage a été réalisé auprès de 1 003 personnes résidant en France, âgées de 18 ans et plus. L’échantillon a été constitué d’après la méthode des quotas (sexe, âge, catégorie socioprofessionnelle du répondant) par région et taille d’agglomération.
+$772$ personnes interrogées ont déclaré avoir déjà été confrontées à une arnaque ou une tentative d’arnaque sur Internet.
+Dans le même temps, $211$ personnes interrogées déclarent avoir déjà été piégées sur Internet par un mail ou un site Internet leur demandant leurs coordonnées personnelles.
+vspace{5}
+Estimer le pourcentage de personnes en France confrontées à une arnaque sur Internet puis le pourcentage de personnes en France ayant déjà été piégées sur internet.  
+    
+</div>    
+</div>      
+    
+<!-- Acteur préféré -->    
+<div class="box" data-title="Acteur préféré" data-newpage="none">
+<div class="styled">
+Un institut de sondage interroge un groupe de filles sur leur acteur préféré.
+
+<div class="num">Sur un premier échantillon de 800 filles, 38 % ont répondu : Léonard Ducapre.
+Déterminer l’intervalle de confiance de ce premier échantillon.</div> 
+<div class="num">Sur un deuxième échantillon de $650$ filles, $42\%$ ont, elles, répondu Brad Flip.
+Déterminer l’intervalle de confiance de ce deuxième échantillon.</div>    
+<div class="num">Ces deux intervalles sont-ils disjoints ? Peut-on en déduire que chez les filles Brad Flip a plus
+de succès que Léonard Ducapre ?</div>      
+</div>    
+</div>          
+    
+<!-- Photographe -->    
+<div class="box" data-title="Photographe" data-newpage="none">
+<div class="styled">
+Un photographe vend des appareils photographiques. Il veut estimer par un intervalle de confiance le pourcentage $p$ d’acheteurs d’appareils autofocus
+avec zoom dans sa clientèle
+
+<div class="num">Dans un échantillon de $100$ clients, $60$ achètent un tel
+appareil. Donner une estimation de $p$.</div> 
+<div class="num">On considère l’affirmation suivante :
+« la fréquence p est obligatoirement dans l’intervalle de confiance obtenu à la question précédente ». Est-elle vraie ?</div>    
+<div class="num">Déterminer la taille $n$, $n \geqslant 30$, d’un échantillon de clients pour qu’un intervalle de confiance de $p$, au seuil de $95\%$ soit $[0, 557; 0, 643]$.</div>      
+</div>    
+</div>              
+       
+</body>
+</html>
