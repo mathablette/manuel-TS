@@ -10,80 +10,298 @@ data-start-page="1"
 data-left="$T_S$-$G_1$"
 data-main-width="900">
 
-<!-- Fonction dérivée -->
-<div class="box" data-title="Fonction dérivée" data-num="$N_1$" data-date="1">
+<!-- Nombre complexe -->
+<div class="box" data-title="Nombre complexe" data-num="$N_1$" data-date="1">
     
-    <div class="titled hide" data-title="\boxD Nombre dérivée" data-color="#444444">
-       Soit $f$ une fonction définie sur un intervalle $I$ de $\mathbb{R}$ et $a \in I$. Le nombre dérivé en $a$ de $f$, noté $f'(a)$, est défini, quand il existe, par : $\displaystyle \frac{f(a+h) - f(a)}{h} \underset{h \rightarrow 0}{\longrightarrow} f'(a)$. $f'(a)$ est appelé le *{bold::nombre dérivée} de la fonctin $f$ en $a$.
+    
+    <div class="titled hide" data-title="\boxD Nombre complexe $z$" data-color="#444444">
+        Le nombre $i$ est  un nombre *{bold::imaginaire} qui vérifie : $\displaystyle i^2 = -1 $  <br>
+        Un *{bold::nombre complexe} $z$ est un nombre pouvant s'écrire : $\displaystyle z = a + i\times b =  a +ib$. 
+où $a$ et $b$ sont deux réels. Il s'agit de *{bold::l'écriture algébrique de $z$}. <br>
+        L'ensemble des nombres complexes est noté $\mathbb{C}$
 	</div>
     
-    <div class="titled hide" data-title="\boxD Fonction dérivée" data-color="#444444">
-        Si pour tout réel $a \in I$, $f'(a)$ existe, on dit que $f$ est *{bold::dérivable} sur $I$. $I$ est le domaine de dérivabilité qu'on peut note $D_{f'}$.
+    <div class="titled hide" data-title="\boxD Partie réelle et partie imaginaire de $z$" data-color="#444444">
+       Soit $z = a+ib$ un nombre complexe. <br>
+        ,, Le réel $a$ est appelé la *{bold::partie réelle} de $z$ et on note $Re(z) = a$ <br>
+        ,, Le réel $b$ est appelé la *{bold::partie imaginaire} de $z$ et on note $Im(z) = a$    
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Conjugué d'un nombre complexe" data-color="#444444">
+        Soit $z = a+ib$ un nombre complexe. Le nombre complexe *{bold::conjugué} de $z$, noté $\bar{z}$, est : $\displaystyle \bar{z} = a - i\times b =  a - ib$
 
-La *{bold::fonction dérivée}, notée $f'$, est définie sur $D_{f'}$ par : $\displaystyle f' : x \mapsto f'(x)$
-
 	</div>
     
-    <div class="titled hide" data-title="\boxP Dérivabilité et continuité" data-color="#444444">
-       Si $f$ est dérivable sur un intervalle $I$ de $\R$ alors $f$ est *{bold::continue} sur $I$. Attention la réciproque est fausse.
-
-	</div>
-    
-    <div class="titled hide" data-title="\boxP Dérivées usuelles" data-color="#444444">
-        $m$ et $p$ sont deux réels et $n$ entier naturel.
-        <div class="table" data-table-class="grey-alternate-header" data-table-style="border-collapse: collapse" cells="*,*|h30;w150;c;bo1#444444">
-        $f(x)$ & $\mathcal{D}_f$ & $f'(x)$ & $\mathcal{D}_{f'}$ ||
-        $f(x) = mx+p$  & $\R$ & $f'(x) = m$ & $\R$ ||  
-            $f(x) = x^2$  & $\R$ & $f'(x) = 2x$ & $\R$  ||  
-            $f(x) = x^n$  & $\R$ & $f'(x) = nx^{n-1}$ & $\R$  ||
-            $f(x) = \dfrac{1}{x}$  & $\R^*$ & $f'(x) = -\dfrac{1}{x^2}$ & $\R^*$  
-            ||
-            $f(x) = \sqrt{x}$  & $[0;+\infty[$ & $f'(x) = \dfrac{1}{2\sqrt{x}}$ & $]0;+\infty[$ 
-            ||
-            $f(x) = \cos{(x)}$  & $\R$ & $f'(x) = -\sin{(x)}$ & $\R$ 
-            ||
-            $f(x) = \sin{(x)}$  & $\R$ & $f'(x) = \cos{(x)}$ & $\R$ 
-        </div>
-	</div>
-   
-    <div class="titled hide" data-title="\boxP Dérivée de la fonction $f(ax+b)$" data-color="#444444">
-        Soit $f$ une fonction dérivable sur un intervalle $I$ de $\R$. Soit $a$ et $b$ deux réels et $g$ une fonction définie par $g(x) = f(ax+b)$. La fonction $g$ est alors dérivable sur $I$ et $g'(x) = [f(ax+b)]' = a\times f'(ax+b)$
-    </div>    
-	
    
 	<div class="styled">
-        Déterminer les dérivées des fonctions suivantes : 
-        <div class="table 2cols">
-        <div class="num">$\displaystyle \underset{x \rightarrow 0}{\lim} \;f_1(x)$ avec $f_1(x) = 5x+9$</div> &
-            <div class="num">$\displaystyle \underset{x \rightarrow -6}{\lim} \;f_2(x)$ avec $f_2(x) = 8x^2$</div>
+        Donner les  parties réelle et imaginaire des nombres complexes suivants :
+        <div class="table 4cols">
+        <div class="num">$z_1 = 7i$</div> & <div class="num">$z_2 = -9$</div> & <div class="num">$z_3 = 8 - 7i$</div> & <div class="num"> $z_4 = 3i + 8$</div> 
+        </div>
+        vspace{5}
+        Donner le conjugué des nombres complexes suivants : 
+        <div class="table 4cols">
+        <div class="num">$z_5 = -6i$</div> & <div class="num">$z_6 = 8$</div> & <div class="num">$z_7 = 10 - 2i$</div> & <div class="num"> $z_8 = 6i - 2$</div> 
         </div>
     </div>
 	
 </div>	
     
     
-<!-- Dérivée d'une somme-->
-<div class="box" data-title="Dérivée d'une somme" data-num="$N_2$" data-date="1">   
-    <div class="titled hide" data-title="\boxP Dérivée d'une somme" data-color="#444444">
-        Soient $u$ et $v$ deux fonctions définies et dérivables sur un intervalle $I$ alors la fonction $(u+v)(x) = u(x) + v(x)$ est dérivable sur $I$ et : $\displaystyle (u+v)' (x)= u'(x) + v'(x)$}
+<!-- Module d'un nombre complexe -->
+<div class="box" data-title="Module d'un nombre complexe" data-num="$N_2$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Module d'un nombre complexe" data-color="#444444">
+        Soit $z = a+ib$ un nombre complexe. Le *{bold::module} de $z$ est le réel, noté $||z||$  : $\displaystyle ||z|| = \sqrt{z \times \bar{z}} = \sqrt{z\bar{z}} = \sqrt{a^2+b^2}$
 	</div>
         
         <div class="styled">
-        Déterminer la dérivée des fonctions suivantes :
-        <div class="table 2cols">
-        <div class="num">$\displaystyle \underset{x \rightarrow 0^{+}}{\lim} \;f_1(x) $ avec $\displaystyle f_1(x) = \frac{1}{x}$</div> &
-            <div class="num"> $\displaystyle \underset{x \rightarrow 2^{-}}{\lim} \;f_2(x) $ avec $\displaystyle f_2(x) = \frac{7}{2-x}$</div> ||
-            <div class="num">$\displaystyle \underset{x \rightarrow 4^{+}}{\lim} \;f_3(x) $ avec $\displaystyle f_3(x) = \frac{x}{2x^2 - 32}$</div> &
-            <div class="num"> $\displaystyle \underset{x \rightarrow 3^{-}}{\lim} \;f_4(x) $ avec $\displaystyle f_4(x) = \frac{1}{x} + \frac{2}{6- 2x}$
-</div>
-        </div>
+        Donner le module des nombres complexes suivants : 
+        <div class="table 4cols">
+        <div class="num">$z_1 = 3+9i$</div> & <div class="num">$z_2 = -7i$</div> & <div class="num">$z_3 = i +5$</div> & <div class="num"> $z_4 = 3$</div> 
+        ||
+        <div class="num">$z_5 = -1 + 4i$</div> & <div class="num">$z_6 = 9 - i$</div> & <div class="num">$z_7 = \frac{1}{3} - i\frac{1}{4}$</div> & <div class="num"> $z_8 = \sqrt{2} + \sqrt{2}i$</div> 
+            
+            </div>
     </div>
 </div>    
+    
+<!-- Opérations sur les nombres complexes -->
+<div class="box" data-title="Opérations sur les nombres complexes" data-num="$N_3$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Propriétés" data-color="#444444">
+        Soient deux nombres complexes $z_1 = a_1+ib_1$ et $z_2 = a_2+ib_2$ non nul et $\alpha$ et $\beta$ deux réels :
+        <div class="table 2cols">
+        ,, $z_1 + z_2 = (a_1 + a_2) + i( b_1 + b_2) $ & ,, $\alpha z_1  = (\alpha a_1) + i(\alpha  b_1) $ ||
+        ,,  $\alpha z_1 + \beta z_2 = (\alpha a_1 + \beta a_2) + i(\alpha b_1 + \beta b_2) $ & ,,  $\norme{\alpha z_1} = |\alpha |\times \norme{z_1} $ ||
+        ,, $z_1 \times z_2 = (a_1a_2 - b_1b_2) + i(a_1b_2 + a_2b_1)$ & ,,  $\displaystyle \frac{z_1}{z_2} = \frac{(a_1a_2 +b_1b_2)}{a_2^2+b_2^2} + i\frac{(a_1b_2 -b_2a_1)}{a_2^2+b_2^2}$ ||
+        ,, $\displaystyle z_1 = z_2$ si et seulement si $a_1 = a_2$ et $b_1=b_2$    
+            
+        </div>
+	</div>
+        
+        <div class="styled">
+        <div class="num" data-valign-num="middle">Soient $\displaystyle z_1 = 3 - 2i$ et $\displaystyle z_2 = 6i - 3$. Calculer $z_1+z_2$, $z_1 z_2$ et $\displaystyle \frac{z_1}{z_2}$</div>
+        <div class="num" data-valign-num="middle"> Soient $\displaystyle z_1 = -\frac{1}{3} - i$ et $\displaystyle z_2 = \frac{i}{5} - 1$. Calculer $z_1+z_2$, $z_1 z_2$ et $\displaystyle \frac{z_1}{z_2}$</div> 
+        <div class="num" data-valign-num="middle"> Soient $\displaystyle z_1 = 5 - 2i$ et $\displaystyle z_2 = \frac{i}{2} + 1$. Calculer $2z_1-4z_2$ et $|| -5(z_1+z_2)||$</div>     <div class="num"> Soient $\displaystyle z_1 = 2 + i$,  $\displaystyle z_2 = i - 3$ et $z_3 = x + iy$. Calculer $x$ et $y$ pour que $z_3 = -4z_1 + 2z_2$.</div>  
+         <div class="num" data-valign-num="middle"> Soient $\displaystyle z_1 = \frac{1}{2} + 3i$,  $\displaystyle z_2 = \frac{1}{3}i - 2$ et $z_3 = x + iy$. Calculer $x$ et $y$ pour que $z_3 = 2z_1 - z_2$.</div>      
+    </div>
+</div>        
         
 
 <div class="newpage"></div>
     
+<!-- Affixe d'un point -->
+<div class="box" data-title="Affixe d'un point" data-num="$N_4$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Affixe d'un point" data-color="#444444">
+        Soit $z = a+ib$ un nombre complexe. Dans un repère orthonormé $(O;I;J)$, on peut placer un point $M(a;b)$. On dit que $z$ est l'*{bold::affixe} du point $M$ et on note $M(z)$.
 
+	</div>
+        
+        <div class="styled">
+            On se place dans un repère orthonormé $(O;\vecteur{i},\vecteur{j})$.
+        <div class="num" data-valign-num="top"> Soient $z_A = i + 1$ et $z_B = -3i + 2$. Placer $A(z_A)$ et $B(z_B)$. Placer les points $C$ et $D$ pour que $ABCD$ soit un carré. Donner les affixes de $C$ et $D$.</div>
+        <div class="num" data-valign-num="top">Soient $z_E= -2i $ et $z_F = 3$. Placer $E(z_E)$ et $F(z_F)$. Placer les points $G$ et $H$ pour que $EFGH$ soit un losange de centre $O$. Donner les affixes de $G$ et $H$.</div> 
+        <div class="num" data-valign-num="top"> Soient $z_A= -2i + 1 $, $z_B = 2 + 3i $ et $z_C = 3i$. Placer $A(z_A)$, $B(z_B$ et $C(z_C)$. Placer le point $D$ pour que $ABCD$ soit un parallélogramme. Donner l'affixe de $D$.</div>      
+    </div>
+</div> 
+    
+<!-- Affixe d'un vecteur -->
+<div class="box" data-title="Affixe d'un vecteur" data-num="$N_5$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Affixe d'un vecteur" data-color="#444444">
+        ,, Soit $z = a+ib$ un nombre complexe. Dans un repère orthonormé $(O;I;J)$, on peut placer un vecteur  $\cvecteur{u}{a}{b}$. On dit que $z$ est l'*{bold::affixe} du vecteur $\vecteur{u}$ et on note $\vecteur{u}(z)$. <br>
+        ,, Soit $M_1$ et $M_2$ deux points du plan muni du repère orthonormé  $(O;I;J)$ tels que  $M_1(z_1=a_1+ib_1)$ et 
+
+$M_2(z_2=a_2+ib_2)$. Le vecteur $\vecteur{M_1M_2}$ a pour affixe le nombre complexe $z_3$ tel que $z_3 = z_2-z_1$ et : $\displaystyle z_3 = (a_2-a_1) + i(b_2-b_1)$
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Norme d'un vecteur" data-color="#444444">
+        Soient $z = a+ib$ un nombre complexe et $\vecteur{u}{z}$ dans un repère orthonormé $(O;I;J)$. On a : $\displaystyle ||\vecteur{u}|| = ||z|| = \sqrt{z\bar{z}}$
+	</div>
+        
+        <div class="styled">
+            On se place dans un repère orthonormé $(O;\vecteur{i},\vecteur{j})$.
+        <div class="num" data-valign-num="middle"> Soient $z_A = i + 2$ et $z_B = -2i + 2$. Donner l'affixe de $\vecteur{AB}$ puis calculer $||\vecteur{AB}||$</div>
+        <div class="num" data-valign-num="middle">Soient $z_E = 5-3$ et $z_F = -3 + 2i$. Donner l'affixe de $\vecteur{EF}$ puis calculer $||\vecteur{EF}||$</div> 
+        <div class="num" data-valign-num="middle">  Soient $\displaystyle z_A = \frac{1}{3}-2i$ et $\displaystyle z_B = -\frac{1}{6} + \frac{1}{5}i$. Donner l'affixe de $\vecteur{AB}$ puis calculer $||\vecteur{AB}||$</div>      
+    </div>
+</div>     
+    
+<!-- Cercle trigonométrique -->
+<div class="box" data-title="Cercle trigonométrique" data-num="$N_6$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Propriétés" data-color="#444444">
+        On se place dans un repère orthonormé $(0;I;J)$ du plan orienté. Soit un point $M$ appartenant au cercle trigonométrique tel que $(\vecteur{OI},\vecteur{OM}) = \theta + k\times 2\pi$ ($k \in \mathbb{Z}$). Soit $z$ l'affixe du point $M$ alors :
+$\displaystyle z = \cos{\theta} + i\sin{\theta}$ et $\displaystyle ||z|| = 1$ vspace{10}
+On note le nombre complexe $\displaystyle z = \cos{\theta} + i\sin{\theta}$ : $\displaystyle z = \cos{\theta} + i\sin{\theta} = e^{i\theta}$
+	</div>
+    
+       
+        <div class="styled">
+           Placer sur le cercle trigonométrique, les points d'affixe :
+        <div class="table 4cols">
+        <div class="num" data-valign-num="middle"> $z_A = e^{i\pi}$</div>   & 
+        <div class="num" data-valign-num="middle"> $z_B= e^{i\frac{\pi}{4}}$</div>   &
+        <div class="num" data-valign-num="middle"> $z_C = e^{i\frac{\pi}{3}}$</div>   &
+        <div class="num" data-valign-num="middle"> $z_D = e^{-i\frac{\pi}{3}}$</div>   ||
+            
+        <div class="num" data-valign-num="middle"> $z_E = e^{-i\frac{\pi}{4}}$</div>   & 
+        <div class="num" data-valign-num="middle"> $z_F = e^{i\frac{3\pi}{4}}$</div>   &
+        <div class="num" data-valign-num="middle"> $z_G = e^{i\frac{5\pi}{4}}$</div>   &
+        <div class="num" data-valign-num="middle"> $z_H = e^{-i\frac{\pi}{2}}$</div>     
+            
+        </div>     
+    </div>
+</div> 
+    
+<div class="newpage"></div>  
+    
+<!-- Ecriture exponentielle -->
+<div class="box" data-title="Ecriture exponentielle" data-num="$N_7$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Ecriture exponentielle" data-color="#444444">
+        On se place dans un repère orthonormé $(0;I;J)$ du plan orienté. Soient $z = a+ib$ un nombre complexe. $z$ peut s'écrire : $z = ||z|| e^{i\theta} = re^{i\theta}$
+
+vspace{5}
+où $r$ est le *{bold::module} de $z$ et $\theta$ son *{bold::argument} (à $2\pi$ près)
+	</div>
+    
+    
+        
+        <div class="styled">
+           
+        <div class="num" data-valign-num="top"> Donner l'écriture algébrique des nombres suivants : 
+
+$z_A = 3e^{i\frac{\pi}{3}}$ ; $z_B = 4e^{i\frac{-\pi}{4}}$ ; $z_C = \sqrt{3}e^{i\frac{\pi}{2}}$ et $z_D = 5e^{i\pi}$</div>
+        <div class="num" data-valign-num="middle">Donner l'écriture algébrique des nombres suivants : 
+
+$z_A = 5e^{i\frac{4\pi}{3}}$ ; $z_B = 7e^{i\frac{3\pi}{4}}$ et $z_C = \sqrt{2}e^{-i\frac{\pi}{6}}$ </div> 
+        <div class="num" data-valign-num="middle">  Donner l'écriture exponentielle des nombres suivants : 
+
+$z_A = 2i$ ; $z_B = 5$ ; $z_C = -4$  et $z_D = -10i$ </div>
+        <div class="num" data-valign-num="middle">  Donner l'écriture exponentielle des nombres suivants : 
+
+$\displaystyle z_A = 3\frac{\sqrt{2}}{2} +  3\frac{\sqrt{2}}{2}i$ et $\displaystyle z_B = 5\frac{\sqrt{3}}{2} - \frac{5}{2}i$</div> 
+            <div class="num" data-valign-num="middle">  Donner l'écriture exponentielle des nombres suivants : 
+
+$\displaystyle z_A = 1 + i$ et $\displaystyle z_B = -5 + 10\frac{\sqrt{3}}{2}i$ </div> 
+            
+            <div class="num" data-valign-num="middle">  Donner l'écriture exponentielle des nombres suivants : 
+
+$\displaystyle z_A = -2 -2i$ ; $\displaystyle z_B = 2\sqrt{3} + 2i$ et $\displaystyle z_C = -i-1$  </div> 
+    </div>
+</div>  
+    
+    
+<!-- Propriétés de l'écriture exponentielle -->
+<div class="box" data-title="Propriétés de l'écriture exponentielle" data-num="$N_8$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Propriétés" data-color="#444444">
+       Soient $z = re^{i\theta}$ et $z' = r'e^{i\theta'}$ deux nombres complexes de module respectif  $r$ et $r'$ et d'argument respectif $\theta$ et $\theta'$.
+    <div class="table 2cols" data-table-style="border-spacing: 0px 10px">
+    ,, $re^{i\theta} \times  r'e^{i\theta'} =  rr'e^{i(\theta + \theta')}$ & ,, $\displaystyle \frac{re^{i\theta}}{r'e^{i\theta'}} =  \frac{r}{r'}e^{i(\theta - \theta')}$ ||
+    ,, $\displaystyle \frac{1}{re^{i\theta}} =  \frac{1}{r}e^{-i\theta}$ & ,, $\displaystyle \overline{re^{i\theta}} =  re^{-i\theta}$    
+    </div>    
+	</div>
+    
+       
+        <div class="styled">
+          Calculer :
+        <div class="table 4cols" cells="*,*|h60">
+        <div class="num" data-valign-num="middle"> $5e^{i\frac{\pi}{6}}\times 2e^{i\frac{\pi}{3}}$</div>   & 
+        <div class="num" data-valign-num="middle"> $\displaystyle \frac{2e^{-i\frac{\pi}{2}}}{2e^{i\frac{\pi}{6}}}$</div>   &
+        <div class="num" data-valign-num="middle"> $\displaystyle \frac{8e^{-i\frac{4\pi}{3}}\times 0,5e^{-i\frac{\pi}{3}}}{2e^{i\frac{\pi}{3}}}$</div>   &
+        <div class="num" data-valign-num="middle"> $\displaystyle \frac{2e^{-i\frac{\pi}{6}}}{6e^{i\frac{\pi}{3}}\times 5e^{-i\frac{\pi}{2}}}$</div>   ||
+            
+        <div class="num" data-valign-num="middle"> $\displaystyle \frac{8e^{i\frac{4\pi}{3}}}{2e^{i\frac{\pi}{3}}}$</div>   & 
+        <div class="num" data-valign-num="middle"> $2e^{-i\frac{\pi}{2}}\times 2e^{i\pi}$</div>   &
+        <div class="num" data-valign-num="middle"> $\displaystyle \frac{(2e^{-i\frac{\pi}{2}})^2}{(2e^{i\pi})^2}$</div>   &
+        <div class="num" data-valign-num="middle"> $2e^{-i\frac{\pi}{4}} +  5e^{-i\frac{\pi}{4}}$</div>     
+            
+        </div>     
+    </div>
+</div> 
+    
+<div class="newpage"></div>    
+    
+<!-- Racines d'1 équation du $2^{nd}$ degré -->
+<div class="box" data-title="Racines d'une équation du $2^{nd}$ degré" data-num="$N_9$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Propriétés" data-color="#444444">
+      On considère l'équation  $ax^2 + bx+ c = 0$ dont le discriminant vaut  $\Delta = b^2 - 4ac$ : <br>
+    ,, si $\Delta > 0$  L'équation $ax^2 + bx+ c = 0$ possède *{tdu::$2$ racines} $z_1$ et $z_2$ réelles
+ avec $\displaystyle z_1 = \frac{-b - \sqrt{\Delta}}{2a}$ et $\displaystyle z_2 = \frac{-b + \sqrt{\Delta}}{2a}$  <br>
+    ,, si $\Delta = 0$  L'équation $ax^2 + bx+ c = 0$ possède *{tdu::$1$ seule racine} $z_0$ réelle avec $\displaystyle z_0 = \frac{-b}{2a}$  <br>
+    ,, si $\Delta &lt; 0$ L'équation $ax^2 + bx+ c = 0$ possède *{bold::$2$ racines} $z_1$ et $z_2$ complexes avec $\displaystyle z_1 = \frac{-b - i\sqrt{-\Delta}}{2a}$ et $\displaystyle z_2 = \frac{-b + i\sqrt{-\Delta}}{2a}$  
+    
+ 
+	</div>
+    
+       
+        <div class="styled">
+          Résoudre les équations suivantes :
+        <div class="table 3cols" data-table-style="border-spacing: 0px 7px">
+        <div class="num" data-valign-num="middle"> $4x^2 - 5x + 1 = 0$</div>   & 
+        <div class="num" data-valign-num="middle"> $8 + 2x -3x^2 = 0$</div>   &
+        <div class="num" data-valign-num="middle"> $9x^2 -24x + 16 = 0$</div>   ||
+            
+        <div class="num" data-valign-num="middle"> $(7x+3)(7x-3)= 0$</div>   &
+        <div class="num" data-valign-num="middle"> $7x^2 - 7x +1= 0$</div>   & 
+        <div class="num" data-valign-num="middle"> $\displaystyle \frac{1}{2}x^2 + \frac{2}{3}x  -1 = 0 $</div>   ||
+            
+        <div class="num" data-valign-num="middle"> $\displaystyle -\frac{2}{3}x^2 - \frac{1}{6}x = \frac{1}{5} $</div>   &
+        <div class="num" data-valign-num="middle"> $\displaystyle 2x^2 - \sqrt{5}x + 6 = 0 $</div> &
+        <div class="num" data-valign-num="middle"> $\displaystyle x^2 - 2\sqrt{7}x= -1 $</div>   ||
+            
+        <div class="num" data-valign-num="middle"> $\displaystyle x^2 + 6=  -3\sqrt{2}x $</div>   &
+        <div class="num" data-valign-num="middle"> $\displaystyle \frac{1}{2}x^2 + \frac{1}{4}=  -\sqrt{10}x $</div>   &
+        <div class="num" data-valign-num="middle"> $x^2 - x  = -9 $</div> ||
+            
+        <div class="num" data-valign-num="middle"> $2x^2  +2x + 1 = 0$</div>   &
+        <div class="num" data-valign-num="middle"> $7 + 3x -7x^2 = 0$</div>   &
+        <div class="num" data-valign-num="middle"> $x^2 -10x + 2 = 0$</div> ||
+            
+        <div class="num" data-valign-num="middle"> $(8x+3)(8x-3)= 0$</div>   &
+        <div class="num" data-valign-num="middle"> $x^2 - 9x +3= 0$</div>   &
+        <div class="num" data-valign-num="middle"> $x^2 - 2x  = -1 $</div> ||
+            
+        <div class="num" data-valign-num="middle"> $\displaystyle \frac{1}{4}x^2 + \frac{1}{3}x  -8 = 0 $</div>   &
+        <div class="num" data-valign-num="middle"> $\displaystyle -\frac{2}{5}x^2 - \frac{1}{8}x = \frac{1}{2} $</div>   &
+        <div class="num" data-valign-num="middle"> $\displaystyle x^2 - \sqrt{3}x + 2 = 0 $</div> ||
+            
+        <div class="num" data-valign-num="middle"> $\displaystyle x^2 - 2\sqrt{5}x= -2 $</div>   &
+        <div class="num" data-valign-num="middle"> $\displaystyle 2x^2 + 5=  -8\sqrt{2}x $</div>   &
+        <div class="num" data-valign-num="middle"> $\displaystyle \frac{1}{7}x^2 + \frac{1}{14}=  -2\sqrt{10}x $</div> 
+            
+            
+        </div>     
+    </div>
+</div>   
+    
+<div class="box" data-title="Propriété  sur les racines">
+<div class="styled">
+ On considère l'équation du second degré suivante :
+
+$ ax^2 +bx + c = 0$
+où $a$, $b$ et  $c$ sont des réels <br>tels que :
+
+$ ac > \Big(\frac{b}{2}\Big)^2$
+
+    <div class="num" data-valign-num="middle">  Déterminer les racines $z_1$ et $z_2$ de cette équation. </div>
+ <div class="num" data-valign-num="middle">  Calculer $\overline{z_1}$ et $\overline{z_2}$</div>
+ <div class="num" data-valign-num="middle">  Calculer $z_1 z_2$</div>
+ <div class="num" data-valign-num="middle">  Calculer $||z_1||$ et $||z_2||$</div>
+ <div class="num" data-valign-num="middle">  Calculer $z_1 + z_2$ </div>
+
+</div>    
+</div>   
+    
+    
+<div class="box" data-title="Quelques calculs sur les racines">
+<div class="styled">
+ On considère l'équation du second degré suivante : $ x^2 +x + 1 = 0$
+
+    <div class="num" data-valign-num="middle">  Déterminer les racines $z_1$ et $z_2$ de cette équation. </div>
+ <div class="num" data-valign-num="middle">  Calculer $z_1 z_2$</div>
+ <div class="num" data-valign-num="middle">  Calculer $||z_1||$ et $||z_2||$</div>
+ <div class="num" data-valign-num="middle">  Calculer $z_1 + z_2$ </div>
+
+</div>    
+</div>       
   
 </body>
 </html>

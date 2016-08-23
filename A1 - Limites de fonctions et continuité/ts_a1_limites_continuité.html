@@ -31,6 +31,10 @@ vspace{5}
 La fonction $f$ est *{bold::continue} sur un intervalle $I$ de $\mathbb{R}$ quand $f$ est continue pour tout réel $a \in I$. Sa courbe représentative ne possède pas de "trou" sur $I$ : on peut la tracer sans lever le crayon.
 	</div>
     
+    <div class="titled hide" data-title="\boxT Dérivabilité et continuité" data-color="#444444">
+        Une foncton *{bold::dérivable} sur un intervalle $I$ de $\R$ est *{bold::continue} sur $I$.
+	</div>
+    
     <div class="titled hide" data-title="\boxA Algorithme" data-color="#444444">
         L'algorithme suivant permet d'afficher la limite d'une fonction : 
         <div class="algo" data-type="algse" frame-style="width: 780px;height: 300px" style="margin-left: 30px">
@@ -57,9 +61,11 @@ algo.output('f('+a+') =  '+f(a));
    
 	<div class="styled">
         Déterminer les limites suivantes :
-        <div class="table 2cols">
+        <div class="table 2cols" data-table-style="border-spacing: 0px 7px">
         <div class="num">$\displaystyle \underset{x \rightarrow 0}{\lim} \;f_1(x)$ avec $f_1(x) = 5x+9$</div> &
-            <div class="num">$\displaystyle \underset{x \rightarrow -6}{\lim} \;f_2(x)$ avec $f_2(x) = 8x^2$</div>
+            <div class="num">$\displaystyle \underset{x \rightarrow -6}{\lim} \;f_2(x)$ avec $f_2(x) = 8x^2$</div> ||
+            <div class="num">$\displaystyle \underset{x \rightarrow 2}{\lim} \;f_3(x)$ avec $f_3(x) = \sqrt{x^2+1}$</div> &
+            <div class="num" data-valign-num="10px">$\displaystyle \underset{x \rightarrow 3}{\lim} \;f_4(x)$ avec $f_4(x) = \dfrac{1}{x+2}$</div>
         </div>
     </div>
 	
@@ -68,15 +74,15 @@ algo.output('f('+a+') =  '+f(a));
 <!--Limite infinie ($+\infty$) en $a$-->
 <div class="box" data-title="Limite infinie ($+\infty$) en $a$" data-num="$N_2$" data-date="1">   
     <div class="titled hide" data-title="\boxD Limite" data-color="#444444">
-        ,, La fonction $f$ admet une *{bold::limite infinie}  ($+\infty$) en $a$  par *{bold::valeurs supérieures}  quand $f(x)$ peut être rendu aussi *{tdu::grand} que l'on veut si $x > a $ est suffisamment  *{tdu::proche} de $a$. On écrit alors : $\displaystyle \underset{x \rightarrow a^{+}}{\lim} \;f(x) =  +\infty$ vspace{10}
-        ,, La fonction $f$ admet une *{bold::limite infinie}  ($+\infty$) en $a$  par *{bold::valeurs inférieures}  quand $f(x)$ peut être rendu aussi *{tdu::grand} que l'on veut si $x < a $ est suffisamment  *{tdu::proche} de $a$. On écrit alors : $\displaystyle \underset{x \rightarrow a^{-}}{\lim} \;f(x) =  +\infty$
+        ,, La fonction $f$ admet une *{bold::limite infinie}  ($+\infty$) en $a$  par *{bold::valeurs supérieures}  quand $f(x)$ peut être rendu aussi *{tdu::grand} que l'on veut si $x &gt; a $ est suffisamment  *{tdu::proche} de $a$. On écrit alors : $\displaystyle \underset{x \rightarrow a^{+}}{\lim} \;f(x) =  +\infty$ vspace{10}
+        ,, La fonction $f$ admet une *{bold::limite infinie}  ($+\infty$) en $a$  par *{bold::valeurs inférieures}  quand $f(x)$ peut être rendu aussi *{tdu::grand} que l'on veut si $x &lt; a $ est suffisamment  *{tdu::proche} de $a$. On écrit alors : $\displaystyle \underset{x \rightarrow a^{-}}{\lim} \;f(x) =  +\infty$
         
 
 	</div>
         
         <div class="styled">
         Déterminer les limites suivantes :
-        <div class="table 2cols">
+        <div class="table 2cols" data-table-style="border-spacing: 0px 7px">
         <div class="num">$\displaystyle \underset{x \rightarrow 0^{+}}{\lim} \;f_1(x) $ avec $\displaystyle f_1(x) = \frac{1}{x}$</div> &
             <div class="num"> $\displaystyle \underset{x \rightarrow 2^{-}}{\lim} \;f_2(x) $ avec $\displaystyle f_2(x) = \frac{7}{2-x}$</div> ||
             <div class="num">$\displaystyle \underset{x \rightarrow 4^{+}}{\lim} \;f_3(x) $ avec $\displaystyle f_3(x) = \frac{x}{2x^2 - 32}$</div> &
@@ -91,8 +97,8 @@ algo.output('f('+a+') =  '+f(a));
 <!--Limite infinie ($-\infty$) en $a$-->
 <div class="box" data-title="Limite infinie ($-\infty$) en $a$" data-num="$N_3$" data-date="1">   
     <div class="titled hide" data-title="\boxD Limite" data-color="#444444">
-        ,, La fonction $f$ admet une *{bold::limite infinie}  ($-\infty$) en $a$  par *{bold::valeurs supérieures}  quand $f(x)$ peut être rendu aussi *{tdu::petit} que l'on veut si $x > a $ est suffisamment  *{tdu::proche} de $a$. On écrit alors : $\displaystyle \underset{x \rightarrow a^{+}}{\lim} \;f(x) =  -\infty$ vspace{10}
-        ,, La fonction $f$ admet une *{bold::limite infinie}  ($-\infty$) en $a$  par *{bold::valeurs inférieures}  quand $f(x)$ peut être rendu aussi *{tdu::grand} que l'on veut si $x < a $ est suffisamment  *{tdu::proche} de $a$. On écrit alors : $\displaystyle \underset{x \rightarrow a^{-}}{\lim} \;f(x) =  -\infty$
+        ,, La fonction $f$ admet une *{bold::limite infinie}  ($-\infty$) en $a$  par *{bold::valeurs supérieures}  quand $f(x)$ peut être rendu aussi *{tdu::petit} que l'on veut si $x &gt; a $ est suffisamment  *{tdu::proche} de $a$. On écrit alors : $\displaystyle \underset{x \rightarrow a^{+}}{\lim} \;f(x) =  -\infty$ vspace{10}
+        ,, La fonction $f$ admet une *{bold::limite infinie}  ($-\infty$) en $a$  par *{bold::valeurs inférieures}  quand $f(x)$ peut être rendu aussi *{tdu::grand} que l'on veut si $x &lt; a $ est suffisamment  *{tdu::proche} de $a$. On écrit alors : $\displaystyle \underset{x \rightarrow a^{-}}{\lim} \;f(x) =  -\infty$
         
 
 	</div>
@@ -121,15 +127,521 @@ C'est à dire que $\mathcal{C}_f$  se "rapproche" de plus de plus de la droite v
         <div class="styled">
        Montrer que les représentations graphiques des fonctions $f$ suivantes admettent une asymptote verticale d'équation $x=a$ ($a \in \mathbb{R}$)  : 
         <div class="table 2cols">
-        <div class="num">$\displaystyle f: x  \mapsto \frac{-1}{x^2}$ et $\displaystyle a = 0$</div> &
-            <div class="num">  $\displaystyle f: x  \mapsto 12 + \frac{1}{x-9}$ et $\displaystyle a = 9$</div> ||
-            <div class="num">$\displaystyle f: x  \mapsto x^2 + \frac{1}{9-x^2}$ et $\displaystyle a = 3$</div> &
-            <div class="num"> $\displaystyle f: x  \mapsto 2x - 8 + \frac{1}{\sqrt{x}}$ et $\displaystyle a = 0$
+        <div class="num" data-valign-num="10px">$\displaystyle f: x  \mapsto \frac{-1}{x^2}$ et $\displaystyle a = 0$</div> &
+            <div class="num" data-valign-num="10px">  $\displaystyle f: x  \mapsto 12 + \frac{1}{x-9}$ et $\displaystyle a = 9$</div> ||
+            <div class="num" data-valign-num="10px">$\displaystyle f: x  \mapsto x^2 + \frac{1}{9-x^2}$ et $\displaystyle a = 3$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f: x  \mapsto 2x - 8 + \frac{1}{\sqrt{x}}$ et $\displaystyle a = 0$
 </div>
         </div>
     </div>
-</div>        
+</div>      
+    
+<!--Limite finie  en l'infini-->
+<div class="box" data-title="Limite finie  en l'infini" data-num="$N_5$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Limite en $+\infty$ et $-\infty$" data-color="#444444">
+        ,, La fonction $f$ admet une *{bold::limite finie} $l \in \mathbb{R}$  en $+\infty$   quand la distance  $|l-f(x)|$ peut être rendue aussi *{tdu::petite} que l'on veut (proche de $0$) si $x $ est suffisamment  *{tdu::grand} (proche de $+\infty$). On écrit alors :
+$\displaystyle \underset{x \rightarrow +\infty}{\lim} \;f(x) =  l$ vspace{10}
         
+        ,, La fonction $f$ admet une *{bold::limite finie} $l \in \mathbb{R}$  en $-\infty$   quand la distance  $|l-f(x)|$ peut être rendue aussi *{tdu::petite} que l'on veut (proche de $0$) si $x $ est suffisamment  *{tdu::petit} (proche de $-\infty$). On écrit alors :
+$\displaystyle \underset{x \rightarrow -\infty}{\lim} \;f(x) =  l$
+	</div>
+        
+        <div class="styled">
+       Déterminer les limites suivantes  : 
+        <div class="table 2cols">
+        <div class="num" data-valign-num="10px">$\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = \frac{-1}{x}$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = \frac{1}{x^2}$</div> ||
+            <div class="num" data-valign-num="10px">$\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = \frac{2}{x^2- 16}$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = \sqrt{5} - \frac{1}{1+x^2}$
+</div>
+        </div>
+    </div>
+</div>          
+    
+<div class="newpage"></div>    
   
+ <!--Asymptote horizontale-->
+<div class="box" data-title="Asymptote horizontale" data-num="$N_6$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Asymptote horizontale" data-color="#444444">
+       La courbe représentative $\mathcal{C}_f$ de la fonction $f$ admet une *{bold::asymptote horizontale}  (parallèle à l'axe des abscisses) d'équation $y=l $ quand $\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) = l$  ou $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;f(x) = l$. 
+
+C'est à dire que $\mathcal{C}_f$  se "rapproche" de plus de plus de la droite horizontale d'équation $y=l$.
+	</div>
+        
+        <div class="styled">
+       Montrer que les représentations graphiques des fonctions $f$ suivantes admettent une asymptote horizontale d'équation $y=a$ ($a \in \mathbb{R}$)  : 
+        <div class="table 2cols">
+        <div class="num" data-valign-num="10px"> $\displaystyle f: x  \mapsto 3 - \frac{1}{x^2}$ et $\displaystyle a = 3$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f: x  \mapsto 12 + \frac{1}{x-9}$ et $\displaystyle a = 12$</div> ||
+            <div class="num" data-valign-num="10px">$\displaystyle f: x  \mapsto -4 - \frac{1}{x} + \frac{1}{9-x^2}$ et $\displaystyle a = -4$</div> &
+            <div class="num" data-valign-num="10px"> $\displaystyle f: x  \mapsto  \frac{2x^2 - 8}{4x^2}$ et $\displaystyle a = 0,5$
+</div>
+        </div>
+    </div>
+</div> 
+    
+<!--Limite infinie  en l'infini-->
+<div class="box" data-title="Limite infinie  en l'infini" data-num="$N_7$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Limite infinie en $+\infty$ et $-\infty$" data-color="#444444">
+        ,, La fonction $f$ admet une *{bold::limite infinie} ($+\infty$)  en $+\infty$   quand   $f(x)$ peut être rendu aussi *{tdu::grand} que l'on veut (proche de $+\infty$) si $x $ est suffisamment  *{tdu::grand} (proche de $+\infty$). On écrit alors : $\displaystyle \underset{x \rightarrow +\infty}{\lim} \;f(x) =  +\infty$
+ vspace{10}
+        
+        ,, La fonction $f$ admet une *{bold::limite infinie} ($+\infty$)  en $-\infty$   quand   $f(x)$ peut être rendu aussi *{tdu::grand} que l'on veut (proche de $+\infty$) si $x $ est suffisamment  *{tdu::petit} (proche de $-\infty$). On écrit alors : $\displaystyle \underset{x \rightarrow -\infty}{\lim} \;f(x) =  +\infty$  vspace{10}
+        
+        ,, La fonction $f$ admet une *{bold::limite infinie} ($-\infty$)  en $+\infty$   quand   $f(x)$ peut être rendu aussi *{tdu::petit} que l'on veut (proche de $-\infty$) si $x $ est suffisamment  *{tdu::grand} (proche de $+\infty$). On écrit alors : $\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) =  -\infty$
+ vspace{10}
+        
+        ,, La fonction $f$ admet une *{bold::limite infinie} ($-\infty$)  en $-\infty$   quand   $f(x)$ peut être rendu aussi *{tdu::petit} que l'on veut (proche de $-\infty$) si $x $ est suffisamment  *{tdu::petit} (proche de $-\infty$). On écrit alors : $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;f(x) =  -\infty$
+
+
+	</div>
+        
+        <div class="styled">
+       Déterminer les limites suivantes  : 
+        <div class="table 2cols">
+        <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = \frac{-1}{x} + x^2$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = \sqrt{x}$</div> ||
+            <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = x\sqrt{x}$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = -2x^6$ </div> ||
+            <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow -\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = \frac{7x^2 + 9x -9}{6x -8}$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = \frac{4 - x^2}{2 - 6x}$ </div> ||
+             <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = 3x -9$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = -4x + 1$ </div>
+        </div>
+    </div>
+</div>   
+    
+    
+ <!-- Limite de fonction affine et fonction carrée -->
+<div class="box" data-title="Limite de fonction affine et fonction carrée" data-num="$N_8$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Fonction affine et fonction carrée" data-color="#444444">
+      <table style="width: 100%">
+        <tr>
+        
+            <td>
+        Soit $a$ ; $b$ et $\alpha$ trois réels :
+        <div class="table" cells="*,*|bo1#444444&*,1|b#aaaaaa;right;par5&*,2|w80;c&*,3|w50;c&*,4|w50;c" data-table-style="border-collapse: collapse">
+           $x \rightarrow $ & $\alpha$ & $-\infty$ & $+\infty$ ||
+  $\lim{(ax+b)}$ avec $a &gt; 0$ & $a\alpha+b$ & $-\infty$ & $+\infty$ ||
+  $\lim{(ax+b)}$ avec $a &lt; 0$ & $a\alpha+b$ & $+\infty$ & $-\infty$ 
+        </div> 
+                vspace{5}
+                La fonction *{bold::affine} $x \mapsto ax+b$ est continue sur $\mathbb{R}$.
+        </td>
+            
+            <td>
+        Soit $\alpha$ un réel :
+        <div class="table" cells="*,*|bo1#444444&*,1|b#aaaaaa;right;par5&*,2|w80;c&*,3|w50;c&*,4|w50;c" data-table-style="border-collapse: collapse">
+           $x \rightarrow $ & $\alpha$ & $-\infty$ & $+\infty$ ||
+  $\lim{(x^2)}$ & $\alpha^2$ & $+\infty$ & $+\infty$
+        </div> 
+                vspace{5}
+                La fonction *{bold::carrée} $x\mapsto x^2$ est continue sur $\mathbb{R}$.
+        </td>
+            
+        </tr>
+        </table>
+	</div>
+        
+        <div class="styled">
+       <div class="num" style="display: inline-block;vertical-align: -7px"></div>Ecrire un <div data-button="algorithme" class="algo" data-type="algse" frame-style="width: 780px;height: 350px" style="display: inline-block">
+function f(x) {return x*x;}
+            
+var distance = 0.001;
+var step = 0.001;
+var x = 0;
+var a = 10;
+var l = 0;
+            
+while (Math.abs(f(x) - f(a)) > distance)
+{
+    l = f(x);
+    x = x+step;
+}
+algo.output('La limite de la fonction f en '+a+' vaut '+l);
+algo.output('f('+a+') =  '+f(a));
+            
+        </div>
+            permettant de déterminer $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;x^2 $ 
+            vspace{1}
+        <div class="num" style="display: inline-block;vertical-align: -7px"></div>Ecrire un <div data-button="algorithme" class="algo" data-type="algse" frame-style="width: 780px;height: 350px" style="display: inline-block">
+function f(x) {return -2*x + 5;}
+            
+var distance = 0.001;
+var step = 0.001;
+var x = 0;
+var a = 10;
+var l = 0;
+            
+while (Math.abs(f(x) - f(a)) > distance)
+{
+    l = f(x);
+    x = x+step;
+}
+algo.output('La limite de la fonction f en '+a+' vaut '+l);
+algo.output('f('+a+') =  '+f(a));
+            
+        </div> permettant de déterminer que la fonction $f(x) = -2x+5$ est continue en $2$.  
+        </div>
+</div> 
+    
+    
+<div class="newpage"></div> 
+    
+ <!-- AUtres fonctions de référence -->
+<div class="box" data-title="Autres fonctions de référence" data-num="$N_9$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Autres fonctions de référence" data-color="#444444">
+      <table style="width: 100%">
+        <tr>
+        
+            <td style="width: 50%;vertical-align: top">
+        Soit $\alpha$ un réel non nul :
+        <div class="table" cells="*,*|bo1#444444&*,1|b#aaaaaa;right;par5&*,2|w80;c&*,3|w50;c&*,4|w50;c&*,5|w50;c&*,6|w50;c" data-table-style="border-collapse: collapse">
+           $x \rightarrow $ & $\alpha$ & $-\infty$ & $0^-$ & $0^+$ & $+\infty$ ||
+  $\lim{(\frac{1}{x})}$ & $\frac{1}{\alpha}$ & $0^-$  & $-\infty$ & $+\infty$ & $0^+$
+        </div> 
+                vspace{5}
+                La fonction *{bold::inverse} $x \mapsto \frac{1}{x}$ est continue <br>sur $]-\infty;0[$ et sur $]0;+\infty[$.
+        </td>
+            
+            <td style="width: 50%;vertical-align: top">
+        Soit $\alpha$ un réel positif :
+        <div class="table" cells="*,*|bo1#444444&*,1|b#aaaaaa;right;par5&*,2|w80;c&*,3|w50;c&*,4|w50;c" data-table-style="border-collapse: collapse">
+           $x \rightarrow $ & $\alpha$ & $0$ & $+\infty$ ||
+  $\lim{(\sqrt{x})}$ & $\sqrt{\alpha}$ & $0$ & $+\infty$
+        </div> 
+                vspace{5}
+                La fonction *{bold::racine carrée} $x \mapsto \sqrt{x}$ est continue sur $[0;+\infty[$.
+        </td>
+            
+        </tr>
+          
+          <tr style="height: 20px"></tr>
+          <tr>
+        
+            <td style="width: 50%;vertical-align: top">
+        Soit $\alpha$ un réel  :
+        <div class="table" cells="*,*|bo1#444444&*,1|b#aaaaaa;right;par5&*,2|w80;c&*,3|w50;c&*,4|w50;c&*,5|w50;c&*,6|w50;c" data-table-style="border-collapse: collapse">
+           $x \rightarrow $ & $\alpha$ & $-\infty$ & $+\infty$ ||
+  $\lim{(|x|)}$ & $|\alpha|$ & $+\infty$  & $+\infty$ 
+        </div> 
+                vspace{5}
+                La fonction *{bold::valeur absolue} $x \mapsto |x|$ est continue <br>sur $]-\infty;+\infty[$.
+        </td>
+            
+            <td style="width: 50%;vertical-align: top">
+        Soit $\alpha$ un réel et $n$ un entier naturel non nul :
+        <div class="table" cells="*,*|bo1#444444&*,1|b#aaaaaa;right;par5&*,2|w80;c&*,3|w50;c&*,4|w50;c" data-table-style="border-collapse: collapse">
+           $x \rightarrow $ & $\alpha$ & $-\infty$ & $+\infty$ ||
+  $\lim{(x^n)}$ si $n$ est pair & $\alpha^n$ & $+\infty$ & $+\infty$ ||
+            $\lim{(x^n)}$ si $n$ est impair & $\alpha^n$ & $-\infty$ & $+\infty$
+        </div> 
+                vspace{5}
+                La fonction *{bold::puissance} $x \mapsto x^n$ est continue sur $]-\infty;+\infty[$.
+        </td>
+            
+        </tr>
+        </table>
+	</div>
+        
+        <div class="styled">
+       <div class="num" style="display: inline-block;vertical-align: -7px"></div>Ecrire un <div data-button="algorithme" class="algo" data-type="algse" frame-style="width: 780px;height: 350px" style="display: inline-block">
+function f(x) {return x*x;}
+            
+var distance = 0.001;
+var step = 0.001;
+var x = 0;
+var a = 10;
+var l = 0;
+            
+while (Math.abs(f(x) - f(a)) > distance)
+{
+    l = f(x);
+    x = x+step;
+}
+algo.output('La limite de la fonction f en '+a+' vaut '+l);
+algo.output('f('+a+') =  '+f(a));
+            
+        </div>
+            permettant de déterminer $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;x^2 $ 
+            vspace{1}
+        <div class="num" style="display: inline-block;vertical-align: -7px"></div>Ecrire un <div data-button="algorithme" class="algo" data-type="algse" frame-style="width: 780px;height: 350px" style="display: inline-block">
+function f(x) {return -2*x + 5;}
+            
+var distance = 0.001;
+var step = 0.001;
+var x = 0;
+var a = 10;
+var l = 0;
+            
+while (Math.abs(f(x) - f(a)) > distance)
+{
+    l = f(x);
+    x = x+step;
+}
+algo.output('La limite de la fonction f en '+a+' vaut '+l);
+algo.output('f('+a+') =  '+f(a));
+            
+        </div> permettant de déterminer que la fonction $f(x) = -2x+5$ est continue en $2$.  
+        </div>
+</div>
+    
+    
+ <!-- Limites d'une somme -->
+<div class="box" data-title="Limites d'une somme" data-num="$N_{10}$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Limites d'une somme de deux fonctions" data-color="#444444">
+        Soient deux fonctions $f$ et $g$.  Le tableau ci-dessous présente la limite de la somme $f+g$ en fonction des limites de $f$ et $g$. Dans certains cas il n'est pas possible de déterminer la limite de la somme, on parle alors de *{bold::Forme Indéterminée} (FI).
+      <table style="border-collapse: collapse;margin-top: 10px;margin-bottom: 10px;margin-left: 100px">
+        
+        <tr>
+        <td></td>
+        <td></td>
+        <td colspan="3" style="border: 1px solid #444444;text-align: center;background: #bbbbbb">$\lim f$</td>    
+        </tr>
+          
+        <tr>
+        <td></td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #aaaaaa">$+$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$l_f$</td>  
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$+\infty$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$-\infty$</td>     
+        </tr> 
+          
+          <tr>
+        <td rowspan="3" style="border: 1px solid #444444;width: 120px;text-align: center;background: #bbbbbb">$\lim g$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$l_g$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$l_f+l_g$</td>  
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$+\infty$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$-\infty$</td>     
+        </tr> 
+          
+        <tr>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$+\infty$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$+\infty$</td>  
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$+\infty$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;font-weight: bold">FI</td>     
+        </tr>  
+          
+        <tr>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$-\infty$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$-\infty$</td>  
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;font-weight: bold">FI</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$-\infty$</td>     
+        </tr>    
+        
+        </table>
+        $l_f$ et $l_g$ sont deux réels.
+	</div>
+        
+        <div class="styled">
+       Déterminer les limites suivantes  : 
+        <div class="table 2cols">
+        <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow 0}{\lim} \;f(x) $ avec $\displaystyle f(x) = x^6 + \frac{1}{x}$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow 9}{\lim} \;f(x) $ avec $\displaystyle f(x) = x^2 + \dfrac{1}{9-x}$</div> ||
+            <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = 9 - 4x + 6x^2$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow 0}{\lim} \;f(x) $ avec $\displaystyle f(x) = \sqrt{x} - 8x^2 + \dfrac{-1}{x^5}$ </div> 
+        </div>
+    </div>
+</div>
+    
+ <div class="newpage"></div>
+    
+ <!-- Limites d'un produit -->
+<div class="box" data-title="Limites d'une somme" data-num="$N_{11}$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Limites d'un produit de deux fonctions" data-color="#444444">
+        Soient deux fonctions $f$ et $g$.  Le tableau ci-dessous présente la limite du produit $f\times g$ en fonction des limites de $f$ et $g$. Dans certains cas il n'est pas possible de déterminer la limite de la somme, on parle alors de *{bold::Forme Indéterminée} (FI).
+      <table style="border-collapse: collapse;margin-top: 10px;margin-bottom: 10px;margin-left: 100px">
+        
+        <tr>
+        <td></td>
+        <td></td>
+        <td colspan="5" style="border: 1px solid #444444;text-align: center;background: #bbbbbb">$\lim f$</td>    
+        </tr>
+          
+        <tr>
+        <td></td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #aaaaaa">$\times$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$l_f &gt; 0$</td>
+         <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$l_f &lt; 0$</td>
+         <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$l_f = 0$</td>               
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$+\infty$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$-\infty$</td>     
+        </tr> 
+          
+          <tr>
+        <td rowspan="5" style="border: 1px solid #444444;width: 120px;text-align: center;background: #bbbbbb">$\lim g$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$l_g &gt; 0$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$l_fl_g$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$l_fl_g$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$0$</td>      
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$+\infty$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$-\infty$</td>     
+        </tr> 
+          
+          
+         <tr>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$l_g &lt; 0$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$l_fl_g$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$l_fl_g$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$0$</td>      
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$-\infty$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$+\infty$</td>     
+        </tr>  
+          
+        <tr>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$l_g = 0$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$0$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$0$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$0$</td>      
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;font-weight: bold">FI</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;font-weight: bold">FI</td>     
+        </tr>    
+         
+         <tr>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$+\infty$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$+\infty$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$-\infty$</td>    
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;font-weight: bold">FI</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$+\infty$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$-\infty$</td>    
+        </tr>  
+          
+        <tr>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$-\infty$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$-\infty$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$+\infty$</td>    
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;font-weight: bold">FI</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$-\infty$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$+\infty$</td>    
+        </tr>    
+        
+        </table>
+        $l_f$ et $l_g$ sont deux réels.
+	</div>
+        
+        <div class="styled">
+       Déterminer les limites suivantes  : 
+        <div class="table 2cols">
+        <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow 0}{\lim} \;f(x) $ avec $\displaystyle f(x) = x^6 + \frac{1}{x}$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow 9}{\lim} \;f(x) $ avec $\displaystyle f(x) = x^2 + \dfrac{1}{9-x}$</div> ||
+            <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = 9 - 4x + 6x^2$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow 0}{\lim} \;f(x) $ avec $\displaystyle f(x) = \sqrt{x} - 8x^2 + \dfrac{-1}{x^5}$ </div> 
+        </div>
+    </div>
+</div> 
+    
+ <!-- Limites de fonctions composée -->
+<div class="box" data-title="Limites d'une fonction composée" data-num="$N_{12}$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Limites de l'inverse d'une fonction" data-color="#444444">
+        Soit $f$ une fonction.  Le tableau ci-dessous présente la limite de l'inverse $\dfrac{1}{f}$ en fonction de la limite de $f$. 
+      <table style="border-collapse: collapse;margin-top: 10px;margin-bottom: 10px;margin-left: 100px">
+        
+          
+         <tr>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$\lim f$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$a$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$-\infty$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$+\infty$</td>      
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$0^+$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$0^-$</td>     
+        </tr>  
+          
+        <tr>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center;background: #dddddd">$\lim \dfrac{1}{f}$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$\dfrac{1}{a}$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$0^-$</td>
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$0^+$</td>      
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$+\infty$</td> 
+        <td style="border: 1px solid #444444;width: 80px;text-align: center">$-\infty$</td>     
+        </tr>    
+         
+           
+        
+        </table>
+        $a$ est un réel non nul.
+	</div>
+    
+     <div class="titled hide" data-title="\boxP Limites d'une composée d'une fonction" data-color="#444444">
+       Soient $u$ et $f$ deux fonctions telles que pour tout $x$ dans l'ensemble de définition de $u$, $u(x)$ appartient à l'ensemble de définition de $f$. $a$, $b$ et $c$ désignent trois réels ou $-\infty$ ou $+\infty$ :
+         <centering-box style="display:inline-block;background: #eeeeee">
+      si $\displaystyle\underset{x \rightarrow a}{\lim} u(x) = b$ et $\displaystyle\underset{x \rightarrow b}{\lim} f(x) = c$  alors  $\displaystyle\underset{x \rightarrow a}{\lim} f(u(x)) = c$
+             
+</centering-box>
+	</div>
+        
+        <div class="styled">
+       Déterminer les limites suivantes  : 
+        <div class="table 2cols">
+        <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow 0}{\lim} \;f(x) $ avec $\displaystyle f(x) = x^6 + \frac{1}{x}$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow 9}{\lim} \;f(x) $ avec $\displaystyle f(x) = x^2 + \dfrac{1}{9-x}$</div> ||
+            <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = 9 - 4x + 6x^2$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow 0}{\lim} \;f(x) $ avec $\displaystyle f(x) = \sqrt{x} - 8x^2 + \dfrac{-1}{x^5}$ </div> 
+        </div>
+    </div>
+</div>  
+    
+    
+<div class="newpage"></div>
+    
+  <!-- Limites et comparaison -->
+<div class="box" data-title="Limites et comparaison" data-num="$N_{13}$" data-date="1">   
+    <div class="titled hide" data-title="\boxT Théorème de minoration et majoration" data-color="#444444">
+        Soient $f$ et $g$ deux fonctions définies que un intervalle de la forme $[a;+\infty[$ telles que pour tout $x &gt; a$ $f(x) \leqslant g(x)$
+        vspace{5}
+        ,, si $\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) = +\infty $ alors $\displaystyle\underset{x \rightarrow +\infty}{\lim} \;g(x) = +\infty $ et si $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;f(x) = +\infty $ alors $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;g(x) = +\infty $
+        vspace{5}
+        ,, si $\displaystyle\underset{x \rightarrow +\infty}{\lim} \;g(x) = -\infty $ alors $\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) = -\infty $ et si $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;g(x) = -\infty $ alors $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;f(x) = -\infty $ 
+        
+	</div>
+    
+    <div class="titled hide" data-title="\boxT Théorème d'encadrement" data-color="#444444">
+        Soient $f$, $g$ et $h$ trois fonctions définies que un intervalle de la forme $[a;+\infty[$ telles que pour tout $x &gt; a$ $hg(x) \leqslant f(x) \leqslant h(x)$
+        vspace{5}
+        ,, Pour un réel $l$, si $\displaystyle\underset{x \rightarrow +\infty}{\lim} \;g(x) = l $ et $\displaystyle\underset{x \rightarrow +\infty}{\lim} \;h(x) = l $ alors $\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) = l $
+        vspace{5}
+        ,,  Pour un réel $l$, si $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;g(x) = l $ et $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;h(x) = l $ alors $\displaystyle\underset{x \rightarrow -\infty}{\lim} \;f(x) = l $ 
+        
+	</div>
+    
+    
+        
+        <div class="styled">
+       Déterminer les limites suivantes  : 
+        <div class="table 2cols">
+        <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow 0}{\lim} \;f(x) $ avec $\displaystyle f(x) = x^6 + \frac{1}{x}$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow 9}{\lim} \;f(x) $ avec $\displaystyle f(x) = x^2 + \dfrac{1}{9-x}$</div> ||
+            <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = 9 - 4x + 6x^2$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow 0}{\lim} \;f(x) $ avec $\displaystyle f(x) = \sqrt{x} - 8x^2 + \dfrac{-1}{x^5}$ </div> 
+        </div>
+    </div>
+</div>
+    
+    
+<!-- Théorème des valeurs intermédaires -->
+<div class="box" data-title="Théorème des valeurs intermédaires" data-num="$N_{14}$" data-date="1">   
+    <div class="titled hide" data-title="\boxT Théorème des valeurs intermédaires" data-color="#444444">
+       Soit une fonction $f$ *{bold::continue} sur un intervalle $[a;b]$. <br>
+    ,, $f$ atteint son minimum en $m$ et son maximum en $M$ <br>
+    ,, pour tout $k \in [m;M]$, il existe au moins un réel $c \in [a;b]$ tel que $f(c) = k$ 
+        
+    vspace{10}
+    Si la fonction $f$ est strictement *{bold::monotone} sur $[a;b]$ alors le réel $c$ est *{bold::unique}.
+	</div>
+    
+   
+   
+    
+        
+        <div class="styled">
+       Déterminer les limites suivantes  : 
+        <div class="table 2cols">
+        <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow 0}{\lim} \;f(x) $ avec $\displaystyle f(x) = x^6 + \frac{1}{x}$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow 9}{\lim} \;f(x) $ avec $\displaystyle f(x) = x^2 + \dfrac{1}{9-x}$</div> ||
+            <div class="num" data-valign-num="middle">$\displaystyle\underset{x \rightarrow +\infty}{\lim} \;f(x) $ avec $\displaystyle f(x) = 9 - 4x + 6x^2$</div> &
+            <div class="num" data-valign-num="middle"> $\displaystyle\underset{x \rightarrow 0}{\lim} \;f(x) $ avec $\displaystyle f(x) = \sqrt{x} - 8x^2 + \dfrac{-1}{x^5}$ </div> 
+        </div>
+    </div>
+</div>    
+    
 </body>
 </html>

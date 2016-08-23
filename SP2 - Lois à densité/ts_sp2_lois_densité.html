@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Lois à densité" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="TS - Lois à densité" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="1"
+data-left="$T_S$-$SP_2$"
+data-main-width="900">
+
+<!-- Variable aléatoire continue -->
+<div class="box" data-title="Variable aléatoire continue" data-num="$N_1$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxD Variable aléatoire continue" data-color="#444444">
+       Soit $\Omega$ l'univers  d'une expérience aléatoire. 
+Une *{bold::variable aléatoire continue} $X$ sur $\Omega$ est une fonction dont l'image de $\Omega$ est un intervalle $I$ de $\mathbb{R}$.
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Densité de probabilité" data-color="#444444">
+        Une fonction $f$ est une *{bold::densité de probabilité} quand :
+
+vspace{5}
+$\bullet$ $f$ est définie sur $\mathbb{R}$
+
+vspace{5}
+$\bullet$ $f$ est continue (sauf en un nombre fini de points) et positive sur $\mathbb{R}$
+
+vspace{5}
+$\bullet$ $\displaystyle \int_{-\infty}^{+\infty} f(t)dt = 1$ : l'aire sous la courbe représentative $\mathcal{C}_f$ de la fonction $f$ vaut $1$ unité d'aire $u.a$
+
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Fonction de répartition" data-color="#444444">
+       La variable aléatoire continue $X$ suit *{bold::une loi de probabilité à densité} $f$ quand : 
+ 
+ vspace{5}
+$\bullet$ $f$ est une densité de probabilité
+
+ vspace{5}
+$\bullet$ $\displaystyle P(X \leqslant a) = \int_{-\infty}^{a}f(t)dt$
+
+vspace{5}
+La fonction $P(X \leqslant x)$ (probabilité que la variable aléatoire continue $X$ soit inférieure ou égale à $x$) est appelée *{bold::fonction de répartition} de la variable aléatoire continue $X$.
+
+	</div>
+    
+   
+	<div class="styled" style="margin-top: 10px">
+        Soit $f$ une fonction définie sur $\mathbb{R}$ par : 
+
+$\left\{\begin{array}{lcl}
+
+f(x) = 0 & pour & x \in ]-\infty;1[ \\[1mm]
+\displaystyle f(x) = \frac{3}{x^4} & pour & x \in [1;+\infty[ \\
+\end{array}
+\right.
+$
+        vspace{20}
+        <div class="table 2cols">
+        <div class="num">Montrer que $f(x) \geqslant 0$ pour $x \in \mathbb{R}$</div> &
+            <div class="num" data-valign-num="middle">Montrer que $\displaystyle \int_{-\infty}^{+\infty} f(x)dx =   \int_{1}^{+\infty} f(x)dx$</div> ||
+          <div class="num"  data-valign-num="middle">Pour $t \geqslant 1$, calculer  $\displaystyle \int_{1}^{t} f(x)dx$</div> &
+        <div class="num"  data-valign-num="middle">Calculer $\displaystyle \underset{t \rightarrow +\infty}{\lim} \displaystyle \int_{1}^{t} f(x)dx$</div> 
+        </div>
+        <div class="num"  data-valign-num="middle">Déduire des questions précédentes que la fonction $f$ est une densité de probabilité.</div>
+        vspace{10}
+        On considère la variable aléatoire $X$ suivant une loi probabilité de densité $f$.
+        vspace{10}
+        <div class="table 2cols">
+        <div class="num">Calculer $P(X \leqslant 3)$ puis $P(X \in [1;+\infty[)$ </div> &
+            <div class="num" data-valign-num="middle">Calculer $\displaystyle P(X \leqslant \frac{3}{2})$</div> ||
+          <div class="num"  data-valign-num="middle"> Déterminer la fonction $F$ de répartition de $X$ sur $[1;+\infty[$</div> &
+        <div class="num"  data-valign-num="middle">Etudier les variations de $F$ sur $[1;+\infty[$</div> ||
+            <div class="num"  data-valign-num="middle"> Dans un repère adapté, tracer la courbe représentative $\mathcal{C}_F$ de $F$.</div> &
+        <div class="num"  data-valign-num="middle"> Graphiquement puis par le calcul, déterminer $a$ tel que  $\displaystyle P(X \leqslant a) = \frac{1}{2}$</div>
+        </div>
+    </div>
+	
+</div>	
+ 
+<div class="newpage"></div>    
+    
+<!-- Propriétés des lois à densité -->
+<div class="box" data-title="Propriétés des lois à densité" data-num="$N_2$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Propriétés des lois à densité" data-color="#444444">
+        Soient $X$ une variable aléatoire continue suivant une loi de probabilité à densité $f$ et $a$ et $b$  deux réels tels que $a &lt; b$ :
+
+ vspace{5}
+,, $P(X=a) = 0$ 
+
+ vspace{5}
+,, $\displaystyle P(X\geqslant a) = 1 - P(X \leqslant a) = \int_{a}^{+\infty} f(t)dt$ 
+
+ vspace{5}
+,, $\displaystyle P\big(X \in [a;b]\big) =  \int_{a}^{b} f(t)dt$ 
+	</div>
+        
+        <div class="styled">
+        On prend la variable aléatoire $X$ de la notion $N_1$. Calculer : 
+        <div class="table 2cols">
+        <div class="num">$P(X=6)$</div> &
+            <div class="num"> $P(X \geqslant 10)$</div> ||
+            <div class="num">$P(X \in [2;3])$</div> &
+            <div class="num"> Déterminer le réel $a$ tel que  $P(X \geqslant a) = 1\%$
+</div>
+        </div>
+    </div>
+</div>    
+        
+
+<!-- Espérance -->
+<div class="box" data-title="Espérance" data-num="$N_3$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Espérance" data-color="#444444">
+        Soient $X$ une variable aléatoire continue suivant une loi de probabilité à densité $f$. L'*{bold::espérance} de $X$, notée $E(X)$, vaut :
+$\displaystyle E(X) = \int_{-\infty}^{+\infty}xf(x)dx $
+
+
+	</div>
+        
+        <div class="styled">
+        On prend la variable aléatoire $X$ de la notion $N_1$. Calculer $E(X)$.
+    </div>
+</div>  
+    
+<!-- Variance et écart-type -->
+<div class="box" data-title="Variance et écart-type" data-num="$N_4$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Variance et écart-type" data-color="#444444">
+        Soient $X$ une variable aléatoire continue suivant une loi de probabilité à densité $f$. La *{bold::variance} de $X$, notée $V(X)$, vaut :
+$\displaystyle V(X) = \int_{-\infty}^{+\infty}\big(x - E(X)\big)^2f(x) dx $ <br>
+        
+    L'*{bold::écart-type} de $X$, noté $\sigma(X)$, vaut :
+
+$\displaystyle \sigma(X) = \sqrt{V(X)} $
+    
+	</div>
+        
+        <div class="styled">
+        On prend la variable aléatoire $X$ de la notion $N_1$. Calculer $V(X)$ puis $\sigma (X)$.
+    </div>
+</div>   
+    
+<div class="newpage"></div>    
+    
+<!-- Loi uniforme $\mathcal{U}(a;b)$ -->
+<div class="box" data-title="Loi uniforme $\mathcal{U}(a;b)$" data-num="$N_5$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Loi uniforme $\mathcal{U}(a;b)$" data-color="#444444">
+        Une variable aléatoire continue $X$ suit une *{bold::loi uniforme} sur l'intervalle $[a;b]$ quand la densité de probabilité $f$ est définie par : <br>
+
+<centering-box style="display:inline-block;background: #eeeeee">
+$\begin{array}{rcl}
+ f : \mathbb{R} & \rightarrow & [0;1] \\
+  x & \mapsto & f(x) = \dfrac{1}{b-a}  \;\mathrm{si}\; x \in [a;b] \;(0 \;\mathrm{sinon})\\
+\end{array}$
+</centering-box>    
+vspace{10}
+On note cette loi uniforme $\mathcal{U}(a;b)$.
+	</div>
+    
+    
+    <div class="titled hide" data-title="\boxP Calculer une probabilité" data-color="#444444">
+        Soient $X$ une variable aléatoire continue suivant la *{bold::loi uniforme} $\mathcal{U}(a;b)$ et $c$ et $d$ deux réels appartenant à  $[a;b]$ tels que $c \leqslant d$. 
+        vspace{20}
+        
+        ,, La probabilité que $X \leqslant d$ vaut : $\displaystyle  P\Big( X \leqslant d \Big)  = \int_{a}^{d} \frac{1}{b-a}dx = \frac{d-a}{b-a}$
+        
+        vspace{30}
+        
+        ,, La probabilité que $X \geqslant  c$ vaut : $\displaystyle  P\Big( X \geqslant  c \Big)  = \int_{c}^{b} \frac{1}{b-a}dx = \frac{b-c}{b-a}$
+        
+        vspace{30}
+        
+        ,, La probabilité que $X \in [c;d]$ vaut : $\displaystyle P\Big(X \in [c;d] \Big) = P\Big( c \leqslant X \leqslant d \Big)  = \int_{c}^{d} \frac{1}{b-a}dx = \frac{d-c}{b-a}$
+        
+        vspace{20}
+
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Espérance" data-color="#444444">
+        Soient $X$ une variable aléatoire continue suivant la *{bold::loi uniforme} $\mathcal{U}(a;b)$.  L'*{bold::espérance} $E(X)$ vaut : $\displaystyle E(X) = \frac{a+b}{2}$
+	</div>
+    
+     <div class="titled hide" data-title="\boxP Variance et écart-type" data-color="#444444">
+        Soient $X$ une variable aléatoire continue suivant la *{bold::loi uniforme} $\mathcal{U}(a;b)$.   La *{bold::variance} $V(X)$ et l'*{bold::écart-type} $\sigma(X)$ valent :
+$\displaystyle V(X) = \frac{(b-a)^2}{12}$  et $\displaystyle \sigma(X) = \frac{b-a}{\sqrt{12}}$
+
+	</div>
+        
+        <div class="styled">
+        On considère une variable aléatoire $Y$ qui suit la loi uniforme $\mathcal{U}(5;11)$. On appelle $g$ la densité de probabilité associée à $Y$. Soit $G$ la fonction de répartition de $Y$.
+        <div class="num"> Dans un repère adapté, tracer la représentation graphique $\mathcal{C}_g$ de la fonction $g$.</div>
+        <div class="num">Déterminer graphiquement $P(Y \leqslant 10)$.</div> 
+        <div class="num">Déterminer par le calcul $P(Y \leqslant 10)$.</div>   
+        <div class="num">Déterminer par le calcul $P(Y \in [6;8])$.</div>
+        <div class="num">Déterminer l'expression de la fonction $G$.</div>  
+        <div class="num">Dans un repère adapté,  tracer la représentation graphique $\mathcal{C}_G$ de la fonction $G$.</div>  
+        <div class="num">Démontrer que $P(Y \leqslant 4) = G(4)$. Calculer $P(Y \leqslant 4)$.</div>  
+        <div class="num">Démontrer que $P(Y \leqslant 12) = G(12)$. Calculer $P(Y \leqslant 12)$.</div> 
+        <div class="num">Démontrer que $P(Y \in [3;8]) = G(8) - G(3)$. Calculer $P(Y \in [3;8])$.</div> 
+        <div class="num">Calculer $E(Y)$, $V(Y)$ puis $\sigma (Y)$.</div>     
+        </div>
+</div>    
+    
+<div class="newpage"></div>    
+    
+<!-- Loi exponentielle -->
+<div class="box" data-title="Loi exponentielle" data-num="$N_6$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Loi exponentielle" data-color="#444444">
+        Une variable aléatoire continue $X$ suit une *{bold::loi exponentielle} de paramètre $\lambda > 0$ quand $X$ *{tdu::est positive} et la densité de probabilité $f$ est définie par :<br>
+
+<centering-box style="display:inline-block;background: #eeeeee">
+$\begin{array}{rcl}
+ f : \mathbb{R} & \rightarrow & [0;1] \\
+  x & \mapsto & f(x) = \lambda e^{-\lambda x}  \;\mathrm{si}\; x \geqslant 0 \;(0 \;\mathrm{sinon})\\
+\end{array}$
+</centering-box>    
+vspace{10}
+On peut noter cette loi exponentielle  $\mathcal{E}(\lambda)$.
+	</div>
+    
+    
+    <div class="titled hide" data-title="\boxP Calculer une probabilité" data-color="#444444">
+        Soient $X$ une variable aléatoire continue positive suivant la *{bold::loi exponentielle} de paramètre $\lambda$ et $c$ un réel tel que $c \geqslant 0$. La probabilité que $X \leqslant c$ (fonction de répartition) vaut :
+        <centering-box style="display:inline-block;background: #eeeeee">
+$\displaystyle P\Big(X \leqslant c \Big) = \int_{0}^{c}  \lambda e^{-\lambda x}dx= \Bigg[-e^{-\lambda x} \Bigg]_{0}^{c} = 1 - e^{-\lambda c}$
+</centering-box> 
+vspace{20}
+        Soient $X$ une variable aléatoire continue positive suivant la *{bold::loi exponentielle} de paramètre $\lambda$ et $c$  et $d$ deux réels tels que $c \geqslant 0$ et $c \leqslant d$. La probabilité que $X \in [c;d]$  vaut :
+        <centering-box style="display:inline-block;background: #eeeeee">
+$\displaystyle P\Big(X \in [c;d] \Big) = \int_{c}^{d}  \lambda e^{-\lambda x}dx=  e^{-\lambda c} - e^{-\lambda d}$
+        </centering-box> 
+        
+        
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Espérance" data-color="#444444">
+        Soient $X$ une variable aléatoire continue positive  suivant la *{bold::loi exponentielle} de paramètre $\lambda$. L'*{bold::espérance} $E(X)$ vaut : $\displaystyle E(X) = \frac{1}{\lambda}$
+	</div>
+    
+     <div class="titled hide" data-title="\boxP Variance et écart-type" data-color="#444444">
+        Soient $X$ une variable aléatoire continue positive  suivant la *{bold::loi exponentielle} de paramètre $\lambda$.  La *{bold::variance} $V(X)$ et l'*{bold::écart-type} $\sigma(X)$ valent :
+$\displaystyle V(X) = \frac{1}{\lambda^2}$  et $\displaystyle \sigma(X) = \frac{1}{\lambda}$ 
+	</div>
+        
+        <div class="styled">
+        On considère une variable aléatoire $T$ suivant la loi exponentielle de paramètre $2$. On appelle $f$ la densité de probabilité associée à $T$. Soi $F$ la fonction de répartition de $T$.
+        <div class="num"> Dans un repère adapté, tracer la représentation graphique $\mathcal{C}_f$ de la fonction $f$.</div>
+        <div class="num"> Calculer $P(T \leqslant 6)$</div> 
+        <div class="num">Déterminer le réel $\alpha$ tel que $\displaystyle P(T \leqslant \alpha) = \frac{1}{4}$</div>   
+        <div class="num">Calculer $P(T \geqslant 10)$</div>
+         <div class="num">C   Déterminer le réel $\beta$ tel que $\displaystyle P(T \geqslant \beta) = 10\%$</div>
+        <div class="num">Déterminer l'expression de la fonction $F$.</div>  
+        <div class="num">Dans un repère adapté,  tracer la représentation graphique $\mathcal{C}_F$ de la fonction $F$.</div>  
+        <div class="num">Calculer $P(T \in [7;10])$</div>  
+        <div class="num">Déterminer trois intervalles $I$ tel que $\displaystyle P(T \in I) = \frac{1}{2}$. Donner l'amplitude de ces intervalles.</div> 
+        <div class="num">Calculer $E(Y)$, $V(Y)$ puis $\sigma (Y)$.</div>     
+        </div>
+</div>        
+  
+</body>
+</html>

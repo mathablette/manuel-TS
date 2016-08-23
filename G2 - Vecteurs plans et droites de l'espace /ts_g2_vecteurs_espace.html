@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Vecteurs, plans et droites de l'espace" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="TS - Vecteurs, plans et droites de l'espace" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="1"
+data-left="$T_S$-$G_2$"
+data-main-width="900">
+
+<!-- Positions relatives de droites et de plans -->
+<div class="box" data-title="Positions relatives de droites et de plans" data-num="$N_1$" data-date="1">
+   
+     <div class="titled hide" data-title="\boxD \boxP Définition et propriétés" data-color="#444444">
+         ,, Par trois points $A$, $B$ et $C$ non alignés de l'espace, il passe une unique plan $\mathcal{P}$ que l'on peut noter $(ABC)$ <br>
+         ,, Si deux points distincts $A$ et $B$ de l'espace appartiennent à un plan $\mathcal{P}$ alors la droite $(AB)$ est contenue dans le plan $\mathcal{P}$. <br>
+         ,, Par deux points de l'espace, il existe une unique droite.
+    </div>     
+    <div class="titled hide" data-title="\boxP Position relative de deux droites" data-color="#444444">
+        <div style="text-align: center"><img src="fig1.png" style="width: 700px"/></div>
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Position relative d'une droite et d'un plan" data-color="#444444">
+        <div style="text-align: center"><img src="fig2.png" style="width: 750px"/></div>
+	</div>
+    
+   
+    <div class="titled hide" data-title="\boxP Position relative de deux plans" data-color="#444444">
+        <div style="text-align: center"><img src="fig3.png" style="width: 750px"/></div>
+	</div>
+    
+   
+	<div class="styled">
+        On considère un parallélépipède rectangle $ABCDEFGH$
+         <div class="num">Donner deux plans parallèles, deux plans sécants.</div>
+        <div class="num">Donner deux droites sécantes, parallèles, non-coplanaires.</div>
+         On considère une pyramide $SEFGH$ de sommet $S$.
+         <div class="num">Donner deux plans sécants.</div>
+        <div class="num">Donner une droite et un plan sécants.</div>
+        <div class="num">Donner l'intersection de $(EFG)$ et $(EFS)$</div>
+    </div>
+	
+</div>	
+    
+    
+<div class="newpage"></div>    
+    
+<!-- Vecteurs de l'espace-->
+<div class="box" data-title="Vecteurs de l'espace" data-num="$N_2$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Définition" data-color="#444444">
+        On étend la notion de *{bold::vecteur} dans le plan à celle de *{bold::vecteur} dans l'espace. A savoir que le vecteur $\vecteur{u}$ de l'espace possède une direction (droite support), un sens et une norme qe l'on note $||\vecteur{u}||$
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Propriétés" data-color="#444444">
+        Les propriétés sur les vecteurs du plan s'étendent aux vecteurs de l'espace : <br>
+        ,, $\vecteur{u}$ et $\vecteur{v}$ sont colinéaires quand il existe un réel $k$ tel que $\vecteur{u} = k\vecteur{v}$ <br>
+        ,, Les points $A$, $B$ et $C$ sont alignés quand $\vecteur{AB}$ et $\vecteur{AC}$ sont colinéaires. <br>
+        ,, Les droites $(AB)$ et $(CD)$ sont parallèles quand $\vecteur{AB}$ et $\vecteur{CD}$ sont colinéaires. <br>
+        ,, Relation de Chasles : $\vecteur{AB} + \vecteur{BC} = \vecteur{AC}$
+	</div>
+        
+        <div class="styled">
+        On considère un tétraèdre $ABCD$. Le point $I$ est le milieu du segment $[AB]$ :
+        <div class="num" data-valign-num="10px">Construire les points $E$ et $F$ tels que : $\vecteur{AB} = \vecteur{ED}$ et $\vecteur{CF} = \vecteur{BC}$ </div>
+        <div class="num" data-valign-num="10px">Exprimer $\vecteur{AI}$ en fonction de $\vecteur{CA}$ et $\vecteur{CD}$ </div> 
+        <div class="num" data-valign-num="10px">Montrer que  $\vecteur{EF} = \vecteur{AC} + \vecteur{CD}$ </div> 
+        <div class="num" data-valign-num="middle">En déduire que les droites $(CI)$ et $(EF)$ sont parallèles.</div>     
+    </div>
+</div> 
+    
+<!-- Caractérisations vectorielles -->
+<div class="box" data-title="Caractérisations vectorielles" data-num="$N_3$" data-date="1">   
+    <div class="titled hide" data-title="\boxP Caractérisation d'une droite" data-color="#444444">
+        Soit $A$ un point de l'espace et $\vecteur{u}$ un vecteur de non nul. L'ensemble des points $M$ de l'espace tels que $\vecteur{AM} = x\vecteur{u}$, $x \in \R$ est la droite $(AB)$, où $\vecteur{AB} = \vecteur{u}$ est un vecteur *{bold::directeur} de la droite $(AB)$.
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Caractérisation d'une droite" data-color="#444444">
+        Soit $A$ un point de l'espace, $\vecteur{u}$ et $\vecteur{v}$ deux vecteurs non colinéaires de l'espace. L'ensemble des points $M$ de l'espace tels que $\vecteur{AM} = x\vecteur{u} + y\vecteur{v}$, $x \in \R$ et $y \in \R$ est le plan $(ABC)$, où $\vecteur{AB} = \vecteur{u}$ et $\vecteur{AC} = \vecteur{v}$. $(\vecteur{u},\vecteur{v})$ est le *{bold::couple de vecteurs directeurs} du plan $(ABC)$.
+	</div>
+    
+    
+     <div class="titled hide" data-title="\boxP Corrolaires" data-color="#444444">
+        ,, Deux droites sont parallèles si et seulement si leurs vecteurs directeurs sont colinéaires. <br>
+        ,, Deux plans ayant le même couple de vec teurs directeurs sont parallèles. <br>
+        ,, Une droite $\mathcal{D}$ et un plan $\mathcal{P}$ sont parallèles quand un vecteur directeur de $\mathcal{D}$ est un vecteur du plan $\mathcal{P}$.
+         
+	</div>
+        
+        <div class="styled">
+        $SABCD$ est une pyramide de base carrée $ABCD$ de centre $O$. Les points $I$, $J$ et $K$ sont les milieux respectifs de $[SA]$, $[SB]$ et $[BD]$.<br> Identifier les ensembles suivants  :
+        <div class="num" data-valign-num="10px">$\mathcal{E}_1$ est l'ensemble des points $M$ tels que $\vecteur{AM} = t\vecteur{IJ}$, $t \in \R$ </div>
+        <div class="num" data-valign-num="10px">$\mathcal{E}_2$ est l'ensemble des points $M$ tels que $\vecteur{JM} = u\vecteur{SD}$, $u \in \R^+$</div> 
+        <div class="num" data-valign-num="10px">$\mathcal{E}_3$ est l'ensemble des points $M$ tels que $\vecteur{BM} = k\vecteur{SA}$, $u \in \R^-$</div>
+            <div class="num" data-valign-num="10px">$\mathcal{E}_4$ est l'ensemble des points $M$ tels que $\vecteur{0M} = x\vecteur{SB} + y\vecteur{SC}$, $x \in \R$ et $y \in \R$</div>
+    </div>
+</div>     
+        
+
+<div class="newpage"></div>
+    
+<!-- Vecteurs coplanaires -->
+<div class="box" data-title="Vecteurs coplanaires" data-num="$N_4$" data-date="1">   
+    <div class="titled hide" data-title="\boxD Vecteurs coplanaires" data-color="#444444">
+        Soit un plan $\mathcal{P}$ dont $(\vecteur{u},\vecteur{v})$ est un couple de vecteurs directeurs. Les trois vecteurs de l'espace $\vecteur{u}$, $\vecteur{v}$ et $\vecteur{w}$ sont *{bold::coplanaires} quand $\vecteur{w}$ appartient au plan $\mathcal{P}$.
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Vecteurs coplanaires" data-color="#444444">
+        Soient $\vecteur{u}$ et $\vecteur{v}$ deux vecteurs non colinéaires de l'espace. Les trois vecteurs de l'espace $\vecteur{u}$, $\vecteur{v}$ et $\vecteur{w}$ sont *{bold::coplanaires} quand il existe deux réels $x$ et $y$ tels que  $\vecteur{w} = x\vecteur{u} + y\vecteur{v}$.
+	</div>
+    
+    
+        
+        <div class="styled">
+        $SABC$ est un tétraèdre. Les points $I$, $J$ et $K$ sont les milieux respectifs de $[AD]$, $[AB]$ et $[BD]$.<br> Indiquer si les vecteurs sont coplanaires :
+        <div class="table 4cols">    
+        <div class="num" data-valign-num="10px"> $\vecteur{AB}$ , $\vecteur{BD}$ et $\vecteur{JK}$ </div> &
+            <div class="num" data-valign-num="10px"> $\vecteur{AK}$ , $\vecteur{AC}$ et $\vecteur{BC}$ </div> &
+            <div class="num" data-valign-num="10px"> $\vecteur{BC}$ , $\vecteur{IJ}$ et $\vecteur{CK}$ </div> &
+<div class="num" data-valign-num="10px"> $\vecteur{CI}$ , $\vecteur{CJ}$ et $\vecteur{BD}$ </div>
+            </div>
+    </div>
+</div> 
+    
+    
+<!-- Vecteurs non-coplanaires -->
+<div class="box" data-title="Vecteurs non-coplanaires" data-num="$N_5$" data-date="1">   
+    
+    
+    <div class="titled hide" data-title="\boxP Vecteurs coplanaires" data-color="#444444">
+        Soient  trois vecteurs de l'espace $\vecteur{u}$, $\vecteur{v}$ et $\vecteur{w}$  *{bold::non coplanaires}. Pour tout vecteur de l'espace $\vecteur{t}$  il existe trois réels  uniques $x$, $y$ et $z$ tels que  $\vecteur{t} = x\vecteur{u} + y\vecteur{v} + z\vecteur{w}$.
+	</div>
+    
+    
+        
+        <div class="styled">
+        $ABCD$ est un tétraèdre. Les points $I$ et $K$ sont les milieux respectifs de $[AB]$ et $[CD]$. Les points $J$ et $L$ sont définis par : $\vecteur{BJ} = \dfrac{1}{4}\vecteur{BC}$ et $\vecteur{AL} = \dfrac{1}{4}\vecteur{AD}$
+        <div class="num" data-valign-num="middle"> Les points $I$, $J$, $K$ et $L$ sont-ils coplanaires ? </div>
+         <div class="num" data-valign-num="middle"> Préciser la section du tétraèdre par le plan $(IJK)$ </div>   
+    </div>
+</div>
+    
+    
+<!-- Repère de l'espace -->
+<div class="box" data-title="Repère de l'espace" data-num="$N_6$" data-date="1">   
+    
+    
+    <div class="titled hide" data-title="\boxD Répère de l'espace" data-color="#444444">
+        Soit $O$ un plan de l'espace et  trois vecteurs de l'espace $\vecteur{i}$, $\vecteur{j}$ et $\vecteur{k}$  *{bold::non coplanaires}. Pour tout point $M$ de l'espace  il existe un unique triplet  $(x;y;z)$ tel que  $\vecteur{OM} = x\vecteur{i} + y\vecteur{j} + z\vecteur{k}$. <br>
+        $(x;y;z)$ sont les coordonnées de $M$ dans le repère $(O,\vecteur{i},\vecteur{j},\vecteur{k})$ avec : <br>
+        ,, $x$ est l'*{bold::abscisse} de $M$ dans le repère $(O,\vecteur{i},\vecteur{j},\vecteur{k})$ <br>
+        ,, $y$ est l'*{bold::ordonnée} de $M$ dans le repère $(O,\vecteur{i},\vecteur{j},\vecteur{k})$ <br>
+        ,, $z$ est la *{bold::côte} de $M$ dans le repère $(O,\vecteur{i},\vecteur{j},\vecteur{k})$ vspace{5}
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Coordonnées d'un vecteur" data-color="#444444">
+        Soient deux points $A(x_A;y_A;z_A)$ et $B(x_B;y_B;z_B)$ dans un repère $(O,\vecteur{i},\vecteur{j},\vecteur{k})$ alors $\cvecteurz{AB}{x_B-x_A}{y_B-y_A}{z_B-z_A}$
+	</div>
+    
+    
+        
+        <div class="styled">
+        $ABCD$ est un tétraèdre. 
+        <div class="num" data-valign-num="10px"> Donner les coordonnées de $\vecteur{AC}$ dans le repère  $(A,\vecteur{AB},\vecteur{AC},\vecteur{AD})$</div>
+         <div class="num" data-valign-num="10px">  Donner les coordonnées de $\vecteur{AC}$ dans le repère  $(B,\vecteur{BC},\vecteur{BA},\vecteur{BD})$ </div>   
+    </div>
+</div>    
+  
+<div class="newpage"></div>    
+ 
+    
+<!-- Propriétés des coordonnnés -->
+<div class="box" data-title="Propriétés des coordonnnés dans l'espace" data-num="$N_7$" data-date="1">   
+     <div class="titled hide" data-title="\boxP Milieu d'un segment" data-color="#444444">
+       Soient deux points $A(x_A;y_A;z_A)$ et $B(x_B;y_B;z_B)$ dans un repère $(O,\vecteur{i},\vecteur{j},\vecteur{k})$. Le point $I$ milieu du segment $[AB]$ a pour coordonnées : $I\Big(\dfrac{x_A+x_B}{2} ; \dfrac{y_A+y_B}{2} ; \dfrac{z_A+z_B}{2} \Big)$
+	</div>
+    <div class="titled hide" data-title="\boxP Centre de gravité d'un triangle" data-color="#444444">
+       Soient trois points $A(x_A;y_A;z_A)$, $B(x_B;y_B;z_B)$ et $C(x_C;y_C;z_C)$ dans un repère $(O,\vecteur{i},\vecteur{j},\vecteur{k})$. Le point $G$ centre de gravité du triangle $ABC$ a pour coordonnées : $G\Big(\dfrac{x_A+x_B+x_C}{3} ; \dfrac{y_A+y_B+y_C}{3} ; \dfrac{z_A+z_B+z_C}{3} \Big)$
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Combinaisons linéaires" data-color="#444444">
+      Soient $\cvecteurz{u}{x}{y}{z}$ et  $\cvecteurz{v}{x'}{y'}{z'}$ deux vecteurs de l'espace. On considère le vecteur $\vecteur{w}$ 
+	</div>
+</div>    
+</body>
+</html>
